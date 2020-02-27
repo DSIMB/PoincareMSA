@@ -14,9 +14,9 @@ import numpy as np
 import torch
 import os
 
-import timeit
-
+import numpy as np
 from argparse import ArgumentParser
+import timeit
 
 def create_parser():
     parser = ArgumentParser()
@@ -34,7 +34,7 @@ def create_parser():
     return parser
 
 # Construct a padded numpy matrices for a given PSSM matrix
-def construct_tensor(fpath):
+def construct_tensor(fpath, maxlen):
     ansarr = np.loadtxt(fpath).reshape(-1)
     # print(np.shape(arr))
     # quit()
@@ -44,7 +44,6 @@ def construct_tensor(fpath):
 
 def create_output_name(opt):
     titlename = f"dist={opt.distfn}, " +\
-                f"metric={opt.distlocal}, " +\
                 f"knn={opt.knn}, " +\
                 f"loss={opt.lossfn} " +\
                 f"sigma={opt.sigma:.2f}, " +\
@@ -55,23 +54,23 @@ def create_output_name(opt):
         os.mkdir(opt.dest)
 
     filename = f"{opt.dest}/{opt.dset}_" +\
-               f"PM{opt.knn:d}" +\
-               f"sigma={opt.sigma:.2f}" +\
-               f"gamma={opt.gamma:.2f}" +\
-               f"{opt.distlocal}pca={opt.pca:d}_seed{opt.seed}"
+               f"{opt.distfn}{opt.knn:d}_" +\
+               f"{opt.lossfn}_sigma={opt.sigma:.2f}_" +\
+               f"gamma={opt.gamma:.2f}_lr={opt.lr:.2f}_lrm={opt.lrm:.2f}_" +\
+               f"pca={opt.pca:d}_" +\
+               f"epochs={opt.epochs:d}_batchsize={opt.batchsize:d}"
 
-    # if opt.connected:
-    #     titlename = titlename + '\nconnected'
-    #     filename = filename + '_connected'
+    if opt.connected:
+        titlename = titlename + '\nconnected'
+        filename = filename + '_connected'
 
-    # if opt.normalize:
-    #     titlename = titlename + '\nnormalized'
-    #     filename = filename + '_normalized'
+    if opt.normalize:
+        titlename = titlename + '\nnormalized'
+        filename = filename + '_normalized'
 
     return titlename, filename
 
-
-def prepare_data(fpath):
+def prepare_data(fpath, maxlen, n_pca=0):
     # print([x[0] for x in os.walk(fpath)])
     # subfolders = [f.path for f in os.listdir(fpath) if f.is_dir() ]   
     proteins = [s for s in os.listdir(fpath) if '.aamtx' in s]
@@ -79,7 +78,7 @@ def prepare_data(fpath):
     print(f"{n_proteins} proteins in the family.")
     protein_name = proteins[0]
     fin = f'{fpath}/{protein_name}'
-    a = construct_tensor(fin).reshape(-1)        
+    a = construct_tensor(fin, maxlen).reshape(-1)        
 
     features = np.zeros([n_proteins, len(a)])
     labels = []
@@ -87,14 +86,14 @@ def prepare_data(fpath):
     for i, protein_name in enumerate(proteins):
         # print(protein_name)
         fin = f'{fpath}/{protein_name}'
-        features[i, :] = construct_tensor(fin).reshape(-1)
+        features[i, :] = construct_tensor(fin, maxlen).reshape(-1)
         labels.append(protein_name.split('.')[0])
 
     return torch.Tensor(features), np.array(labels)
 
+        
 
-
-# def prepare_data(fin, with_labels=True, normalize=False, n_pca=0):
+# def prepare_data(fin, with_labels=True, normalize=True, n_pca=0):
 #     """
 #     Reads a dataset in CSV format from the ones in datasets/
 #     """
@@ -131,7 +130,7 @@ def prepare_data(fpath):
 
 #     labels = np.array([str(s) for s in labels])
 
-#     return torch.DoubleTensor(x), labels
+#     return torch.Tensor(x), labels
 
 
 def connect_knn(KNN, distances, n_components, labels):
@@ -168,7 +167,7 @@ def compute_rfa(features, mode='features', k_neighbours=15, distfn='sym',
     built on top of the Laplacian of a single connected component k-nearest
     neighbour graph of the data.
     """
-    start = timeit.default_timer()
+    start = timeit.timeit()
     if mode == 'features':
         KNN = kneighbors_graph(features,
                                k_neighbours,
@@ -185,31 +184,27 @@ def compute_rfa(features, mode='features', k_neighbours=15, distfn='sym',
 
         if connected and (n_components > 1):
             from sklearn.metrics import pairwise_distances
-            distances = pairwise_distances(features, metric=distlocal)
+            distances = pairwise_distances(features, metric='euclidean')
             KNN = connect_knn(KNN, distances, n_components, labels)
     else:
         KNN = features    
 
     if distlocal == 'minkowski':
-        # sigma = np.mean(features)
         S = np.exp(-KNN / (sigma*features.size(1)))
-        # sigma_std = (np.max(np.array(KNN[KNN > 0])))**2
-        # print(sigma_std)
-        # S = np.exp(-KNN / (2*sigma*sigma_std))
     else:
         S = np.exp(-KNN / sigma)
 
     S[KNN == 0] = 0
-    print("Computing laplacian...")    
+    print("Computing laplacian...")
     L = csgraph.laplacian(S, normed=False)
-    print(f"Laplacian computed in {(timeit.default_timer() - start):.2f} sec")
+    print(f"Laplacian computed in {(timeit.timeit() - start):.2f} sec")
 
     print("Computing RFA...")
-    start = timeit.default_timer()
+
     RFA = np.linalg.inv(L + np.eye(L.shape[0]))
     RFA[RFA==np.nan] = 0.0
     
-    print(f"RFA computed in {(timeit.default_timer() - start):.2f} sec")
+    print(f"RFA computed in {(timeit.timeit() - start):.2f} sec")
 
     return torch.Tensor(RFA)
 

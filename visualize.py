@@ -13,18 +13,20 @@ import numpy as np
 import warnings
 import random
 
+warnings.filterwarnings("ignore")
+plt.switch_backend('agg')
+sns.set()
+
+
 colors_palette = ['#1F77B4', '#FF7F0E', '#2CA02C', '#D62728', '#9467BD',
                   '#8C564B', '#E377C2', '#BCBD22', '#17BECF', '#40004B',
                   '#762A83', '#9970AB', '#C2A5CF', '#E7D4E8', '#F7F7F7',
                   '#D9F0D3', '#A6DBA0', '#5AAE61', '#1B7837', '#00441B',
                   '#8DD3C7', '#FFFFB3', '#BEBADA', '#FB8072', '#80B1D3',
                   '#FDB462', '#B3DE69', '#FCCDE5', '#D9D9D9', '#BC80BD',
-                  '#CCEBC5', '#FFED6F']
+                  '#CCEBC5', '#FFED6F', '#edf8b1', '#c7e9b4', '#7fcdbb',
+                  '#41b6c4', '#1d91c0', '#225ea8', '#253494', '#081d58']
 
-
-warnings.filterwarnings("ignore")
-plt.switch_backend('agg')
-sns.set()
 
 
 def linear_scale(embeddings):
@@ -37,72 +39,68 @@ def linear_scale(embeddings):
     embeddings = dist * embeddings / np.sqrt(sqnorm)
     return np.transpose(embeddings)
 
+def plot_training(loss_func, title_name=None, file_name=None, d1=4, d2=4, fs=11):
+  fig = plt.figure(figsize=(d1, d2))
+  plt.plot(loss_func, c='#f03b20')
 
-def plot_poincare_disc(x, labels=None, labels_name='labels', labels_order=None, 
+  if title_name:
+    plt.title(title_name, fontsize=fs)
+  plt.show()
+
+  if file_name:
+    plt.savefig(file_name + '.pdf', format='pdf')
+  plt.close(fig)
+
+
+
+def plot_poincare_disc(x, labels_txt, labels=None, labels_name='labels', labels_order=None, 
                        file_name=None, coldict=None,
-                       d1=4*4.5, d2=4*4.0, fs=9, ms=1,
-                       u=None, v=None,
-                       col_palette=plt.get_cmap("tab10"), bbox=(1.3, 0.7)):    
+                       d1=6.0, d2=6.0, fs=11, ms=20, col_palette=plt.get_cmap("tab10"), bbox=(1.3, 0.7)):    
+
+    idx = np.random.permutation(len(x))    
+    df = pd.DataFrame(x[idx, :], columns=['pm1', 'pm2'])
     
     fig = plt.figure(figsize=(d1, d2))
     ax = plt.gca()
     circle = plt.Circle((0, 0), radius=1,  fc='none', color='black')
     ax.add_patch(circle)
     ax.plot(0, 0, '.', c=(0, 0, 0), ms=4)
-    
-#     ax.scatter(x[:, 0], x[:, 1], c)
-    df = pd.DataFrame(x, columns=['pm1', 'pm2'])
-    sns.scatterplot(x="pm1", y="pm2",
-                        data=df, ax=ax, s=30)
-    
-    for i,l in enumerate(labels):
-        ax.text(x[i, 0], x[i, 1], labels[i], fontsize=10)
 
+    if not (labels is None):
+        df[labels_name] = labels[idx]
+        # if labels_order is None:
+        #     labels_order = np.unique(labels)        
+        # if coldict is None:
+            # coldict = dict(zip(labels_order, col_palette[:len(labels)]))
+        sns.scatterplot(x="pm1", y="pm2", hue=labels_name, 
+                        hue_order=labels_order,
+                        # palette=coldict,
+                        alpha=1.0, edgecolor="none",
+                        data=df, ax=ax, s=ms)
+
+        ax.legend(fontsize=fs, loc='outside', bbox_to_anchor=bbox)
+            
+    else:
+        sns.scatterplot(x="pm1", y="pm2",
+                        data=df, ax=ax, s=ms)
     fig.tight_layout()
     ax.axis('off')
-    ax.axis('equal') 
+    ax.axis('equal')  
 
-    ax.set_ylim([-1.01, 1.01])
-    ax.set_xlim([-1.01, 1.01]) 
+    if not (labels_txt is None):
+      labels_list = np.unique(labels_txt)
+      for l in labels_list:
+  #         i = np.random.choice(np.where(labels == l)[0])
+          ix_l = np.where(labels_txt == l)[0]
+          c1 = np.median(x[ix_l, 0])
+          c2 = np.median(x[ix_l, 1])
+          ax.text(c1, c2, l, fontsize=fs)
+
 
     if file_name:
         plt.savefig(file_name + '.pdf', format='pdf')
 
-# def plot_poincare_disc(x, labels=None, labels_name='labels', labels_order=None, 
-#                        file_name=None, coldict=None,
-#                        d1=19, d2=18.0, fs=9, ms=20, col_palette=plt.get_cmap("tab10"), bbox=(1.3, 0.7)):    
-
-#     idx = np.random.permutation(len(x))
-#     df = pd.DataFrame(x[idx, :], columns=['pm1', 'pm2'])
-    
-#     fig = plt.figure(figsize=(d1, d2))
-#     ax = plt.gca()
-#     circle = plt.Circle((0, 0), radius=1,  fc='none', color='black')
-#     ax.add_patch(circle)
-#     ax.plot(0, 0, '.', c=(0, 0, 0), ms=4)
-
-#     if not (labels is None):
-#         df[labels_name] = labels[idx]
-#         if labels_order is None:
-#             labels_order = np.unique(labels)        
-#         if coldict is None:
-#             coldict = dict(zip(labels_order, col_palette[:len(labels)]))
-#         sns.scatterplot(x="pm1", y="pm2", hue=labels_name, 
-#                         hue_order=labels_order,
-#                         palette=coldict,
-#                         alpha=1.0, edgecolor="none",
-#                         data=df, ax=ax, s=ms)
-#         ax.legend(fontsize=fs, loc='outside', bbox_to_anchor=bbox)
-            
-#     else:
-#         sns.scatterplot(x="pm1", y="pm2",
-#                         data=df, ax=ax2, s=ms)
-#     fig.tight_layout()
-#     ax.axis('off')
-#     ax.axis('equal')  
-
-#     if file_name:
-#         plt.savefig(file_name + '.pdf', format='pdf')
+    plt.close(fig)
 
 
 def plotPoincareDisc(x,
@@ -111,9 +109,9 @@ def plotPoincareDisc(x,
                      title_name=None,
                      idx_zoom=None,
                      show=False,
-                     d1=7,
-                     d2=5,
-                     fs=8,
+                     d1=12,
+                     d2=6,
+                     fs=11,
                      ms=4,
                      col_palette=None,
                      color_dict=None):
@@ -146,10 +144,18 @@ def plotPoincareDisc(x,
     plt.plot(0, 0, 'x', c=(1, 1, 1), ms=ms)
     plt.axis('off')
     plt.axis('equal')
-    plt.legend(numpoints=1, loc='center left',
-               bbox_to_anchor=(1, 0.5), fontsize=fs)
+    # plt.legend(numpoints=1, loc='center left',
+    #            bbox_to_anchor=(1, 0.5), fontsize=fs)
 
+    labels_list = np.unique(label_names)
 
+    for l in labels_list:
+#         i = np.random.choice(np.where(labels == l)[0])
+        ix_l = np.where(label_names == l)[0]
+        c1 = np.median(x[0, ix_l])
+        c2 = np.median(x[1, ix_l])
+        plt.text(c1, c2, l, fontsize=fs)
+#
     if idx_zoom is None:
         xl = np.array(linear_scale(x))
         xl[np.isnan(xl)] = 0
@@ -181,6 +187,8 @@ def plotPoincareDisc(x,
 
     plt.legend(numpoints=1, loc='center left',
                bbox_to_anchor=(1, 0.5), fontsize=fs)
+
+    plt.tight_layout()
 
     if file_name:
         plt.savefig(file_name + '.pdf', format='pdf')
