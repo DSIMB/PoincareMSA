@@ -1,4 +1,4 @@
-from runExperiment import *
+from main import *
 import submitit
 import os
 import csv
