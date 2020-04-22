@@ -36,13 +36,16 @@ if __name__ == "__main__":
         for knn in [2, 3, 5]:
             for sigma in [1.0, 2.0]:
                 for gamma in [1.0, 2.0]:
-                    l += 1
-                    train_args = parse_args()
-                    train_args.family = family
-                    train_args.knn = knn
-                    train_args.sigma = sigma
-                    train_args.gamma = gamma
-                    all_args.append(train_args)
+                    for batchsize in [-1, 64]:
+                        l += 1
+                        train_args = parse_args()
+                        train_args.family = family
+                        train_args.knn = knn
+                        train_args.sigma = sigma
+                        train_args.gamma = gamma
+                        train_args.batchsize = batchsize
+                        train_args.seed = 1
+                        all_args.append(train_args)
 
     print("Launching one array of {} jobs...".format(len(all_args)))
     cluster = Cluster()
