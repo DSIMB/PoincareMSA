@@ -116,7 +116,7 @@ if __name__ == "__main__":
         type=float, default=0.0001)
 
     parser.add_argument('--debugplot', help='Plot intermidiate embeddings every N iterations', type=int, default=200)
-    parser.add_argument('--cuda', help='Use GPU', type=int, default=0)
+    parser.add_argument('--cuda', help='Use GPU', type=int, default=1)
     parser.add_argument('--logfile', help='Use GPU', type=str, default='Logs')
 
     opt = parser.parse_args()            
