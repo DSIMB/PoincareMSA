@@ -5,7 +5,7 @@ import csv
 
 class Cluster:
     def __init__(self,
-                 checkpoint_dir="clusterlogsMo/",
+                 checkpoint_dir="clusterlogsTanya/",
                  partition="learnfair",
                  array_parallelism=512,
                  num_cpus=8,
