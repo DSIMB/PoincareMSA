@@ -15,7 +15,7 @@ import torch
 import os
 
 import timeit
-
+import re
 from argparse import ArgumentParser
 
 def create_parser():
@@ -36,58 +36,32 @@ def create_parser():
 # Construct a padded numpy matrices for a given PSSM matrix
 def construct_tensor(fpath):
     ansarr = np.loadtxt(fpath).reshape(-1)
-    # print(np.shape(arr))
     # quit()
     # ansarr = np.zeros((maxlen, 20))
     # ansarr[:arr.shape[0], :] = arr
-    return ansarr
-
-def create_output_name(opt):
-    titlename = f"dist={opt.distfn}, " +\
-                f"metric={opt.distlocal}, " +\
-                f"knn={opt.knn}, " +\
-                f"loss={opt.lossfn} " +\
-                f"sigma={opt.sigma:.2f}, " +\
-                f"gamma={opt.gamma:.2f}, " +\
-                f"n_pca={opt.pca}"
-
-    if not os.path.isdir(opt.dest):
-        os.mkdir(opt.dest)
-
-    filename = f"{opt.dest}/{opt.dset}_" +\
-               f"PM{opt.knn:d}" +\
-               f"sigma={opt.sigma:.2f}" +\
-               f"gamma={opt.gamma:.2f}" +\
-               f"{opt.distlocal}pca={opt.pca:d}_seed{opt.seed}"
-
-    # if opt.connected:
-    #     titlename = titlename + '\nconnected'
-    #     filename = filename + '_connected'
-
-    # if opt.normalize:
-    #     titlename = titlename + '\nnormalized'
-    #     filename = filename + '_normalized'
-
-    return titlename, filename
+    return np.array(ansarr)
 
 
-def prepare_data(fpath):
+def prepare_data(fpath, fmt='.txt'):
     # print([x[0] for x in os.walk(fpath)])
     # subfolders = [f.path for f in os.listdir(fpath) if f.is_dir() ]   
-    proteins = [s for s in os.listdir(fpath) if '.aamtx' in s]
+    # fmt = '.aamtx'
+    proteins = [s for s in os.listdir(fpath) if fmt in s]
     n_proteins = len(proteins)
-    print(f"{n_proteins} proteins in the family.")
-    protein_name = proteins[0]
-    fin = f'{fpath}/{protein_name}'
-    a = construct_tensor(fin).reshape(-1)        
+    print(f"{n_proteins} proteins in the family in folder {fpath}.")
+
+    protein_file = proteins[0]
+    fin = f'{fpath}/{protein_file}'    
+
+    a = construct_tensor(fin)
 
     features = np.zeros([n_proteins, len(a)])
     labels = []
-
+    labels2 = []
     for i, protein_name in enumerate(proteins):
         # print(protein_name)
         fin = f'{fpath}/{protein_name}'
-        features[i, :] = construct_tensor(fin).reshape(-1)
+        features[i, :] = construct_tensor(fin)
         labels.append(protein_name.split('.')[0])
 
     return torch.Tensor(features), np.array(labels)
