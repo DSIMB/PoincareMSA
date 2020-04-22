@@ -72,8 +72,7 @@ def get_tree_colors(opt, labels, tree_cut=5):
     return tree_levels, color_dict
 
 
-if __name__ == "__main__":
-    # parse arguments
+def parse_args():
     parser = argparse.ArgumentParser(description='Poincare maps')
     parser.add_argument('--dim', help='Embedding dimension', type=int, default=2)
 
@@ -119,8 +118,9 @@ if __name__ == "__main__":
     parser.add_argument('--cuda', help='Use GPU', type=int, default=1)
     parser.add_argument('--logfile', help='Use GPU', type=str, default='Logs')
 
-    opt = parser.parse_args()            
+    return parser.parse_args()
 
+def poincare_map(opt):
     # read and preprocess the dataset
     features, labels = prepare_data(opt.path + opt.family + '/Nfasta/')
 
@@ -207,3 +207,8 @@ if __name__ == "__main__":
                            title_name=titlename,
                            labels=tree_levels, 
                            coldict=color_dict, file_name=f'{fout}_rotate_cut{t}', d1=8.5, d2=8.0, bbox=(1.2, 1.), leg=leg)
+
+
+if __name__ == "__main__":
+    args = parse_args()
+    poincare_map(args)

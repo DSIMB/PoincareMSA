@@ -46,7 +46,7 @@ if __name__ == "__main__":
 
     print("Launching one array of {} jobs...".format(len(all_args)))
     cluster = Cluster()
-    cluster.submit(run_experiment, all_args)
+    cluster.submit(poincare_map, all_args)
 
     for job in cluster.jobs:
         print("Submitted job array: {}".format(job.job_id.split("_")[0]))
