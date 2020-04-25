@@ -51,24 +51,27 @@ def create_output_name(opt):
 
 
 
-def get_tree_colors(opt, labels, tree_cut=5):
-    pkl_file = open(f'{opt.path}/{opt.family}/{opt.family}_tree_cluster_{tree_cut}.pkl', 'rb')
+def get_tree_colors(opt, labels, tree_cl_name):
+    pkl_file = open(f'{tree_cl_name}.pkl', 'rb')
     colors = pickle.load(pkl_file)
+    colors_keys = [str(k) for k in colors.keys()]
+    colors_val = [str(k) for k in colors.values()]
+    colors = dict(zip(colors_keys, colors_val))
     pkl_file.close()
-    colors['000'] = -2
     tree_levels = []
     for l in labels:
         if l == '000':
-            tree_levels.append(-2)
+            tree_levels.append('root')
         else:
-            tree_levels.append(colors[int(l)])
+            tree_levels.append(colors[l])
+
     tree_levels = np.array(tree_levels)
     n_tree_levels = len(np.unique(tree_levels))
     current_palette = sns.color_palette("husl", n_tree_levels)
     color_dict = dict(zip(np.unique(tree_levels), current_palette))
     sns.palplot(current_palette)
     color_dict[-1] = '#bdbdbd'
-    color_dict[-2] = '#000000'
+    color_dict['root'] = '#000000'
     return tree_levels, color_dict
 
 
@@ -79,6 +82,8 @@ def parse_args():
     parser.add_argument('--path', help='Path to dataset to embed', type=str, default='../data_proteins/')
     parser.add_argument('--family', help='Name of the protein family (name of the folder)', type=str, default='glob')
     parser.add_argument('--tree', help='File with phylogenetic trees', type=str, default=5)
+    parser.add_argument('--function', help='Protein by function', type=str, default='glob-name')
+
     parser.add_argument('--dest', help='Write results', type=str, default='../results_proteins/')
     parser.add_argument('--seed', help='Random seed', type=int, default=0)
 
@@ -125,7 +130,7 @@ def poincare_map(opt):
     features, labels = prepare_data(opt.path + opt.family + '/Nfasta/')
 
     if not (opt.tree is None):
-        tree_levels, color_dict = get_tree_colors(opt, labels, tree_cut=opt.tree)
+        tree_levels, color_dict = get_tree_colors(opt, labels, f'{opt.path}/{opt.family}/{opt.family}_tree_cluster_{opt.tree}')
     else:
         color_dict = None
         tree_levels = None
@@ -192,13 +197,30 @@ def poincare_map(opt):
     plot_poincare_disc(embeddings, labels, 
                        title_name=titlename,
                        labels=tree_levels, 
-                       coldict=color_dict, file_name=fout, d1=8.5, d2=8.0, bbox=(1.2, 1.), leg=True)
+                       coldict=color_dict, file_name=fout, d1=8.5, d2=8.0, bbox=(1.2, 1.), leg=False)
 
-    idx_root = np.where(tree_levels == -2)[0]
+    idx_root = np.where(tree_levels == 'root')[0]
     poincare_coord_rot = poincare_translation(-embeddings[idx_root, :], embeddings)
 
+
+    if not (opt.function is None):
+        for f in ['glob-spec', 'glob-spec1', 'glob-name1', 'glob-name']:
+            fun_levels, color_dict_fun = get_tree_colors(opt, labels, f'{opt.path}/{opt.family}/{f}')
+            plot_poincare_disc(poincare_coord_rot, fun_levels, 
+                               title_name=titlename,
+                               labels=fun_levels, 
+                               coldict=color_dict_fun, 
+                               file_name=f'{fout}_rotate_{f}', 
+                               d1=8.5, d2=8.0, bbox=(1., 1.), leg=True)
+
+    else:
+        color_dict_fun = None
+        fun_levels = None
+
+
+    
     for t in range(1, 6):
-        tree_levels, color_dict = get_tree_colors(opt, labels, tree_cut=t)
+        tree_levels, color_dict = get_tree_colors(opt, labels, f'{opt.path}/{opt.family}/{opt.family}_tree_cluster_{t}')
         if len(np.unique(tree_levels)) < 25:
             leg = True
         else:

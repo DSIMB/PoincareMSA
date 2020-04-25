@@ -105,7 +105,7 @@ def plot_training(loss_func, title_name=None, file_name=None, d1=4, d2=4, fs=11)
 def plot_poincare_disc(x, labels_txt, 
                        labels=None, labels_name='groups', labels_order=None, 
                        file_name=None, coldict=None,
-                       title_name=None, leg=False,
+                       title_name=None, leg=True,
                        d1=6.0, d2=6.0, fs=11, ms=80, 
                        col_palette=plt.get_cmap("tab10"), bbox=(1.3, 0.7)):    
 
@@ -137,12 +137,10 @@ def plot_poincare_disc(x, labels_txt,
             
 
     if not (labels_txt is None):
-      labels_list = np.unique(labels_txt)
-      for l in labels_list:
+      for ix_l, l in enumerate(labels_txt):
   #         i = np.random.choice(np.where(labels == l)[0])
-          ix_l = np.where(labels_txt == l)[0]
-          c1 = np.median(x[ix_l, 0])
-          c2 = np.median(x[ix_l, 1])
+          c1 = x[ix_l, 0]
+          c2 = x[ix_l, 1]
           ax.text(c1, c2, l, fontsize=fs)
 
     plt.tight_layout()
