@@ -32,8 +32,9 @@ class Cluster:
 if __name__ == "__main__":
     all_args = []
     l = 0
-    for family in ['glob', 'DNA_pol_B_exo', 'cytb', 'eIF6', 'glob', 'igvar-h', 'sh3']:
-        for knn in [2, 3, 5]:
+    # for family in ['glob', 'DNA_pol_B_exo', 'cytb', 'eIF6', 'glob', 'igvar-h', 'sh3']:
+    for family in ['glob']:
+        for knn in [3, 5]:
             for sigma in [1.0, 2.0]:
                 for gamma in [1.0, 2.0]:
                     for batchsize in [-1, 64]:
@@ -44,7 +45,7 @@ if __name__ == "__main__":
                         train_args.sigma = sigma
                         train_args.gamma = gamma
                         train_args.batchsize = batchsize
-                        train_args.seed = 1
+                        train_args.seed = 0
                         all_args.append(train_args)
 
     print("Launching one array of {} jobs...".format(len(all_args)))
