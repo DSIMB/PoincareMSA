@@ -35,8 +35,8 @@ if __name__ == "__main__":
     # for family in ['glob', 'DNA_pol_B_exo', 'cytb', 'eIF6', 'glob', 'igvar-h', 'sh3']:
     for family in ['glob']:
         for knn in [3, 5]:
-            for sigma in [1.0, 2.0]:
-                for gamma in [1.0, 2.0]:
+            for sigma in [1.0, 2.0, 4.0]:
+                for gamma in [1.0, 2.0, 4.0]:
                     for batchsize in [-1, 64]:
                         l += 1
                         train_args = parse_args()

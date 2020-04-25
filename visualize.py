@@ -106,7 +106,7 @@ def plot_poincare_disc(x, labels_txt,
                        labels=None, labels_name='groups', labels_order=None, 
                        file_name=None, coldict=None,
                        title_name=None, leg=True,
-                       d1=6.0, d2=6.0, fs=9, ms=80, 
+                       d1=6.0, d2=6.0, fs=6, ms=80, 
                        col_palette=plt.get_cmap("tab10"), bbox=(1.3, 0.7)):    
 
     df = pd.DataFrame(x, columns=['pm1', 'pm2'])
