@@ -211,7 +211,7 @@ def poincare_map(opt):
                                labels=fun_levels, 
                                coldict=color_dict_fun, 
                                file_name=f'{fout}_rotate_{f}', 
-                               d1=8.5, d2=8.0, bbox=(1., 1.), leg=True)
+                               d1=8.5, d2=8.0, bbox=(1., 1.), leg=False)
 
     else:
         color_dict_fun = None
