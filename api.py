@@ -72,9 +72,10 @@ class PoincareMSA:
         """  
         with open(colors_file, 'rb') as f:
             colors = pickle.load(f)
-        colors['000'] = 'root'
+        colors['root'] = 'root'
 
         tree_levels = [colors[protein_id] for protein_id in self.labels['proteins']]
+        
         self.labels[colors_name] = np.array(tree_levels)
         self.labels_palettes[colors_name] = get_colors(list(np.unique(tree_levels)),\
             palette=palette, 
@@ -144,13 +145,14 @@ if __name__ == "__main__":
 
     pMSA = PoincareMSA(file_name)
 
-    pMSA.rotate('proteins', root_name=0)
+    pMSA.rotate('proteins')
 
     pMSA.get_tree_colors(
         'data/glob/glob_tree_cluster_1.pkl', 
         colors_name='glob_tree_cluster_1',        
         )
 
+    # quit()
     pMSA.plot_disc('glob_tree_cluster_1',
         labels_text_name='proteins',
         figsize=(12, 12),

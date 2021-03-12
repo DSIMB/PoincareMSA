@@ -60,7 +60,7 @@ def get_tree_colors(opt, labels, tree_cl_name):
     pkl_file.close()
     tree_levels = []
     for l in labels:
-        if l == '000':
+        if l == 'root':
             tree_levels.append('root')
         else:
             tree_levels.append(colors[l])
@@ -128,7 +128,7 @@ def poincare_map(opt):
     # read and preprocess the dataset
     opt.cuda = True if torch.cuda.is_available() else False
 
-    print(opt.cuda)
+    print('CUDA:', opt.cuda)
 
     features, labels = prepare_data(opt.path + opt.family + '/Nfasta/')
     
