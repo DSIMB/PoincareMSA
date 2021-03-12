@@ -1,0 +1,240 @@
+0	>DNA_pol_B_exo
+1	>tr|Q76Z74|Q76Z74_9CAUD DNA polymerase OS=Aeromonas phage Aeh1 GN=43 PE=3 SV=1
+2	>tr|A0A172Q105|A0A172Q105_9VIRU DNA polymerase OS=Escherichia phage WG01 GN=WG01_49 PE=3 SV=1
+3	>tr|E5DPU8|E5DPU8_9CAUD DNA polymerase OS=Aeromonas phage PX29 GN=43 PE=3 SV=1
+4	>tr|E1A2P1|E1A2P1_9CAUD DNA polymerase OS=Aeromonas phage phiAS5 GN=phiAS5_ORF0144 PE=3 SV=1
+5	>tr|A0A192YA53|A0A192YA53_9CAUD DNA polymerase OS=Morganella phage vB_MmoM_MP1 GN=MP1_gp0034 PE=4 SV=1
+6	>tr|E5FIG6|E5FIG6_9CAUD DNA polymerase OS=Enterobacteria phage vB_EcoM-VR7 GN=43 PE=3 SV=1
+7	>tr|A0A0G2SSF9|A0A0G2SSF9_9CAUD DNA polymerase OS=Proteus phage vB_PmiM_Pm5461 GN=Pm5461_044 PE=3 SV=1
+8	>tr|W6ASJ3|W6ASJ3_9CAUD DNA polymerase OS=Enterobacter phage PG7 GN=PG7_043 PE=3 SV=1
+9	>tr|A0A0K1Y516|A0A0K1Y516_9CAUD DNA polymerase OS=Klebsiella phage JD18 GN=JD18_025 PE=3 SV=1
+10	>tr|I7LH45|I7LH45_9CAUD DNA polymerase OS=Yersinia phage phiR1-RT GN=g055 PE=3 SV=1
+11	>tr|D4Z9J6|D4Z9J6_BPAR1 DNA polymerase OS=Enterobacteria phage AR1 GN=43 PE=3 SV=1
+12	>tr|A0A076YKU3|A0A076YKU3_9CAUD DNA polymerase OS=Citrobacter phage Miller GN=CPTMiller_0039 PE=3 SV=1
+13	>tr|A0A0A0PZF1|A0A0A0PZF1_9CAUD DNA polymerase OS=Pectobacterium bacteriophage PM2 GN=PM2_052 PE=3 SV=1
+14	>tr|A0A0B6VTM5|A0A0B6VTM5_9CAUD DNA polymerase OS=Edwardsiella phage PEi20 GN=43 PE=3 SV=1
+15	>tr|K4I222|K4I222_9CAUD DNA polymerase OS=Salmonella phage STML-198 PE=3 SV=1
+16	>tr|C4MYJ6|C4MYJ6_9CAUD DNA polymerase OS=Enterobacteria phage JSE GN=EpJSE_00028 PE=4 SV=1
+17	>tr|A0A060AN20|A0A060AN20_9CAUD DNA polymerase OS=Cronobacter phage S13 GN=S13_250 PE=3 SV=1
+18	>tr|I6XGN4|I6XGN4_BPKV4 DNA polymerase OS=Vibriophage phi-pp2 GN=pp2_081 PE=3 SV=1
+19	>tr|E5E478|E5E478_9CAUD Gp43A split DNA polymerase OS=Acinetobacter phage Acj61 GN=43A PE=4 SV=1
+20	>tr|I6YMT3|I6YMT3_9CAUD DNA polymerase subunit OS=Aeromonas phage Aes144 PE=4 SV=1
+21	>tr|Q6RHT8|Q6RHT8_9CAUD Gp43A core DNA polymerase of replisome OS=Aeromonas phage 65 GN=43A PE=4 SV=1
+22	>tr|Q6J2P7|Q6J2P7_9CAUD Gp43A split DNA polymerase OS=Acinetobacter phage 133 GN=43A PE=4 SV=1
+23	>tr|I6XLW2|I6XLW2_9CAUD Core DNA polymerase of replisome OS=Aeromonas phage CC2 GN=CC2_250 PE=4 SV=1
+24	>tr|E5EPN6|E5EPN6_9CAUD Gp43A split DNA polymerase OS=Acinetobacter phage Acj9 GN=43A PE=4 SV=1
+25	>tr|M4M9T5|M4M9T5_9VIRU DNA polymerase OS=Vibrio phage henriette 12B8 GN=VPDG_00027 PE=4 SV=1
+26	>tr|G0YKE7|G0YKE7_9CAUD Split DNA polymerase OS=Acinetobacter phage ZZ1 GN=ZZ1p0102 PE=4 SV=2
+27	>tr|E5EYL8|E5EYL8_9CAUD Gp43A split DNA polymerase OS=Acinetobacter phage Ac42 GN=43A PE=4 SV=1
+28	>tr|Q56EX6|Q56EX6_9CAUD Gp43 OS=Aeromonas phage 31 GN=43 PE=4 SV=1
+29	>tr|A0A0E3G401|A0A0E3G401_9CAUD DNA polymerase OS=Synechococcus phage ACG-2014f GN=Syn7803C19_156 PE=4 SV=1
+30	>tr|A0A023W652|A0A023W652_9CAUD Putative split hinge connector of DNA polymerase OS=Serratia phage PS2 GN=PS2_052 PE=4 SV=1 
+31	>tr|F5B412|F5B412_9CAUD DNA polymerase OS=Synechococcus phage S-CRM01 GN=SCRM01_142c PE=3 SV=1
+32	>tr|A0A0H4IPK1|A0A0H4IPK1_9CAUD DNA polymerase OS=Stenotrophomonas phage IME-SM1 GN=dpo1 PE=4 SV=1
+33	>tr|A0A142EZL4|A0A142EZL4_9VIRU DNA polymerase OS=Stenotrophomonas phage vB_SmaS-DLP_6 GN=AAY80_054 PE=3 SV=1
+34	>tr|A0A0F6YPA4|A0A0F6YPA4_9CAUD DNA polymerase OS=Sinorhizobium phage phiM19 GN=PHIM19_22 PE=4 SV=1
+35	>tr|A0A076YKY1|A0A076YKY1_9CAUD DNA polymerase OS=Rhizobium phage vB_RleM_P10VF GN=P10VF_214 PE=4 SV=1
+36	>tr|E3SNU2|E3SNU2_9CAUD DNA polymerase OS=Prochlorococcus phage P-SSM7 GN=gp43 PE=3 SV=1
+37	>tr|A0A067XQQ4|A0A067XQQ4_9CAUD DNA polymerase OS=Caulobacter phage Cr30 PE=4 SV=1
+38	>tr|A0A0C5AMY7|A0A0C5AMY7_9CAUD DNA polymerase OS=Cyanophage P-TIM40 GN=PTIM40_175 PE=3 SV=1
+39	>tr|A0A0F9NZ45|A0A0F9NZ45_9ZZZZ Uncharacterized protein OS=marine sediment metagenome GN=LCGC14_1278090 PE=4 SV=1
+40	>tr|M4PN14|M4PN14_9CAUD DNA polymerase OS=Cyanophage S-SSM6a GN=CYVG_00053 PE=3 SV=1
+41	>tr|M4QE28|M4QE28_9CAUD DNA polymerase OS=Cyanophage P-RSM1 GN=CPPG_00142 PE=3 SV=1
+42	>tr|A0A0F6R7R0|A0A0F6R7R0_9CAUD DNA polymerase OS=Sinorhizobium phage phiM9 GN=Sm_phiM9_231 PE=4 SV=1
+43	>tr|E3SJJ2|E3SJJ2_9CAUD DNA polymerase OS=Synechococcus phage S-ShM2 GN=gp43 PE=3 SV=1
+44	>tr|A0A0E3EQF5|A0A0E3EQF5_9CAUD DNA polymerase OS=Synechococcus phage ACG-2014c GN=Syn7803C43_155 PE=3 SV=1
+45	>tr|M4QPP8|M4QPP8_9CAUD DNA polymerase OS=Synechococcus phage S-SKS1 GN=SWZG_00104 PE=3 SV=1
+46	>tr|R9S6M7|R9S6M7_BPPRM DNA polymerase OS=Prochlorococcus phage P-SSM5 GN=PRTG_00260 PE=3 SV=1
+47	>tr|E3SJ44|E3SJ44_9CAUD DNA polymerase OS=Synechococcus phage S-SM2 GN=gp43 PE=3 SV=1
+48	>tr|A0A0K0KVW3|A0A0K0KVW3_9CAUD Putative DNA polymerase OS=Prochlorococcus phage P-TIM68 PE=4 SV=1
+49	>tr|V5UTY4|V5UTY4_9CAUD DNA polymerase OS=Synechococcus phage ACG-2014h GN=S-MbCM7_145 PE=3 SV=1
+50	>tr|Q5GQK4|Q5GQK4_BPSYP DNA polymerase OS=Synechococcus phage S-PM2 GN=gp43 PE=3 SV=1
+51	>tr|M4QF96|M4QF96_9CAUD DNA polymerase OS=Synechococcus phage S-CAM1 GN=SXBG_00158 PE=4 SV=1
+52	>tr|A0A0E3FE21|A0A0E3FE21_9CAUD DNA polymerase OS=Synechococcus phage ACG-2014d GN=Syn7803C102_144 PE=3 SV=1
+53	>tr|I3ULE9|I3ULE9_9CAUD DNA polymerase OS=Synechococcus phage S-CBM2 GN=SWPG_00064 PE=3 SV=1
+54	>tr|E3SM66|E3SM66_9CAUD DNA polymerase OS=Prochlorococcus phage P-RSM4 GN=gp43 PE=3 SV=1
+55	>tr|M4SLH9|M4SLH9_9CAUD DNA polymerase OS=Cyanophage P-RSM6 GN=CPXG_00050 PE=3 SV=1
+56	>tr|E3SMY4|E3SMY4_9CAUD DNA polymerase OS=Prochlorococcus phage P-HM1 GN=gp43 PE=3 SV=1
+57	>tr|M1PR79|M1PR79_9VIRU DNA polymerase OS=Cyanophage P-SS1 GN=CPYG_00150 PE=3 SV=1
+58	>tr|M1IPC5|M1IPC5_9CAUD DNA polymerase OS=Pelagibacter phage HTVC008M PE=4 SV=1
+59	>tr|S6C380|S6C380_9CAUD DNA polymerase OS=Klebsiella phage 0507-KN2-1 PE=4 SV=1
+60	>tr|C8XUU9|C8XUU9_9CAUD Gp43 DNA polymerase OS=Shigella phage Ag3 GN=orf00236 PE=4 SV=1
+61	>tr|A0A0A0YSZ8|A0A0A0YSZ8_9CAUD DNA polymerase OS=Erwinia phage phiEa2809 GN=NW77_137 PE=4 SV=1
+62	>tr|U5PYQ6|U5PYQ6_9CAUD DNA polymerase OS=Salmonella phage Maynard GN=Maynard_20 PE=4 SV=1
+63	>tr|K7YGQ0|K7YGQ0_9CAUD DNA polymerase OS=Serratia phage phiMAM1 GN=MAM_016 PE=4 SV=1
+64	>tr|C9DG06|C9DG06_9CAUD Gp43 DNA polymerase OS=Deftia phage phiW-14 GN=34 PE=4 SV=1
+65	>tr|A0A125ST64|A0A125ST64_9VIRU DNA-directed DNA polymerase type II OS=Ralstonia phage RSP15 PE=4 SV=1
+66	>tr|A2SR34|A2SR34_METLZ DNA polymerase OS=Methanocorpusculum labreanum (strain ATCC 43576 / DSM 4855 / Z) GN=Mlab_0616 PE=3 SV=1
+67	>tr|G0QEP7|G0QEP7_NANS0 DNA polymerase OS=Nanosalina sp. (strain J07AB43) GN=J07AB43_01580 PE=3 SV=1
+68	>tr|M0FHE2|M0FHE2_9EURY DNA polymerase OS=Halorubrum hochstenium ATCC 700873 GN=C467_05507 PE=3 SV=1
+69	>tr|M0JCU9|M0JCU9_HALVA DNA polymerase OS=Haloarcula vallismortis ATCC 29715 GN=C437_11923 PE=3 SV=1
+70	>tr|L9UGT3|L9UGT3_HALBP DNA polymerase OS=Halogeometricum borinquense (strain ATCC 700274 / DSM 11551 / JCM 10706 / PR3) GN=C499_16642 PE=3 SV=1
+71	>tr|R4VT58|R4VT58_9EURY DNA polymerase OS=Salinarchaeum sp. Harcht-Bsk1 GN=L593_02195 PE=3 SV=1
+72	>tr|M0MN01|M0MN01_9EURY DNA polymerase OS=Halococcus saccharolyticus DSM 5350 GN=C449_06226 PE=3 SV=1
+73	>tr|V4HKF8|V4HKF8_9EURY DNA polymerase OS=Candidatus Halobonum tyrrellensis G22 GN=K933_09707 PE=3 SV=1
+74	>tr|J3A4S0|J3A4S0_9EURY DNA polymerase OS=Halogranum salarium B-1 GN=HSB1_10760 PE=3 SV=1
+75	>tr|M0MLZ0|M0MLZ0_HALMO DNA polymerase OS=Halococcus morrhuae DSM 1307 GN=C448_06418 PE=3 SV=1
+76	>tr|R4TLV1|R4TLV1_9VIRU DNA polymerase OS=Halovirus HCTV-5 GN=88 PE=3 SV=1
+77	>tr|M0BQM2|M0BQM2_9EURY DNA polymerase OS=Haloterrigena salina JCM 13891 GN=C477_22510 PE=3 SV=1
+78	>tr|A0A0U5HSJ9|A0A0U5HSJ9_9EURY DNA polymerase OS=Halobacterium hubeiense GN=polB1 PE=3 SV=1
+79	>tr|R4T858|R4T858_9VIRU DNA polymerase OS=Halovirus HCTV-1 GN=85 PE=3 SV=1
+80	>tr|M0CT63|M0CT63_9EURY DNA polymerase OS=Halosimplex carlsbadense 2-9-1 GN=C475_10874 PE=3 SV=1
+81	>tr|M0LU68|M0LU68_9EURY DNA polymerase OS=Halococcus hamelinensis 100A6 GN=C447_13914 PE=3 SV=1
+82	>tr|M0BUB8|M0BUB8_9EURY DNA polymerase OS=Halovivax asiaticus JCM 14624 GN=C479_02691 PE=3 SV=1
+83	>tr|A0A063ZUS1|A0A063ZUS1_9EURY DNA polymerase OS=Halostagnicola sp. A56 GN=EL22_08100 PE=3 SV=1
+84	>tr|M0A5Q6|M0A5Q6_9EURY DNA polymerase OS=Natrialba taiwanensis DSM 12281 GN=C484_08643 PE=3 SV=1
+85	>tr|A0A0W1RAN6|A0A0W1RAN6_9EURY DNA polymerase OS=Halobacteriaceae archaeon SB9 GN=AUR64_09260 PE=3 SV=1
+86	>tr|Q9HRV9|Q9HRV9_HALSA DNA polymerase OS=Halobacterium salinarum (strain ATCC 700922 / JCM 11081 / NRC-1) GN=polB1 PE=3 SV=1
+87	>tr|M0I7E4|M0I7E4_9EURY DNA polymerase OS=Haloferax sulfurifontis ATCC BAA-897 GN=C441_10843 PE=3 SV=1
+88	>tr|A0A0F7PAU7|A0A0F7PAU7_9EURY DNA polymerase OS=Halanaeroarchaeum sulfurireducens GN=polB PE=3 SV=1
+89	>tr|W0K1H7|W0K1H7_9EURY DNA polymerase OS=Halobacterium sp. DL1 GN=HALDL1_06755 PE=3 SV=1
+90	>tr|D8J698|D8J698_HALJB DNA polymerase OS=Halalkalicoccus jeotgali (strain DSM 18796 / CECT 7217 / JCM 14584 / KCTC 4019 / B3) GN=HacjB3_12165 PE=3 SV=
+91	>tr|A0A166S6W9|A0A166S6W9_9EURY DNA polymerase OS=Haladaptatus sp. R4 GN=A4G99_13425 PE=3 SV=1
+92	>tr|R4T5N0|R4T5N0_9VIRU DNA polymerase elongation subunit (Family B) OS=Halovirus HRTV-7 GN=42 PE=4 SV=1
+93	>tr|R4TJI7|R4TJI7_9VIRU DNA polymerase elongation subunit (Family B) OS=Halovirus HRTV-8 GN=56 PE=4 SV=1
+94	>tr|H1Z3S7|H1Z3S7_9EURY DNA polymerase OS=Methanoplanus limicola DSM 2279 GN=Metlim_1575 PE=3 SV=1
+95	>tr|L0HHE1|L0HHE1_METFS DNA polymerase OS=Methanoregula formicica (strain DSM 22288 / NBRC 105244 / SMSP) GN=Metfor_2165 PE=3 SV=1
+96	>tr|A7I7B5|A7I7B5_METB6 DNA polymerase OS=Methanoregula boonei (strain DSM 21154 / JCM 14090 / 6A8) GN=Mboo_1108 PE=3 SV=1
+97	>tr|Q2FPC2|Q2FPC2_METHJ DNA polymerase OS=Methanospirillum hungatei JF-1 (strain ATCC 27890 / DSM 864 / NBRC 100397 / JF-1) GN=Mhun_1156 PE=3 SV=1
+98	>tr|L9WDJ6|L9WDJ6_9EURY DNA-directed DNA polymerase type II OS=Natronorubrum sulfidifaciens JCM 14089 GN=C495_03822 PE=4 SV=1
+99	>tr|A0A063ZCD0|A0A063ZCD0_9EURY DNA polymerase OS=Methanoculleus sp. MH98A GN=EI28_09810 PE=3 SV=1
+100	>tr|J0S908|J0S908_9EURY DNA polymerase OS=Methanofollis liminatans DSM 4140 GN=Metli_1132 PE=3 SV=1
+101	>tr|A0A0Q1AE25|A0A0Q1AE25_9EURY DNA polymerase OS=Methanolinea sp. SDB GN=APR55_00970 PE=3 SV=1
+102	>tr|A0A163EW66|A0A163EW66_9EURY DNA polymerase OS=Methanoculleus bourgensis GN=MBBA_1111 PE=3 SV=1
+103	>tr|A0A0Q1AGE1|A0A0Q1AGE1_9EURY DNA polymerase OS=Methanoculleus sp. SDB GN=APR53_01350 PE=3 SV=1
+104	>tr|A0A0W8F418|A0A0W8F418_9ZZZZ Archaeal dna polymerase i OS=hydrocarbon metagenome GN=ASZ90_014720 PE=4 SV=1
+105	>tr|A0A101ITV3|A0A101ITV3_9EURY DNA polymerase OS=Methanomicrobiales archaeon 53_19 GN=XE11_2280 PE=3 SV=1
+106	>tr|E1RJ10|E1RJ10_METP4 DNA polymerase OS=Methanolacinia petrolearia (strain DSM 11571 / OCM 486 / SEBR 4847) GN=Mpet_1929 PE=3 SV=1
+107	>tr|B8GJK6|B8GJK6_METPE DNA polymerase OS=Methanosphaerula palustris (strain ATCC BAA-1556 / DSM 19958 / E1-9c) GN=Mpal_1740 PE=3 SV=1
+108	>tr|U1QRZ0|U1QRZ0_9EURY DNA polymerase elongation subunit, family B OS=halophilic archaeon J07HX64 GN=J07HX64_00218 PE=4 SV=1
+109	>tr|M1XPD5|M1XPD5_NATM8 DNA-directed DNA polymerase B (Intein-containing) OS=Natronomonas moolapensis (strain DSM 18674 / JCM 14361 / 8.8.11) GN=polB P
+110	>tr|U1Q9A5|U1Q9A5_9EURY DNA polymerase elongation subunit, family B OS=Halonotius sp. J07HN6 GN=J07HN6_00039 PE=4 SV=1
+111	>tr|C7NRC5|C7NRC5_HALUD DNA polymerase OS=Halorhabdus utahensis (strain DSM 12940 / JCM 11049 / AX-2) GN=Huta_0375 PE=3 SV=1
+112	>tr|I3R2T8|I3R2T8_HALMT DNA polymerase OS=Haloferax mediterranei (strain ATCC 33500 / DSM 1411 / JCM 8866 / NBRC 14739 / NCIMB 2177 / R-4) GN=polB1 PE=
+113	>tr|C7P0Y4|C7P0Y4_HALMD DNA polymerase OS=Halomicrobium mukohataei (strain ATCC 700874 / DSM 12286 / JCM 9738 / NCIMB 13541) GN=Hmuk_2894 PE=3 SV=1
+114	>tr|M0PMJ1|M0PMJ1_9EURY DNA polymerase OS=Halorubrum arcis JCM 13916 GN=C462_08905 PE=3 SV=1
+115	>tr|M0HK10|M0HK10_9EURY DNA polymerase OS=Haloferax larsenii JCM 13917 GN=C455_00447 PE=3 SV=1
+116	>tr|A0A0K1IRN0|A0A0K1IRN0_9EURY DNA polymerase OS=Haloferax gibbonsii GN=ABY42_04115 PE=4 SV=1
+117	>tr|L9XJJ5|L9XJJ5_9EURY DNA polymerase OS=Natronolimnobius innermongolicus JCM 12255 GN=C493_01916 PE=3 SV=1
+118	>tr|M0K835|M0K835_9EURY DNA polymerase OS=Haloarcula amylolytica JCM 13557 GN=C442_16823 PE=3 SV=1
+119	>tr|A0A0X3BKC2|A0A0X3BKC2_9EURY DNA polymerase OS=Methanoculleus sp. MAB1 GN=MMAB1_1117 PE=4 SV=1
+120	>tr|U1P3R2|U1P3R2_9EURY DNA polymerase elongation subunit, family B OS=halophilic archaeon J07HX5 GN=J07HX5_00290 PE=4 SV=1
+121	>tr|K4F7H5|K4F7H5_9CAUD DNA polymerase OS=Cronobacter phage vB_CsaM_GAP32 GN=GAP32_257 PE=4 SV=1
+122	>tr|L7TII7|L7TII7_9CAUD DNA polymerase OS=Escherichia phage PBECO 4 PE=4 SV=1
+123	>tr|A0A0A8J8P9|A0A0A8J8P9_9CAUD DNA polymerase OS=Klebsiella phage K64-1 PE=4 SV=1
+124	>tr|H2J307|H2J307_MARPK DNA polymerase elongation subunit (Family B) OS=Marinitoga piezophila (strain DSM 14283 / JCM 11233 / KA3) GN=Marpi_1295 PE=4 S
+125	>tr|A0A0H2SFG7|A0A0H2SFG7_9BACT Uncharacterized protein OS=Marinitoga sp. 1155 GN=X274_07650 PE=4 SV=1
+126	>tr|S5VYS5|S5VYS5_9CAUD DNA polymerase OS=Campylobacter phage CP8 PE=4 SV=1
+127	>tr|A0A0F9EXA7|A0A0F9EXA7_9ZZZZ Uncharacterized protein (Fragment) OS=marine sediment metagenome GN=LCGC14_2022240 PE=4 SV=1 
+128	>tr|H9NBY2|H9NBY2_9CAUD Gp105 OS=Sphingomonas phage PAU GN=105 PE=4 SV=1 
+129	>tr|F4BWT2|F4BWT2_METCG DNA polymerase OS=Methanosaeta concilii (strain ATCC 5969 / DSM 3671 / JCM 10134 / NBRC 103675 / OCM 69 / GP-6) GN=polB2 PE=3 S
+130	>tr|Q8TSB3|Q8TSB3_METAC DNA polymerase OS=Methanosarcina acetivorans (strain ATCC 35395 / DSM 2834 / JCM 12185 / C2A) GN=MA_0885 PE=3 SV=1
+131	>tr|A0A0E3Q3C0|A0A0E3Q3C0_9EURY DNA polymerase OS=Methanosarcina vacuolata Z-761 GN=MSVAZ_0466 PE=3 SV=1
+132	>tr|A0A0P6VL93|A0A0P6VL93_9EURY DNA polymerase OS=Methanosarcina flavescens GN=AOB57_04810 PE=3 SV=1
+133	>tr|G7WP31|G7WP31_METH6 DNA polymerase OS=Methanosaeta harundinacea (strain 6Ac) GN=Mhar_1508 PE=3 SV=1
+134	>tr|L0L3C7|L0L3C7_METHD DNA polymerase OS=Methanomethylovorans hollandica (strain DSM 15978 / NBRC 107637 / DMS1) GN=Metho_2679 PE=3 SV=1
+135	>tr|A0A0E3NZ93|A0A0E3NZ93_9EURY DNA polymerase OS=Methanosarcina sp. MTP4 GN=MSMTP_2591 PE=3 SV=1
+136	>tr|A0A139CXL6|A0A139CXL6_9EURY DNA polymerase OS=Methanohalophilus sp. T328-1 GN=AWU58_852 PE=3 SV=1
+137	>tr|D7EB63|D7EB63_METEZ DNA polymerase OS=Methanohalobium evestigatum (strain ATCC BAA-1072 / DSM 3721 / NBRC 107634 / OCM 161 / Z-7303) GN=Metev_1742 
+138	>tr|K4MNQ7|K4MNQ7_9EURY DNA polymerase OS=Methanolobus psychrophilus R15 GN=Mpsy_1484 PE=3 SV=1
+139	>tr|A0A099T2K4|A0A099T2K4_METMT DNA polymerase OS=Methanococcoides methylutens GN=LI82_12215 PE=3 SV=1
+140	>tr|Q12VE4|Q12VE4_METBU DNA polymerase OS=Methanococcoides burtonii (strain DSM 6242 / NBRC 107633 / OCM 468 / ACE-M) GN=Mbur_1688 PE=3 SV=1
+141	>tr|W9DRG4|W9DRG4_METTI DNA polymerase OS=Methanolobus tindarius DSM 2278 GN=MettiDRAFT_1784 PE=3 SV=1
+142	>tr|F7XNK6|F7XNK6_METZD DNA polymerase OS=Methanosalsum zhilinae (strain DSM 4017 / NBRC 107636 / OCM 62 / WeN5) GN=Mzhil_0225 PE=3 SV=1
+143	>tr|A0A139CMT9|A0A139CMT9_9EURY DNA polymerase OS=Methanolobus sp. T82-4 GN=AWU59_1617 PE=3 SV=1
+144	>tr|L0KWQ1|L0KWQ1_METHD DNA polymerase OS=Methanomethylovorans hollandica (strain DSM 15978 / NBRC 107637 / DMS1) GN=Metho_0220 PE=3 SV=1
+145	>tr|A0A101II83|A0A101II83_9EURY DNA polymerase OS=Methanosaeta harundinacea GN=XD72_1335 PE=3 SV=1
+146	>tr|A0A101F2Z2|A0A101F2Z2_9EURY DNA polymerase OS=Methanosarcinales archeaon 56_1174 GN=XD62_1413 PE=3 SV=1
+147	>tr|A0A0B3A582|A0A0B3A582_9ARCH DNA polymerase OS=archaeon GW2011_AR5 GN=QT00_C0002G0145 PE=3 SV=1
+148	>tr|A0A062UYV7|A0A062UYV7_9EURY DNA polymerase OS=Candidatus Methanoperedens nitroreducens GN=ANME2D_01518 PE=3 SV=1
+149	>tr|A0A0P7ZM23|A0A0P7ZM23_9EURY DNA polymerase OS=Candidatus Methanoperedens sp. BLZ1 GN=MPEBLZ_00097 PE=3 SV=1
+150	>tr|W7T9T7|W7T9T7_9STRA DNA polymerase OS=Nannochloropsis gaditana GN=Naga_100229g7 PE=3 SV=1
+151	>tr|L7JZ23|L7JZ23_TRAHO DNA polymerase OS=Trachipleistophora hominis GN=THOM_1015 PE=3 SV=1
+152	>tr|D7G6D3|D7G6D3_ECTSI DNA polymerase OS=Ectocarpus siliculosus GN=Esi_0073_0118 PE=3 SV=1
+153	>tr|B7G220|B7G220_PHATC DNA polymerase OS=Phaeodactylum tricornutum (strain CCAP 1055/1) GN=PHATRDRAFT_54677 PE=3 SV=1
+154	>tr|F0Y3Y2|F0Y3Y2_AURAN DNA polymerase OS=Aureococcus anophagefferens GN=AURANDRAFT_23037 PE=3 SV=1
+155	>tr|B8C5U2|B8C5U2_THAPS DNA polymerase (Fragment) OS=Thalassiosira pseudonana GN=DPO1 PE=3 SV=1
+156	>tr|K6U9C8|K6U9C8_9EURY DNA polymerase OS=Methanobacterium sp. Maddingley MBC34 GN=B655_1301 PE=3 SV=1
+157	>tr|R9SLY5|R9SLY5_9EURY DNA polymerase OS=Methanobrevibacter sp. AbM4 GN=polB1 PE=3 SV=1
+158	>tr|Q2NE77|Q2NE77_METST DNA polymerase OS=Methanosphaera stadtmanae (strain ATCC 43021 / DSM 3091 / JCM 11832 / MCB-3) GN=pol PE=3 SV=1
+159	>tr|A0A089ZJ41|A0A089ZJ41_METFO DNA polymerase OS=Methanobacterium formicicum GN=polB3 PE=3 SV=1
+160	>tr|D9PY67|D9PY67_METTM DNA polymerase OS=Methanothermobacter marburgensis (strain ATCC BAA-927 / DSM 2133 / JCM 14651 / NBRC 100331 / OCM 82 / Marburg
+161	>tr|T2GJY9|T2GJY9_9EURY DNA polymerase OS=Methanothermobacter sp. CaT2 GN=MTCT_1101 PE=3 SV=1
+162	>tr|A0A101DPH5|A0A101DPH5_9EURY DNA polymerase OS=Methanobacteriaceae archaeon 41_258 GN=XD44_1230 PE=3 SV=1
+163	>tr|A0A0F9P4X1|A0A0F9P4X1_9ZZZZ Uncharacterized protein OS=marine sediment metagenome GN=LCGC14_0945520 PE=4 SV=1
+164	>tr|A0A0F9S9P3|A0A0F9S9P3_9ZZZZ Uncharacterized protein OS=marine sediment metagenome GN=LCGC14_0546620 PE=4 SV=1
+165	>tr|A0A0B3AUN5|A0A0B3AUN5_9ARCH DNA polymerase, DNA polymerase I OS=archaeon GW2011_AR13 GN=QT05_C0048G0033 PE=4 SV=1
+166	>tr|A0A0B3AND8|A0A0B3AND8_9ARCH Uncharacterized protein OS=archaeon GW2011_AR1 GN=QJ16_C0005G0198 PE=4 SV=1
+167	>tr|A0A0B3AWG4|A0A0B3AWG4_9ARCH DNA polymerase (Fragment) OS=archaeon GW2011_AR11 GN=QT04_C0015G0014 PE=3 SV=1
+168	>tr|D6GUG5|D6GUG5_PARA5 DNA polymerase Pol2 OS=Candidatus Parvarchaeum acidophilus ARMAN-5 GN=BJBARM5_0102 PE=4 SV=1
+169	>tr|D2EF18|D2EF18_PARA4 DNA polymerase B region OS=Candidatus Parvarchaeum acidiphilum ARMAN-4 GN=BJBARM4_0325 PE=4 SV=1
+170	>tr|Q2SLR0|Q2SLR0_HAHCH DNA polymerase OS=Hahella chejuensis (strain KCTC 2396) GN=polB PE=3 SV=1
+171	>tr|A6F775|A6F775_9GAMM DNA polymerase OS=Moritella sp. PE36 GN=PE36_19455 PE=3 SV=1
+172	>tr|Q12LG8|Q12LG8_SHEDO DNA polymerase OS=Shewanella denitrificans (strain OS217 / ATCC BAA-1090 / DSM 15013) GN=Sden_2428 PE=3 SV=1
+173	>tr|B0TLR0|B0TLR0_SHEHH DNA polymerase OS=Shewanella halifaxensis (strain HAW-EB4) GN=Shal_2729 PE=3 SV=1
+174	>tr|M4U4Y4|M4U4Y4_9GAMM DNA polymerase OS=Psychromonas sp. CNPT3 GN=PCNPT3_06855 PE=3 SV=1
+175	>tr|D4ZA98|D4ZA98_SHEVD DNA polymerase OS=Shewanella violacea (strain JCM 10179 / CIP 106290 / LMG 19151 / DSS12) GN=polB PE=3 SV=1
+176	>tr|A0A099L6E6|A0A099L6E6_9GAMM DNA polymerase OS=Thalassotalea sp. ND16A GN=ND16A_0750 PE=3 SV=1
+177	>tr|F2K444|F2K444_MARM1 DNA polymerase OS=Marinomonas mediterranea (strain ATCC 700492 / JCM 21426 / NBRC 103028 / MMB-1) GN=Marme_2143 PE=3 SV=1
+178	>tr|A1S501|A1S501_SHEAM DNA polymerase OS=Shewanella amazonensis (strain ATCC BAA-1098 / SB2B) GN=Sama_1250 PE=3 SV=1
+179	>tr|A0A090QY09|A0A090QY09_9GAMM DNA polymerase II OS=Photobacterium aphoticum GN=JCM19237_4569 PE=4 SV=1
+180	>tr|A3QFV0|A3QFV0_SHELP DNA polymerase OS=Shewanella loihica (strain ATCC BAA-1088 / PV-4) GN=Shew_2482 PE=3 SV=1
+181	>tr|Q1N131|Q1N131_9GAMM DNA polymerase OS=Bermanella marisrubri GN=RED65_13817 PE=3 SV=1
+182	>tr|A0A094LS77|A0A094LS77_9GAMM DNA polymerase OS=Shewanella mangrovi GN=HR45_05935 PE=3 SV=1
+183	>tr|B7RVU0|B7RVU0_9GAMM DNA polymerase OS=marine gamma proteobacterium HTCC2148 GN=GPB2148_2486 PE=3 SV=1
+184	>tr|A0Y8Q4|A0Y8Q4_9GAMM DNA polymerase OS=marine gamma proteobacterium HTCC2143 GN=GP2143_14671 PE=3 SV=1
+185	>tr|A6VXF3|A6VXF3_MARMS DNA polymerase OS=Marinomonas sp. (strain MWYL1) GN=Mmwyl1_2210 PE=3 SV=1
+186	>tr|A0A1A9EVD3|A0A1A9EVD3_9GAMM DNA polymerase II OS=Marinobacterium sp. ST58-10 GN=A8C75_06260 PE=4 SV=1
+187	>tr|W1RNH5|W1RNH5_9GAMM DNA polymerase OS=Marinomonas profundimaris GN=D104_17215 PE=3 SV=1
+188	>tr|S6I0N8|S6I0N8_9GAMM DNA polymerase OS=Osedax symbiont Rs2 GN=OFPI_08970 PE=3 SV=1
+189	>tr|A0A063Y7G9|A0A063Y7G9_9GAMM DNA polymerase OS=Nitrincola lacisaponensis GN=ADINL_1298 PE=3 SV=1
+190	>tr|A0A1A8TH99|A0A1A8TH99_9GAMM DNA polymerase II OS=Marinomonas aquimarina GN=polB PE=4 SV=1
+191	>tr|A0A0J7KDU4|A0A0J7KDU4_9BACT DNA polymerase OS=Chitinispirillum alkaliphilum GN=CHISP_2889 PE=3 SV=1
+192	>tr|A0A0F4R2L7|A0A0F4R2L7_9GAMM DNA polymerase OS=Marinomonas sp. S3726 GN=TW85_11290 PE=3 SV=1
+193	>tr|A0A075I033|A0A075I033_9EURY DNA polymerase OS=uncultured marine group II/III euryarchaeote KM3_88_H06 GN=DPA PE=3 SV=1
+194	>tr|A0A075GRL9|A0A075GRL9_9EURY DNA polymerase OS=uncultured marine group II/III euryarchaeote KM3_192_B10 GN=DPA PE=3 SV=1
+195	>tr|F5YP19|F5YP19_TREPZ DNA polymerase OS=Treponema primitia (strain ATCC BAA-887 / DSM 12427 / ZAS-2) GN=TREPR_3877 PE=3 SV=1
+196	>tr|V5WKX0|V5WKX0_9SPIO DNA polymerase OS=Salinispira pacifica GN=L21SP2_2841 PE=3 SV=1
+197	>tr|F5YF74|F5YF74_TREAZ DNA polymerase OS=Treponema azotonutricium (strain ATCC BAA-888 / DSM 13862 / ZAS-9) GN=TREAZ_1432 PE=3 SV=1
+198	>tr|B3GAM5|B3GAM5_9VIRU DNA polymerase OS=uncultured virus PE=3 SV=1 
+199	>tr|Q9Q2Q0|Q9Q2Q0_HHV8 DNA polymerase (Fragment) OS=Chlorocebus rhadinovirus 1 GN=pol PE=4 SV=1
+200	>tr|F2VSK8|F2VSK8_9GAMA DNA polymerase (Fragment) OS=Type 2 ruminant rhadinovirus of mule deer GN=DNAP PE=4 SV=1
+201	>tr|Q7T7L1|Q7T7L1_9BETA DNA polymerase (Fragment) OS=Pongo pygmaeus cytomegalovirus 1 PE=4 SV=2
+202	>tr|C1PHX9|C1PHX9_9HERP DNA polymerase (Fragment) OS=Hipposideros diadema herpesvirus GN=DPOL PE=4 SV=1
+203	>tr|Q49UB6|Q49UB6_9GAMA DNA polymerase (Fragment) OS=Saimiri sciureus gammaherpesvirus 2 GN=DPOL PE=4 SV=2
+204	>tr|A7XNB9|A7XNB9_9GAMA DNA polymerase (Fragment) OS=Elephas maximus gammaherpesvirus 1 PE=4 SV=1
+205	>tr|Q6Y6C3|Q6Y6C3_BHV4 DNA polymerase (Fragment) OS=Babyrousa babyrussa rhadinovirus 1 GN=DPOL PE=4 SV=2
+206	>tr|Q6Y6C2|Q6Y6C2_BHV4 DNA polymerase (Fragment) OS=Sus barbatus rhadinovirus 1 GN=DPOL PE=4 SV=2
+207	>tr|A0A0H4SHT0|A0A0H4SHT0_9GAMA DNA polymerase (Fragment) OS=Rupicapra pyrenaica gammaherpesvirus 1 PE=4 SV=1
+208	>tr|A6XHS6|A6XHS6_9GAMA DNA polymerase (Fragment) OS=Crocuta crocuta gammaherpesvirus 1 GN=DPOL PE=4 SV=2
+209	>tr|W5S6U0|W5S6U0_9GAMA DNA polymerase (Fragment) OS=Puma concolor gammaherpesvirus 1 PE=4 SV=1
+210	>tr|A6XHS5|A6XHS5_9GAMA DNA polymerase (Fragment) OS=Panthera leo gammaherpesvirus 1 GN=DPOL PE=4 SV=2
+211	>tr|F2YZ35|F2YZ35_9GAMA DNA polymerase (Fragment) OS=Procavia capensis gammaherpesvirus 2 PE=4 SV=1
+212	>tr|Q6XZB4|Q6XZB4_9GAMA DNA polymerase (Fragment) OS=Hexaprotodon liberiensis gammaherpesvirus 1 GN=DPOL PE=4 SV=2
+213	>tr|Q6XZB2|Q6XZB2_9GAMA DNA polymerase (Fragment) OS=Tupaia belangeri gammaherpesvirus 1 GN=DPOL PE=4 SV=2
+214	>tr|A0A0K2K0Y4|A0A0K2K0Y4_9GAMA DNA polymerase (Fragment) OS=Lynx rufus gammaherpesvirus 2 PE=4 SV=1
+215	>tr|W5SB66|W5SB66_9GAMA DNA polymerase (Fragment) OS=Lynx rufus gammaherpesvirus 1 PE=4 SV=1
+216	>tr|A7KAW4|A7KAW4_9BETA DNA polymerase (Fragment) OS=Apodemus flavicollis cytomegalovirus 3 GN=DPOL PE=4 SV=1
+217	>tr|A0A090S6D0|A0A090S6D0_9VIBR DNA polymerase II OS=Vibrio maritimus GN=JCM19235_3058 PE=4 SV=1
+218	>tr|C0AT43|C0AT43_9ENTR Putative DNA polymerase II OS=Proteus penneri ATCC 35198 GN=PROPEN_00979 PE=4 SV=1
+219	>tr|R1F0N1|R1F0N1_9GAMM DNA polymerase II (Fragment) OS=Aeromonas molluscorum 848 GN=G113_19159 PE=4 SV=1
+220	>tr|W4LXH2|W4LXH2_9BACT DNA polymerase OS=Candidatus Entotheonella sp. TSY1 GN=ETSY1_02925 PE=4 SV=1
+221	>tr|B3QWW3|B3QWW3_CHLT3 DNA polymerase B region OS=Chloroherpeton thalassium (strain ATCC 35110 / GB-78) GN=Ctha_0859 PE=4 SV=1
+222	>tr|D0MIJ2|D0MIJ2_RHOM4 DNA polymerase B region OS=Rhodothermus marinus (strain ATCC 43812 / DSM 4252 / R-10) GN=Rmar_1412 PE=4 SV=1
+223	>tr|A0A0S1XDG0|A0A0S1XDG0_9EURY DNA polymerase OS=Thermococcus barophilus GN=pol PE=4 SV=1
+224	>sp|O33845|DPOL_THEAG DNA polymerase OS=Thermococcus aggregans GN=pol PE=3 SV=1
+225	>tr|A0A0B3ANU2|A0A0B3ANU2_9ARCH DNA polymerase I OS=archaeon GW2011_AR16 GN=QT07_C0010G0003 PE=4 SV=1 
+226	>tr|W4M991|W4M991_9BACT Uncharacterized protein (Fragment) OS=Candidatus Entotheonella sp. TSY2 GN=ETSY2_15240 PE=4 SV=1
+227	>tr|F0UXF0|F0UXF0_9BETA DNA polymerase (Fragment) OS=Pan troglodytes cytomegalovirus 1.1 PE=4 SV=1
+228	>tr|A7KAV6|A7KAV6_9BETA DNA polymerase (Fragment) OS=Microtus arvalis cytomegalovirus 1 GN=DPOL PE=4 SV=1
+229	>tr|F0UXF8|F0UXF8_9BETA DNA polymerase (Fragment) OS=Gorilla gorilla cytomegalovirus 2.1 PE=4 SV=1
+230	>tr|A7KAV9|A7KAV9_9BETA DNA polymerase (Fragment) OS=Myodes glareolus cytomegalovirus 1 GN=DPOL PE=4 SV=1
+231	>tr|Q8QS34|Q8QS34_9BETA DNA polymerase OS=Panine herpesvirus 2 GN=UL54 PE=3 SV=1
+232	>tr|V9LQX3|V9LQX3_HCMV DNA polymerase OS=Human cytomegalovirus GN=UL54 PE=3 SV=1
+233	>sp|Q85428|DPOL_RCMVM DNA polymerase catalytic subunit OS=Rat cytomegalovirus (strain Maastricht) GN=UL54 PE=3 SV=2
+234	>tr|Q77LA0|Q77LA0_TUHV1 DNA polymerase OS=Tupaiid herpesvirus 1 (strain 1) PE=3 SV=1
+235	>tr|U6H6Q3|U6H6Q3_9BETA DNA polymerase OS=Caviid herpesvirus 2 str. CIDMTR PE=3 SV=1
+236	>tr|B3UXI6|B3UXI6_MUHV1 DNA polymerase OS=Muromegalovirus WP15B GN=M54 PE=3 SV=1
+237	>tr|A0A0P9EFH8|A0A0P9EFH8_9ARCH DNA polymerase OS=Candidatus Bathyarchaeota archaeon BA1 GN=pol_4 PE=3 SV=1 
+238	>tr|A0DPB2|A0DPB2_PARTE Uncharacterized protein OS=Paramecium tetraurelia GN=GSPATT00019061001 PE=4 SV=1 
+239	>tr|A8BDM4|A8BDM4_GIAIC DNA polymerase epsilon, catalytic subunit OS=Giardia intestinalis (strain ATCC 50803 / WB clone C6) GN=GL50803_23064 PE=4 SV=1
