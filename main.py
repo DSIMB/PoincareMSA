@@ -79,12 +79,12 @@ def parse_args():
     parser = argparse.ArgumentParser(description='Poincare maps')
     parser.add_argument('--dim', help='Embedding dimension', type=int, default=2)
 
-    parser.add_argument('--path', help='Path to dataset to embed', type=str, default='../data_proteins/')
+    parser.add_argument('--path', help='Path to dataset to embed', type=str, default='data/')
     parser.add_argument('--family', help='Name of the protein family (name of the folder)', type=str, default='glob')
     parser.add_argument('--tree', help='File with phylogenetic trees', type=str, default=5)
     parser.add_argument('--function', help='Protein by function', type=str, default='glob-name')
 
-    parser.add_argument('--dest', help='Write results', type=str, default='../results_proteins/')
+    parser.add_argument('--dest', help='Write results', type=str, default='results/')
     parser.add_argument('--seed', help='Random seed', type=int, default=0)
 
     parser.add_argument('--labels', help='has labels', type=int, default=1)
