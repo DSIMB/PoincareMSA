@@ -117,7 +117,7 @@ class PoincareMSA:
             labels_text = None
         else:
             if labels_text_name in self.labels.keys():
-                labels_text = self.labels[labels_name]
+                labels_text = self.labels[labels_text_name]
             else:
                 print("This category name doesn't exist.")
                 labels_text = None
@@ -145,25 +145,25 @@ class PoincareMSA:
         )
 
 
-if __name__ == "__main__":
-    file_name = 'results/glob/PM3sigma=1.00gamma=1.00cosinepca=0_seed0.csv'
-
-    pMSA = PoincareMSA(file_name)
-
-    pMSA.rotate('proteins')
-
-    pMSA.get_tree_colors(
-        'data/glob/glob_tree_cluster_1.pkl', 
-        colors_name='glob_tree_cluster_1',        
-        )
-
-    # quit()
-    pMSA.plot_disc('glob_tree_cluster_1',
-        labels_text_name='proteins',
-        figsize=(12, 12),
-        show_text=False,
-        rotation=None,
-        plot_legend=True)
-
+#if __name__ == "__main__":
+#    file_name = 'results/glob/PM3sigma=1.00gamma=1.00cosinepca=0_seed0.csv'
+#
+#    pMSA = PoincareMSA(file_name)
+#
+#    pMSA.rotate('proteins')
+#
+#    pMSA.get_tree_colors(
+#        'data/glob/glob_tree_cluster_1.pkl', 
+#        colors_name='glob_tree_cluster_1',        
+#        )
+#
+#    # quit()
+#    pMSA.plot_disc('glob_tree_cluster_1',
+#        labels_text_name='proteins',
+#        figsize=(12, 12),
+#        show_text=False,
+#        rotation=None,
+#        plot_legend=True)
+#
 
     
