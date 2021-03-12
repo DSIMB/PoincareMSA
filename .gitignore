@@ -1,1 +1,4 @@
 results/
+__pycache__/
+data/.DS_Store
+.vscode/
