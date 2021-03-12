@@ -193,10 +193,8 @@ def poincare_map(opt):
     df_pm['proteins'] = labels
     df_pm.to_csv(fout + '.csv', sep=',', index=False)
 
-
     t = timeit.default_timer() - t_start
     titlename = f"{opt.family}\nloss = {loss:.3e}\ntime = {t/60:.3f} min"
-
 
     plot_poincare_disc(embeddings, labels, 
                        title_name=titlename,
@@ -220,8 +218,6 @@ def poincare_map(opt):
     else:
         color_dict_fun = None
         fun_levels = None
-
-
     
     for t in range(1, 6):
         tree_levels, color_dict = get_tree_colors(opt, labels, f'{opt.path}/{opt.family}/{opt.family}_tree_cluster_{t}')

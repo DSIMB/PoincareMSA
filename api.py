@@ -1,5 +1,5 @@
 import sys
-sys.path.insert(0, "/Users/klanna/pretty-plots")
+sys.path.insert(0, "../pretty-plots")
 
 import numpy as np
 # import pplots
@@ -44,7 +44,7 @@ class PoincareMSA:
             print('WARNING! Protein labels are not found! It can lead to errors\
              in downstream functions.')
 
-    def rotate(self, labels_name, root_name=0):
+    def rotate(self, labels_name, root_name='root'):
         assert labels_name in self.labels.keys(), "Labels name not found"
         labels = self.labels[labels_name]
         idx_root = np.where(labels==root_name)[0]
@@ -52,8 +52,7 @@ class PoincareMSA:
             print('Root not found!')
         else:
             idx_root = idx_root[0]
-            print(f"Rotating the map with respect to: {root_name} (index = {idx_root}.")
-            print(-self.emb[idx_root, :])
+            print(f"Rotating the map with respect to: {root_name} (index = {idx_root}).")
             self.rotations[root_name] = poincare_translation(-self.emb[idx_root, :], self.emb)
 
     def get_tree_colors(
@@ -132,7 +131,7 @@ class PoincareMSA:
         col_dict=col_dict,
         show_lines=False,
         show_text=show_text,
-        title='My glob example',
+        title=labels_name,
         circe_transparency=0.5,
         file_name=f"{self.prefix}_{labels_name}{rotation}{postfix}.png",
         is_hyperbolic=True,
@@ -156,7 +155,7 @@ if __name__ == "__main__":
         labels_text_name='proteins',
         figsize=(12, 12),
         show_text=False,
-        rotation=0,
+        rotation=None,
         plot_legend=True)
 
 
