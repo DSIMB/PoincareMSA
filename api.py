@@ -71,8 +71,13 @@ class PoincareMSA:
             Name of this category to save in this class.
         """  
         with open(colors_file, 'rb') as f:
-            colors = pickle.load(f)
+            colors_tmp = pickle.load(f)
+
+        colors = {}
+        for k in colors_tmp.keys():
+            colors[str(k)] = colors_tmp[k]
         colors['root'] = 'root'
+
 
         tree_levels = [colors[protein_id] for protein_id in self.labels['proteins']]
         
