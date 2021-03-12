@@ -112,7 +112,7 @@ def parse_args():
     # optimization parameters
     parser.add_argument('--lr', help='Learning rate', type=float, default=0.1)
     parser.add_argument('--lrm', help='Learning rate multiplier', type=float, default=1.0)
-    parser.add_argument('--epochs', help='Number of epochs', type=int, default=5000)
+    parser.add_argument('--epochs', help='Number of epochs', type=int, default=50)
     parser.add_argument('--batchsize', help='Batchsize', type=int, default=4)
     parser.add_argument('--burnin', help='Duration of burnin', type=int, default=500)
 
@@ -120,15 +120,18 @@ def parse_args():
         type=float, default=0.0001)
 
     parser.add_argument('--debugplot', help='Plot intermidiate embeddings every N iterations', type=int, default=200)
-    parser.add_argument('--cuda', help='Use GPU', type=int, default=1)
     parser.add_argument('--logfile', help='Use GPU', type=str, default='Logs')
 
     return parser.parse_args()
 
 def poincare_map(opt):
     # read and preprocess the dataset
-    features, labels = prepare_data(opt.path + opt.family + '/Nfasta/')
+    opt.cuda = True if torch.cuda.is_available() else False
 
+    print(opt.cuda)
+
+    features, labels = prepare_data(opt.path + opt.family + '/Nfasta/')
+    
     if not (opt.tree is None):
         tree_levels, color_dict = get_tree_colors(opt, labels, f'{opt.path}/{opt.family}/{opt.family}_tree_cluster_{opt.tree}')
     else:
@@ -152,6 +155,7 @@ def poincare_map(opt):
     titlename, fout = create_output_name(opt)
 
     indices = torch.arange(len(RFA))
+    
     if opt.cuda:
         indices = indices.cuda()
         RFA = RFA.cuda()
@@ -204,7 +208,7 @@ def poincare_map(opt):
 
 
     if not (opt.function is None):
-        for f in ['glob-spec', 'glob-spec1', 'glob-name1', 'glob-name']:
+        for f in ['glob_tree_cluster_1']:
             fun_levels, color_dict_fun = get_tree_colors(opt, labels, f'{opt.path}/{opt.family}/{f}')
             plot_poincare_disc(poincare_coord_rot, fun_levels, 
                                title_name=titlename,

@@ -42,7 +42,7 @@ def construct_tensor(fpath):
     return np.array(ansarr)
 
 
-def prepare_data(fpath, fmt='.txt'):
+def prepare_data(fpath, fmt='.aamtx'):
     # print([x[0] for x in os.walk(fpath)])
     # subfolders = [f.path for f in os.listdir(fpath) if f.is_dir() ]   
     # fmt = '.aamtx'

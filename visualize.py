@@ -133,7 +133,7 @@ def plot_poincare_disc(x, labels_txt,
     if leg == False:
         ax.legend_.remove()
     else:
-        ax.legend(fontsize=fs, loc='outside', bbox_to_anchor=bbox)
+        ax.legend(fontsize=fs, loc='best', bbox_to_anchor=bbox)
             
 
     if not (labels_txt is None):
