@@ -295,7 +295,8 @@ def X_to_gap(ali, AA):
 #    and not contains_non_AA(i,AA) ) ]
 #    res.insert(0,ali[0])
 #    print >> sys.stderr, "%d X aa replaced by gaps in %d sequences"%(nx, len(ali))
-    print("%d X aa replaced by gaps in %d sequences"%(nx, len(ali)), file=sys.stderr)
+    if nx != 0:
+        print("%d X aa replaced by gaps in %d sequences"%(nx, len(ali)), file=sys.stderr)
     return ali_out
 
 def bca(Bc, a, Nc, raw_occ_c, mtx_freq):
