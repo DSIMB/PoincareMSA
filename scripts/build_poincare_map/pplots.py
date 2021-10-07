@@ -4,19 +4,40 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
 from adjustText import adjust_text
+from model import poincare_translation
 
 import matplotlib
 matplotlib.use('Agg')
 
-def read_embeddings(path_annotation, path_embedding):
-    df = pd.read_csv(path_annotation)
-    df['proteins_id'] = list(df.index)
-    df = df.set_index(['proteins_id'])
+def rotate(df, root_name='root'):
+    idx_root = np.where(df.index == root_name)[0][0]
+    embeddings = df[['pm1', 'pm2']].values
+    poincare_coord_rot = poincare_translation(
+        -embeddings[idx_root, :], embeddings)
+    df_rot = df.copy()
+    df_rot['pm1'] = poincare_coord_rot[:, 0]
+    df_rot['pm2'] = poincare_coord_rot[:, 1]
+    return df_rot
+
+def read_embeddings(
+    path_embedding, 
+    path_annotation=None, 
+    root_name='root'
+    ):
+
     embeddings = pd.read_csv(path_embedding)
     embeddings = embeddings.set_index(['proteins_id'])
-    result = pd.concat([embeddings, df], axis=1, join="inner")
-    return result
 
+    if not (path_annotation is None):
+        df = pd.read_csv(path_annotation)    
+        df['proteins_id'] = [str(i) for i in list(df.index)]    
+        df = df.set_index(['proteins_id'])    
+        df.loc[root_name] = [root_name]*len(df.columns)        
+        result = pd.concat([embeddings, df], axis=1, join="outer")
+        return result
+    else:
+        return embeddings
+    
 
 def get_palette(
         n_colors, 
@@ -82,7 +103,7 @@ def plot_embedding(
         plot_legend=False,
         is_hyperbolic=True
     ):
-    
+    # TODO add readdocs
     # create data structure suitable for embedding
     
     if not (labels_name is None):
@@ -159,14 +180,15 @@ def plot_embedding(
 
     if show_text and (not (labels_text is None)):
         texts = []
-        if labels_idx is None:
-            labels_idx = list(range(len(labels_text)))
+        labels_idx = []
+        for cur_label in labels_text:
+            labels_idx += list(np.where(labels == cur_label)[0])
         for i in labels_idx:
             texts.append(
                 ax.text(
                     emb[i, 0], 
                     emb[i, 1], 
-                    labels_text[i], 
+                    labels[i], 
                     fontsize=fontsize
                 )
             )
