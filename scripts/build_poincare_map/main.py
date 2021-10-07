@@ -233,7 +233,7 @@ def poincare_map(opt):
         )
 
     df_pm = pd.DataFrame(embeddings, columns=['pm1', 'pm2'])
-    df_pm['proteins'] = labels
+    df_pm['proteins_id'] = labels
     df_pm.to_csv(fout + '.csv', sep=',', index=False)
 
     t = timeit.default_timer() - t_start

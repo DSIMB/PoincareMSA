@@ -72,7 +72,7 @@ def plotPoincareDisc(
     u=None,
     v=None,
     alpha=1.0,
-    col_palette=plt.get_cmap("tab10"),
+    col_palette=list(sns.color_palette("husl", 28)),
     print_labels=True,
     bbox=(1.3, 0.7),
     leg=True,
@@ -95,6 +95,8 @@ def plotPoincareDisc(
             labels_order = np.unique(labels)        
         if coldict is None:
             coldict = dict(zip(labels_order, col_palette[:len(labels)]))
+        print(coldict)
+
         sns.scatterplot(            
             x="pm1", y="pm2",
             hue=labels_name,
