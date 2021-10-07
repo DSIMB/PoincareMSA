@@ -10,13 +10,13 @@ from sklearn.decomposition import PCA
 import numpy as np
 import argparse
 import torch
-
+import pandas as pd
 from data import prepare_data, compute_rfa
 from model import PoincareEmbedding, PoincareDistance
 from model import poincare_root, poincare_translation
 from rsgd import RiemannianSGD
 from train import train
-from visualize import *
+from poincare_maps import plotPoincareDisc
 from coldict import *
 
 import os
@@ -36,12 +36,10 @@ def create_output_name(opt):
                 f"gamma={opt.gamma:.2f}, " +\
                 f"n_pca={opt.pca}"
 
-    output_dir = opt.dest + opt.family + '/'
+    if not os.path.isdir(opt.output_path):
+        os.makedirs(opt.output_path)
 
-    if not os.path.isdir(output_dir):
-        os.mkdir(output_dir)
-
-    filename = output_dir +\
+    filename = opt.output_path +\
                f"PM{opt.knn:d}" +\
                f"sigma={opt.sigma:.2f}" +\
                f"gamma={opt.gamma:.2f}" +\
@@ -76,75 +74,120 @@ def get_tree_colors(opt, labels, tree_cl_name):
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(description='Poincare maps')
+    parser = argparse.ArgumentParser(
+        description='Adaptation of Poincare maps for MSA')
     parser.add_argument('--dim', help='Embedding dimension', type=int, default=2)
 
-    parser.add_argument('--path', help='Path to dataset to embed', type=str, default='data/')
-    parser.add_argument('--family', help='Name of the protein family (name of the folder)', type=str, default='glob')
-    parser.add_argument('--tree', help='File with phylogenetic trees', type=str, default=5)
-    parser.add_argument('--function', help='Protein by function', type=str, default='glob-name')
+    parser.add_argument('--input_path', help='Path to dataset to embed', type=str, 
+        default='/Users/klanna/UniParis/PoincareMSA/data/glob/Nfasta/')
 
-    parser.add_argument('--dest', help='Write results', type=str, default='results/')
-    parser.add_argument('--seed', help='Random seed', type=int, default=0)
+    parser.add_argument('--output_path', help='Path to dataset to embed', type=str, 
+        default='/Users/klanna/UniParis/results/glob/')
+
+    parser.add_argument('--plot',
+        help='Flag True or False, if you want to plot the output.', type=str, 
+        default='True')
+    parser.add_argument('--checkout_freq',
+        help='Checkout frequency (in epochs) to show intermidiate results', 
+        type=int, default=10)
+
+    parser.add_argument('--tree', 
+        help='File with phylogenetic trees', type=str, default=5)
+    parser.add_argument('--function', 
+        help='Protein by function', type=str, default='glob-name')
+
+    parser.add_argument('--seed',
+        help='Random seed', type=int, default=0)
 
     parser.add_argument('--labels', help='has labels', type=int, default=1)
-    parser.add_argument('--mode', help='Mode: features or KNN', type=str, default='features')
+    parser.add_argument('--mode',
+        help='Mode: features or KNN', type=str, default='features')
 
-    parser.add_argument('--normalize', help='Apply z-transform to the data', type=int, default=0)
-    parser.add_argument('--pca', help='Apply pca for data preprocessing (if pca=0, no pca)', type=int, default=0)
+    parser.add_argument('--normalize',
+        help='Apply z-transform to the data', type=int, default=0)
+    parser.add_argument('--pca',
+        help='Apply pca for data preprocessing (if pca=0, no pca)', 
+        type=int, default=0)
+    parser.add_argument('--distlocal', 
+        help='Distance function (minkowski, cosine)', 
+        type=str, default='cosine')
+    parser.add_argument('--distfn', 
+        help='Distance function (Euclidean, MFImixSym, MFI, MFIsym)', 
+        type=str, default='MFIsym')
+    parser.add_argument('--distr', 
+        help='Target distribution (laplace, gaussian, student)', 
+        type=str, default='laplace')
+    parser.add_argument('--lossfn', help='Loss funstion (kl, klSym)',
+        type=str, default='klSym')
 
-    parser.add_argument('--distlocal', help='Distance function (minkowski, cosine)', type=str, default='cosine')
+    parser.add_argument('--root', 
+        help='Get root node from labels', type=str, default="root")
+    parser.add_argument('--iroot',
+        help='Index of the root cell', type=int, default=-1)
+    parser.add_argument('--rotate',
+        help='Rotate', type=int, default=-1)
 
-    parser.add_argument('--distfn', help='Distance function (Euclidean, MFImixSym, MFI, MFIsym)', type=str, default='MFIsym')
-    parser.add_argument('--distr', help='Target distribution (laplace, gaussian, student)', type=str, default='laplace')
-    parser.add_argument('--lossfn', help='Loss funstion (kl, klSym)', type=str, default='klSym')
+    parser.add_argument('--knn', 
+        help='Number of nearest neighbours in KNN', type=int, default=3)
+    parser.add_argument('--connected',
+        help='Force the knn graph to be connected', type=int, default=1)
 
-    parser.add_argument('--root', help='Get root node from labels', type=str, default="root")
-    parser.add_argument('--iroot', help='Index of the root cell', type=int, default=-1)
-    parser.add_argument('--rotate', help='Rotate', type=int, default=-1)
-
-    parser.add_argument('--knn', help='Number of nearest neighbours in KNN', type=int, default=3)
-    parser.add_argument('--connected', help='Force the knn graph to be connected', type=int, default=1)
-
-    parser.add_argument('--sigma', help='Bandwidth in high dimensional space', type=float, default=1.0)
-    parser.add_argument('--gamma', help='Bandwidth in low dimensional space', type=float, default=1.0)
+    parser.add_argument('--sigma',
+        help='Bandwidth in high dimensional space', type=float, default=1.0)
+    parser.add_argument('--gamma',
+        help='Bandwidth in low dimensional space', type=float, default=1.0)
 
     # optimization parameters
-    parser.add_argument('--lr', help='Learning rate', type=float, default=0.1)
-    parser.add_argument('--lrm', help='Learning rate multiplier', type=float, default=1.0)
-    parser.add_argument('--epochs', help='Number of epochs', type=int, default=50)
-    parser.add_argument('--batchsize', help='Batchsize', type=int, default=4)
-    parser.add_argument('--burnin', help='Duration of burnin', type=int, default=500)
+    parser.add_argument('--lr',
+        help='Learning rate', type=float, default=0.1)
+    parser.add_argument('--lrm',
+        help='Learning rate multiplier', type=float, default=1.0)
+    parser.add_argument('--epochs',
+        help='Number of epochs', type=int, default=500)
+    parser.add_argument('--batchsize',
+        help='Batchsize', type=int, default=4)
+    parser.add_argument('--burnin',
+        help='Duration of burnin', type=int, default=500)
 
-    parser.add_argument('--earlystop', help='Early stop  of training by epsilon. If 0, continue to max epochs', 
+    parser.add_argument('--earlystop',
+        help='Early stop  of training by epsilon. If 0, continue to max epochs', 
         type=float, default=0.0001)
 
-    parser.add_argument('--debugplot', help='Plot intermidiate embeddings every N iterations', type=int, default=200)
-    parser.add_argument('--logfile', help='Use GPU', type=str, default='Logs')
+    parser.add_argument('--debugplot',
+        help='Plot intermidiate embeddings every N iterations',
+        type=int, default=200)
+    parser.add_argument('--logfile',
+        help='Use GPU', type=str, default='Logs')
+    args = parser.parse_args()
 
-    return parser.parse_args()
+    args.plot = bool(args.plot)
+    return args
 
 def poincare_map(opt):
     # read and preprocess the dataset
     opt.cuda = True if torch.cuda.is_available() else False
-
     print('CUDA:', opt.cuda)
 
-    features, labels = prepare_data(opt.path + opt.family + '/Nfasta/')
+    features, labels = prepare_data(opt.input_path)
     
-    if not (opt.tree is None):
-        tree_levels, color_dict = get_tree_colors(opt, labels, f'{opt.path}/{opt.family}/{opt.family}_tree_cluster_{opt.tree}')
-    else:
-        color_dict = None
-        tree_levels = None
+    # if not (opt.tree is None):
+    #     tree_levels, color_dict = get_tree_colors(
+    #         opt, labels, 
+    #         f'{opt.input_path}/{opt.family}_tree_cluster_{opt.tree}')
+    # else:
+    #     color_dict = None
+    #     tree_levels = None
 
     # compute matrix of RFA similarities
-    RFA = compute_rfa(features, mode=opt.mode,
-                                        k_neighbours=opt.knn,
-                                        distfn=opt.distfn,
-                                        distlocal= opt.distlocal,
-                                        connected=opt.connected,
-                                            sigma=opt.sigma)
+    RFA = compute_rfa(
+        features,
+        mode=opt.mode,
+        k_neighbours=opt.knn,
+        distfn=opt.distfn,
+        distlocal= opt.distlocal,
+        connected=opt.connected,
+        sigma=opt.sigma
+        )
 
     if opt.batchsize < 0:
         opt.batchsize = min(512, int(len(RFA)/10))
@@ -163,14 +206,16 @@ def poincare_map(opt):
     dataset = TensorDataset(indices, RFA)
 
     # instantiate our Embedding predictor
-    predictor = PoincareEmbedding(len(dataset),
-                                                                opt.dim,
-                                                                dist=PoincareDistance,
-                                                                max_norm=1,
-                                                                Qdist=opt.distr, 
-                                                                lossfn = opt.lossfn,
-                                                                gamma=opt.gamma,
-                                                                cuda=opt.cuda)
+    predictor = PoincareEmbedding(
+        len(dataset),
+        opt.dim,
+        dist=PoincareDistance,
+        max_norm=1,
+        Qdist=opt.distr, 
+        lossfn = opt.lossfn,
+        gamma=opt.gamma,
+        cuda=opt.cuda
+        )
 
     # instantiate the Riemannian optimizer 
     t_start = timeit.default_timer()
@@ -178,57 +223,60 @@ def poincare_map(opt):
 
     # train predictor
     print('Starting training...')
-    embeddings, loss, epoch = train(predictor,
-                                                     dataset,
-                                                     optimizer,
-                                                     opt,
-                                                     fout=fout,
-                                                     labels=labels,
-                                                     tree_levels=tree_levels,
-                                                     earlystop=opt.earlystop,
-                                                     color_dict=color_dict)
-
+    embeddings, loss, epoch = train(
+        predictor,
+        dataset,
+        optimizer,
+        opt,
+        fout=fout,
+        earlystop=opt.earlystop
+        )
 
     df_pm = pd.DataFrame(embeddings, columns=['pm1', 'pm2'])
     df_pm['proteins'] = labels
     df_pm.to_csv(fout + '.csv', sep=',', index=False)
 
     t = timeit.default_timer() - t_start
-    titlename = f"{opt.family}\nloss = {loss:.3e}\ntime = {t/60:.3f} min"
+    titlename = f"\nloss = {loss:.3e}\ntime = {t/60:.3f} min"
+    print(titlename)
 
-    plot_poincare_disc(embeddings, labels, 
-                       title_name=titlename,
-                       labels=tree_levels, 
-                       coldict=color_dict, file_name=fout, d1=8.5, d2=8.0, bbox=(1.2, 1.), leg=False)
+    plotPoincareDisc(
+        embeddings, 
+        title_name=titlename,
+        file_name=fout, 
+        d1=5.5, d2=5.0, 
+        bbox=(1.2, 1.),
+        leg=False
+        )
 
-    idx_root = np.where(tree_levels == 'root')[0]
-    poincare_coord_rot = poincare_translation(-embeddings[idx_root, :], embeddings)
+    # idx_root = np.where(tree_levels == 'root')[0]
+    # poincare_coord_rot = poincare_translation(-embeddings[idx_root, :], embeddings)
 
 
-    if not (opt.function is None):
-        for f in ['glob_tree_cluster_1']:
-            fun_levels, color_dict_fun = get_tree_colors(opt, labels, f'{opt.path}/{opt.family}/{f}')
-            plot_poincare_disc(poincare_coord_rot, fun_levels, 
-                               title_name=titlename,
-                               labels=fun_levels, 
-                               coldict=color_dict_fun, 
-                               file_name=f'{fout}_rotate_{f}', 
-                               d1=8.5, d2=8.0, bbox=(1., 1.), leg=False)
+    # if not (opt.function is None):
+    #     for f in ['glob_tree_cluster_1']:
+    #         fun_levels, color_dict_fun = get_tree_colors(opt, labels, f'{opt.input_path}/{opt.family}/{f}')
+    #         plotPoincareDisc(poincare_coord_rot, fun_levels, 
+    #                            title_name=titlename,
+    #                            labels=fun_levels, 
+    #                            coldict=color_dict_fun, 
+    #                            file_name=f'{fout}_rotate_{f}', 
+    #                            d1=8.5, d2=8.0, bbox=(1., 1.), leg=False)
 
-    else:
-        color_dict_fun = None
-        fun_levels = None
+    # else:
+    #     color_dict_fun = None
+    #     fun_levels = None
     
-    for t in range(1, 6):
-        tree_levels, color_dict = get_tree_colors(opt, labels, f'{opt.path}/{opt.family}/{opt.family}_tree_cluster_{t}')
-        if len(np.unique(tree_levels)) < 25:
-            leg = True
-        else:
-            leg = False
-        plot_poincare_disc(poincare_coord_rot, labels, 
-                           title_name=titlename,
-                           labels=tree_levels, 
-                           coldict=color_dict, file_name=f'{fout}_rotate_cut{t}', d1=8.5, d2=8.0, bbox=(1.2, 1.), leg=leg)
+    # for t in range(1, 6):
+    #     tree_levels, color_dict = get_tree_colors(opt, labels, f'{opt.input_path}/{opt.family}/{opt.family}_tree_cluster_{t}')
+    #     if len(np.unique(tree_levels)) < 25:
+    #         leg = True
+    #     else:
+    #         leg = False
+    #     plotPoincareDisc(poincare_coord_rot, labels, 
+    #                        title_name=titlename,
+    #                        labels=tree_levels, 
+    #                        coldict=color_dict, file_name=f'{fout}_rotate_cut{t}', d1=8.5, d2=8.0, bbox=(1.2, 1.), leg=leg)
 
 
 if __name__ == "__main__":

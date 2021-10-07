@@ -17,10 +17,8 @@ from visualize import *
 from model import *
 import seaborn as sns; sns.set()
 import torch as th
-from fastdtw import fastdtw
 from coldict import *
 from scipy.spatial.distance import euclidean
-import scanpy.api as sc
 
 
 sns.set_style('white', {'legend.frameon':True})
@@ -35,19 +33,50 @@ colors_palette = ['#1F77B4', '#FF7F0E', '#2CA02C', '#D62728', '#9467BD',
                   '#41b6c4', '#1d91c0', '#225ea8', '#253494', '#081d58']
 
 
-# colors_palette = ['#1F77B4', '#FF7F0E', '#2CA02C', '#D62728', '#9467BD', '#8C564B', '#E377C2', '#BCBD22', 
-#         '#17BECF', '#40004b', '#762a83', '#9970ab', '#c2a5cf', '#e7d4e8', '#f7f7f7', '#d9f0d3', 
-#         '#a6dba0', '#5aae61', '#1b7837', '#00441b', '#8dd3c7', '#ffffb3', '#bebada', '#fb8072', 
-#         '#80b1d3', '#fdb462', '#b3de69', '#fccde5', '#d9d9d9', '#bc80bd', '#ccebc5', '#ffed6f', '#CCEBC5', '#FFED6F', '#edf8b1', '#c7e9b4', '#7fcdbb',
-#                   '#41b6c4', '#1d91c0', '#225ea8', '#253494', '#081d58']
+def plotTraining(
+    loss_func, 
+    title_name=None,
+    file_name=None, 
+    figsize=(4, 3),
+    fs=9
+    ):
 
-def plot_poincare_disc(x, labels=None, title_name=None,
-    labels_name='labels', labels_order=None, labels_pos=None, labels_text=None,
-                       file_name=None, coldict=None,
-                       d1=4.5, d2=4.0, fs=9, ms=20,
-                       u=None, v=None, alpha=1.0,
-                       col_palette=plt.get_cmap("tab10"), print_labels=True,
-                       bbox=(1.3, 0.7), leg=True, ft='pdf'):    
+  fig = plt.figure(figsize=figsize)
+  plt.plot(loss_func, c='#f03b20')
+  ax = plt.gca()
+  ax.set_xlabel('epoch')
+  ax.set_ylabel('loss')
+
+  if title_name:
+    plt.title(title_name, fontsize=fs)
+  plt.show()
+
+  plt.tight_layout()
+
+  if file_name:
+    plt.savefig(file_name + '.png', format='png')
+  plt.close(fig)
+
+
+def plotPoincareDisc(
+    x,
+    labels=None,
+    title_name=None,
+    labels_name='labels',
+    labels_order=None,
+    labels_pos=None,
+    labels_text=None,
+    file_name=None,
+    coldict=None,
+    d1=4.5, d2=4.0, fs=9, ms=20,
+    u=None,
+    v=None,
+    alpha=1.0,
+    col_palette=plt.get_cmap("tab10"),
+    print_labels=True,
+    bbox=(1.3, 0.7),
+    leg=True,
+    ft='png'):    
 
     idx = np.random.permutation(len(x))
     df = pd.DataFrame(x[idx, :], columns=['pm1', 'pm2'])
@@ -66,23 +95,33 @@ def plot_poincare_disc(x, labels=None, title_name=None,
             labels_order = np.unique(labels)        
         if coldict is None:
             coldict = dict(zip(labels_order, col_palette[:len(labels)]))
-        sns.scatterplot(x="pm1", y="pm2", hue=labels_name, 
-                        hue_order=labels_order,
-                        palette=coldict,
-                        alpha=alpha, edgecolor="none",
-                        data=df, ax=ax, s=ms)
+        sns.scatterplot(            
+            x="pm1", y="pm2",
+            hue=labels_name,
+            hue_order=labels_order,
+            palette=coldict,
+            alpha=alpha, edgecolor="none",
+            data=df, 
+            ax=ax, 
+            s=ms)
         
         if leg:
-            ax.legend(fontsize=fs, loc='outside', bbox_to_anchor=bbox, facecolor='white')
+            ax.legend(
+                fontsize=fs, 
+                loc='outside', 
+                bbox_to_anchor=bbox,
+                facecolor='white'
+                )
         else:
             ax.legend_.remove()
             
     else:
-        sns.scatterplot(x="pm1", y="pm2",
-                        data=df, ax=ax, s=ms)
+        sns.scatterplot(
+            x="pm1", y="pm2",
+            data=df, ax=ax, s=ms)
 
-        if leg == False:
-            ax.legend_.remove()
+        # if leg == False:
+        #     ax.legend_.remove()
 
     if not (u is None):     
         a, b = get_geodesic_parameters(u, v)        
@@ -174,7 +213,7 @@ class PoincareMaps:
                 labels = labels[idx_zoom]
 
         
-        self.labels_pos = plot_poincare_disc(coordinates, title_name=title_name, 
+        self.labels_pos = plotPoincareDisc(coordinates, title_name=title_name, 
             print_labels=print_labels, labels_text=labels_text,
             labels=labels, labels_name=labels_name, labels_order=labels_order, labels_pos = self.labels_pos,
                        file_name=file_name, coldict=coldict, u=u, v=v, alpha=alpha,
@@ -468,10 +507,6 @@ class PoincareMaps:
         plt.show()
         plt.close(fig)
 
-
-
-
-
 def get_geodesic_parameters(u, v, eps=1e-10):
     if all(u) == 0:
         u = np.array([eps, eps])
@@ -540,148 +575,6 @@ def poincare_linspace(u, v, n_points=175):
     return interpolated
 
 
-
-def init_scanpy(data, col_names, head_name, true_labels, fin, k=30, n_pcs=20, computeEmbedding=True):
-    head_idx = np.where(true_labels == head_name)[0]
-    if len(head_idx) > 1:
-        D = pairwise_distances(data[head_idx, :], metric='euclidean')
-        iroot = head_idx[np.argmin(D.sum(axis=0))]
-    else:
-        iroot = head_idx[0]
-        
-    adata = sc.AnnData(data)
-    adata.var_names = col_names
-    adata.obs['labels'] = true_labels
-    adata.uns['iroot'] = iroot
-    if computeEmbedding:
-        if n_pcs:
-            sc.pp.pca(adata, n_comps=n_pcs)
-            sc.pp.neighbors(adata, n_neighbors=k, n_pcs=n_pcs)
-        else:
-            sc.pp.neighbors(adata, n_neighbors=k)
-        
-    
-        sc.tl.louvain(adata, resolution=0.9)
-        louvain_labels = np.array(list(adata.obs['louvain']))
-        
-        sc.tl.paga(adata)
-        sc.tl.draw_graph(adata)
-        sc.tl.diffmap(adata)
-        sc.tl.tsne(adata)
-        sc.tl.umap(adata)
-        sc.tl.pca(adata, n_comps=2)
-
-        sc.pl.paga(adata)
-        sc.tl.draw_graph(adata, init_pos='paga')
-    else:
-        louvain_labels = []
-
-    sc.settings.figdir = fin
-    sc.settings.autosave = True
-    # sc.settings.set_figure_params(dpi=80, dpi_save=300, color_map='Set1', format='pdf')
-    sc.settings.set_figure_params(dpi=80, dpi_save=300, format='pdf')
-        
-    return adata, iroot, louvain_labels
-
-
-def plotBenchamrk(adata, true_labels, fname_benchmark, method='X_draw_graph_fa', pl_size=2.4, n1=3, n2=3, ms=10, fs=9, coldict=None):
-    labels_order=np.unique(true_labels)
-    if coldict is None:
-        colors_palette = get_palette(coldict)
-        coldict = dict(zip(labels_order, colors_palette[:len(labels_order)]))
-
-    fig = plt.figure(figsize=(n2*pl_size, n1*pl_size))
-    ax = plt.gca()
-
-    title_name_dict = {'X_pca': 'PCA',
-                        'X_tsne': 'tSNE',
-                        'X_umap': 'UMAP', 
-                       'X_diffmap': 'DiffusionMaps', 
-                       'X_draw_graph_fa': 'ForceAtlas2'}
-
-
-    title_name=title_name_dict[method]
-    axs_names=['x1', 'x2']
-    if method == 'X_diffmap':
-        x=adata.obsm[method][:, 1:3]
-    else:
-        x=adata.obsm[method]
-
-    idx = np.random.permutation(len(x))
-    df = pd.DataFrame(x[idx, :], columns=axs_names)
-    df['labels'] = true_labels[idx]
-    plt.title(title_name, fontsize=fs)
-    ax.axis('equal')
-    ax.grid('off')
-    ax.set_xticks([])
-    ax.set_yticks([])
-    sns.scatterplot(x=axs_names[0], y=axs_names[1], hue='labels', 
-                            hue_order=labels_order,
-                            palette=coldict,
-                            alpha=1.0, edgecolor="none",
-                            data=df, ax=ax, s=ms)
-    ax.set_xlabel(axs_names[0], fontsize=fs)
-    ax.set_ylabel(axs_names[1], fontsize=fs)
-    ax.legend_.remove()
-    fig.tight_layout()
-
-
-    fig.tight_layout()        
-    plt.savefig( f"{fname_benchmark}_{title_name}.pdf", format='pdf')
-    plt.show()
-
-
-def plotBenchamrks(adata, true_labels, fname_benchmark, pl_size=2.4, n1=2, n2=3, ms=3, fs=9, coldict=None, methods=['X_pca', 'X_umap', 'X_draw_graph_fa']):
-    labels_order=np.unique(true_labels)
-    if coldict is None:
-        coldict = dict(zip(labels_order, colors_palette[:len(labels_order)]))
-
-    fig, axs = plt.subplots(n1, n2, sharex=False, sharey=False, figsize=(n2*pl_size, n1*pl_size))
-    methods=['X_pca', 'X_tsne', 'X_umap', 'X_diffmap', 'X_draw_graph_fa']
-    title_name_dict = {'X_pca': 'PCA',
-                        'X_tsne': 'tSNE',
-                        'X_umap': 'UMAP', 
-                       'X_diffmap': 'DiffusionMaps', 
-                       'X_draw_graph_fa': 'ForceAtlas2'}
-
-    l=0
-    for i in range(n1):
-        for j in range(n2):
-            if l < len(methods):
-                method=methods[l]
-                title_name=title_name_dict[method]
-                axs_names=['x1', 'x2']
-                if method == 'X_diffmap':
-                    x=adata.obsm[method][:, 1:3]
-                else:
-                    x=adata.obsm[method]
-                idx = np.random.permutation(len(x))
-                df = pd.DataFrame(x[idx, :], columns=axs_names)
-                df['labels'] = true_labels[idx]
-                axs[i, j].set_title(title_name, fontsize=fs)
-                axs[i, j].axis('equal')
-                axs[i, j].grid('off')
-                axs[i, j].set_xticks([])
-                axs[i, j].set_yticks([])
-                sns.scatterplot(x=axs_names[0], y=axs_names[1], hue='labels', 
-                                        hue_order=labels_order,
-                                        palette=coldict,
-                                        alpha=1.0, edgecolor="none",
-                                        data=df, ax=axs[i, j], s=ms)
-                axs[i, j].set_xlabel(axs_names[0], fontsize=fs)
-                axs[i, j].set_ylabel(axs_names[1], fontsize=fs)
-                axs[i, j].legend_.remove()
-                fig.tight_layout()
-            else:
-                axs[i, j].axis('off')
-                axs[i, j].grid('off')
-                axs[i, j].yaxis.set_tick_params(labelsize=fs)
-                axs[i, j].xaxis.set_tick_params(labelsize=fs)
-            l += 1
-    fig.tight_layout()        
-    plt.savefig(fname_benchmark + 'benchmarks.pdf', format='pdf')
-    plt.show()
-    
 
 
 def read_data(fin, with_labels=True, normalize=False, n_pca=20):
@@ -919,148 +812,3 @@ def get_interpolated_coordinates(coordinates, labels, clusters, distances,
                           np.array(['interpolation']*n_points)))
                 
     return interpolated_coordinates, interpolated_labels, points_list
-
-
-def get_time_and_idx(dpt, idx):
-    time = dpt[idx] / np.max(dpt[idx])
-    ix_time = np.argsort(time)
-
-    return time, ix_time
-
-
-def plot_dtw_comparison(dpt_true, dpt_po, dpt_fa, dpt_umap, 
-    idx_full, idx_pm, idx_fa, idx_umap, data_full, 
-    x_predicted_po, x_predicted_fa, x_predicted_umap, 
-    col_names, fout,
-    n_plt = 15, n2 = 4, win = 5, pl_size = 2, fs = 9,
-                        lw = 2, cpal = ['#1a9641', '#d7191c', '#2b83ba', '#fdae61']):
-
-    time_true, ix_true = get_time_and_idx(dpt_true, idx_full)
-    time_po, ix_po = get_time_and_idx(dpt_po, idx_pm)
-    time_fa, ix_fa = get_time_and_idx(dpt_fa, idx_fa)
-    time_umap, ix_umap = get_time_and_idx(dpt_umap, idx_umap)
-
-    N = len(col_names)
-
-    n1 = n_plt // n2
-    if n1*n2 < n_plt:
-        n1 += 1
-
-    if n1 == 1:
-        n1 = 2
-    if n2 == 1:
-        n2 = 2
-        
-    n1_all = N // n2
-    if n2*n1_all < N:
-        n1_all += 1
-
-    if n1 == 1:
-        n1 = 2
-    if n2 == 1:
-        n2 = 2
-    
-
-    fig, axs = plt.subplots(n1, n2, sharey=False, figsize=(n2*pl_size + 2, n1*pl_size))
-
-    i = 0
-    dtw_po = []
-    dtw_fa = []
-    dtw_umap = []
-    for i1 in range(n1_all):
-        for i2 in range(n2):            
-            if i < N:
-                df_true = pd.DataFrame(data_full[idx_full[ix_true], i], columns=['gene'])
-                y_smooth_true = df_true.rolling(window=win, min_periods=1).mean()['gene'].values
-
-                df_po = pd.DataFrame(x_predicted_po[idx_pm[ix_po], i], columns=['gene'])
-                y_smooth_po = df_po.rolling(window=win, min_periods=1).mean()['gene'].values
-
-                df_fa= pd.DataFrame(x_predicted_fa[idx_fa[ix_fa], i], columns=['gene'])
-                y_smooth_fa = df_fa.rolling(window=win, min_periods=1).mean()['gene'].values
-
-                df_umap= pd.DataFrame(x_predicted_umap[idx_umap[ix_umap], i], columns=['gene'])
-                y_smooth_umap = df_umap.rolling(window=win, min_periods=1).mean()['gene'].values
-
-                distance, path = fastdtw(y_smooth_true, y_smooth_po, dist=euclidean)
-                dtw_po.append(distance)
-                    
-                distance, path = fastdtw(y_smooth_true, y_smooth_fa, dist=euclidean)
-                dtw_fa.append(distance)
-
-                distance, path = fastdtw(y_smooth_true, y_smooth_umap, dist=euclidean)
-                dtw_umap.append(distance)
-
-                if i < n_plt:
-                    
-                    axs[i1, i2].grid('off')
-                    axs[i1, i2].yaxis.set_tick_params(labelsize=fs)
-                    axs[i1, i2].xaxis.set_tick_params(labelsize=fs)
-                    marker = col_names[i]
-                    axs[i1, i2].plot(time_true[ix_true], y_smooth_true, c=cpal[0], linewidth=lw*2)  
-                    axs[i1, i2].plot(time_po[ix_po], y_smooth_po,  c=cpal[1], linewidth=lw)                    
-                    axs[i1, i2].plot(time_fa[ix_fa], y_smooth_fa,  c=cpal[2], linewidth=lw)
-                    axs[i1, i2].plot(time_umap[ix_umap], y_smooth_umap,  c=cpal[3], linewidth=lw)
-
-                    axs[i1, i2].set_title(marker, fontsize=fs)            
-
-                elif i < n1*n2:
-                # else:
-                    axs[i1, i2].axis('off')
-                    axs[i1, i2].grid('off')
-                    axs[i1, i2].yaxis.set_tick_params(labelsize=fs)
-                    axs[i1, i2].xaxis.set_tick_params(labelsize=fs)
-
-                if i == (n_plt-1):
-                    i1l = i1
-                    i2l = i2
-            elif i < n1*n2:
-                axs[i1, i2].axis('off')
-                axs[i1, i2].grid('off')
-                axs[i1, i2].yaxis.set_tick_params(labelsize=fs)
-                axs[i1, i2].xaxis.set_tick_params(labelsize=fs)
-
-                
-            i+=1
-
-    dtw_po = np.array(dtw_po)
-    dtw_fa = np.array(dtw_fa)
-    dtw_umap = np.array(dtw_umap)
-
-    axs[i1l, i2l].legend(['True', f'PM: {np.median(dtw_po):.1f}', f'FA2: {np.median(dtw_fa):.1f}', f'UMAP: {np.median(dtw_umap):.1f}'], 
-                     bbox_to_anchor=(1.4, 0.5), fontsize=fs)
-    # axs[i1l, i2l].legend(['True', f'Poincaré', f'ForceAtals2', f'UMAP'], 
-    #                  bbox_to_anchor=(1.4, 0.5), fontsize=fs)
-                     
-
-    plt.xlabel('pseudotime', fontsize=fs)
-    fig.tight_layout()
-
-    plt.savefig(fout + '_compare_interpolation.pdf', format='pdf')
-
-    return dtw_po, dtw_fa, dtw_umap
-
-
-def plot_benchmark(coord, labels, method, fout, d1=2.5, d2=2.5, fs=9, ms=3):
-    sns.set_style("white")
-    print(np.shape(coord))
-    fig = plt.figure(figsize=(d1, d2))
-    ax = plt.gca()
-    axs_names=['x1', 'x2']
-    idx = np.random.permutation(len(coord))
-    df = pd.DataFrame(coord[idx, :], columns=axs_names)
-    df['labels'] = labels[idx]
-    # plt.title(f'Interpolation: {method}', fontsize=fs)
-    ax.axis('equal')
-    ax.grid('off')
-    ax.set_xticks([])
-    ax.set_yticks([])
-    sns.scatterplot(x=axs_names[0], y=axs_names[1], hue='labels',
-                    alpha=1.0, edgecolor="none",
-                    palette=None,
-                    data=df, ax=ax, s=ms)
-    ax.set_xlabel(axs_names[0], fontsize=fs)
-    ax.set_ylabel(axs_names[1], fontsize=fs)
-    ax.legend_.remove()
-    fig.tight_layout()
-    plt.savefig( f"{fout}_{method}_interpolation.pdf", format='pdf')
