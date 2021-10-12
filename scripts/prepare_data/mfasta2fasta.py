@@ -18,7 +18,7 @@ F = open(f, "r") # no X and gaps filtered
 S  = open(f.split(".mfasta")[0] + ".sum", "w") # file with number-protein id correspondence
 E = open(f.split(".mfasta")[0] + ".NUM.mfasta", "w")
 
-i = 0 # iteration over sequences
+i = 1 # iteration over sequences
 line = F.readline()
 
 while line!="":

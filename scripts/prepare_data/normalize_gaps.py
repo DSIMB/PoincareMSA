@@ -10,7 +10,9 @@ def get_args():
 
 f=get_args()
 x = loadtxt(f)
-F = open(f+".gap-sq.aamtx", "w")
+d = "".join(f.split("/")[:-1])
+f = f.split("/")[-1].split(".")[0]
+F = open(d+"/"+f+".aamtx", "w")
 
 for i in range(len(x)):
   for j in range(20):
