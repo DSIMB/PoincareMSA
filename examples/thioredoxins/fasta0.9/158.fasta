@@ -1,8 +1,8 @@
->gi|11135407|sp|Q9XGS0.1|TRXM_BRANA RecName: Full=Thioredoxin M-type, chloroplastic; Short=Trx-M; Flags: Precursor
-MA-----AFTCTSSPPISLRSEM------------MIASSKTVSLSTRQMFSV-LRTRVS
-LSSVSKNS----RASRLRRGGIICEAQD--T-------------------------AT--
---GIPMVND-STWESLVLKA--DEPVVVDFWAPWCGPCKMIDPIVNELAQQYTGKIKFFK
-LNTDDSPATPGKYGVRSIPTIMIFVKGEKKDTIIGAVPKTTLATSIDKF-----------
+>gi|15594012|emb|CAC69854.1| putative thioredoxin m2 (chloroplast) [Pisum sativum]
+MATVQ--LESFSLIPSSQHPRTV------------------ASSLSCRPIAARFLKLRPL
+AATSLRSRFA-ASRVVPRGGRVLCEARD--T-------------------------AV--
+--EVASITD-GNWQSLVIES--DTPVLVEFWAPWCGPCRMMHPIIDELAKEYVGKFKCYK
+LNTDESPSTATRYGIRSIPTVIFFKDGEKKDAIIGSVPKASLITTIEKF-----------
 ------------------------------------------------L-----------
 ------------------------------------------------------------
------------------------------Q
+------------------------------

@@ -1,8 +1,8 @@
->gi|108935910|sp|Q95108.2|THIOM_BOVIN RecName: Full=Thioredoxin, mitochondrial; Short=MTRX; Short=Mt-Trx; AltName: Full=Thioredoxin-2; Flags: Precursor
-MAQRL-------------------------------LLRRFLTSIISGKPSQSR------
--------------------WAPVAS-----LQTPQYSPGYLTVTPSQARSIYTTRVCS--
---TTFNIQDGPDFQDRVVNS--ETPVVVDFHAQWCGPCKILGPRLEKVVAKQHGKVVMAK
-VDIDDHTDLALEYEVSAVPTVLAMKNGDVVDKFVGIKDEDQLEAFLKKL-----------
+>gi|15603883|ref|NP_220398.1| thioredoxin (trxA) [Rickettsia prowazekii str. Madrid E]
+------------------------------------------------------------
+------------------------------M-------------------------SCEI
+TTMVNNVTD-SSFKNEVLES--DLPVMVDFWAEWCGPCKMLIPIIDEISKELQDKVKVLK
+MNIDENPKTPSEYGIRSIPTIMLFKNGEQKDTKIGLQQKNSLLDWINKS-----------
 ------------------------------------------------I-----------
 ------------------------------------------------------------
------------------------------G
+------------------------------

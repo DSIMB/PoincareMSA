@@ -1,8 +1,8 @@
->gi|115401922|ref|XP_001216549.1| thioredoxin [Aspergillus terreus NIH2624]
+>gi|30580603|sp|O96952.1|THIO_GEOCY RecName: Full=Thioredoxin; Short=Trx
 ------------------------------------------------------------
-------------------------------M------------------------AHG--
---KVVEVDNPVIFK--ALTS--SGPVVVDFFATWCGPCKQIAPHVGKLSETYPN-VRFIQ
-VDVDKVRSVAQEMQVRAMPTFVLFKDGQQWEKVVGGNL-KELEDQIKAI-----------
+------------------------------M-----------------------------
+---VNFLKTKADFDQ-ALKDAGDKLVVIDFTASWCGPCQRIAPKYVEMAKEFPD-VIFYK
+VDVDENDETAEAEKIQAMPTFKFYKSGKALSDYVGANE-AGLREKIKKN-----------
 ------------------------------------------------------------
 ------------------------------------------------------------
-----------------------------SS
+-----------------------------K

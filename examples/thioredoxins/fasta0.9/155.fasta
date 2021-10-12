@@ -1,8 +1,8 @@
->gi|2507458|sp|P07591.2|TRXM_SPIOL RecName: Full=Thioredoxin M-type, chloroplastic; Short=Trx-M; Contains: RecName: Full=Thioredoxin M-type Mc; Contains: RecName: Full=Thioredoxin M-type Md; Flags: Precursor
-MA-----IENCLQLSTSASVGTVAV-------------KSHVHHLQPSSKVNV-LKRSFP
-ALSSSVSS---SSPRQFRYSSVVCKASE--A-------------------------VK--
---EVQDVND-SSWKEFVLES--EVPVMVDFWAPWCGPCKLIAPVIDELAKEYSGKIAVYK
-LNTDEAPGIATQYNIRSIPTVLFFKNGERKESIIGAVPKSTLTDSIEKY-----------
-------------------------------------------------LS----------
+>gi|1351239|sp|P48384.1|TRXM_PEA RecName: Full=Thioredoxin M-type, chloroplastic; Short=Trx-M; Flags: Precursor
+MALES--LFKSIHTKTS------------LSSSIVFIFKGKACLLTSKSRIQ--------
+--ESFAELNSFTSLVLLIENHVLLHARE--A-------------------------VN--
+--EVQVVND-SSWDELVIGS--ETPVLVDFWAPWCGPCRMIAPIIDELAKEYAGKIKCYK
+LNTDESPNTATKYGIRSIPTVLFFKNGERKDSVIGAVPKATLSEKVEKY-----------
+------------------------------------------------I-----------
 ------------------------------------------------------------
------------------------------P
+------------------------------

@@ -1,8 +1,8 @@
->gi|74316054|ref|YP_313794.1| thioredoxin [Thiobacillus denitrificans ATCC 25259]
+>gi|121635072|ref|YP_975317.1| thioredoxin I [Neisseria meningitidis FAM18]
 ------------------------------------------------------------
-------------------------------M-------------------------SE--
---HVHYISD-DSFEQEVLQA--GVPVLVDYWADWCGPCKMISPILDEVAKEYAGKLKVCK
-LNIDENQATPPKFGIRGIPTLMIFKNGNVEATKVGALSKSQLTAFVDSN-----------
+------------------------------M------------------------SSE--
+--LIVHTSD-AAFEKDVLNA--DIPVLLDFWAPWCGPCKMIAPILDDIAAEFEGRLKVVK
+INIDDNEATPSRFGVRGIPTLMVFKNGEVVATKVGALAKGQLTAFVEAS-----------
 ------------------------------------------------I-----------
 ------------------------------------------------------------
-------------------------------
+-----------------------------A

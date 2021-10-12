@@ -1,8 +1,8 @@
->gi|40746887|gb|EAA66043.1| THIO_EMENI Thioredoxin [Aspergillus nidulans FGSC A4]
+>gi|119479067|ref|XP_001259562.1| thioredoxin TrxA [Aspergillus fischeri NRRL 181]
 ------------------------------------------------------------
-------------------------------M-----------------------GASE--
---HVPPITSKAEFQEKVLNA--KGFVVVDCFATWCGPCKAIAPTVEKFAQTYTD-ASFYQ
-IDVDELSEVAAELGIRAMPTFLLFKDGQKVSDVVGANP-GALEAGIKAL-----------
-------------------------------------------------L-----------
+------------------------------M-------------------------SH--
+--NVEKITDAKVFKE-KVQEA-SGPVIVDCSATWCGPCKAISPVFQRFSTEFKN-AKFYE
+IDVDELSEVAAELGVRAMPTFMFFKGGEKVNEVVGANP-PALEAAIKAH-----------
+------------------------------------------------V-----------
 ------------------------------------------------------------
 -----------------------------A

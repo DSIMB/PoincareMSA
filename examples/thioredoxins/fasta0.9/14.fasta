@@ -1,8 +1,8 @@
->gi|135773|sp|P10599.3|THIO_HUMAN RecName: Full=Thioredoxin; Short=Trx; AltName: Full=ATL-derived factor; Short=ADF; AltName: Full=Surface-associated sulphydryl protein; Short=SASP; AltName: Allergen=Hom s Trx
+>gi|146291083|sp|P08628.2|THIO_RABIT RecName: Full=Thioredoxin; Short=Trx
 ------------------------------------------------------------
 ------------------------------M-----------------------------
----VKQIESKTAFQE-ALDAAGDKLVVVDFSATWCGPCKMIKPFFHSLSEKYSN-VIFLE
-VDVDDCQDVASECEVKCMPTFQFFKKGQKVGEFSGANK-EKLEATINEL-----------
+---VKQIESKSAFQE-VLDSAGDKLVVVDFSATWCGPCKMIKPFFHALSEKFNN-VVFIE
+VDVDDCKDIAAECEVKCMPTFQFFKKGQKVGEFSGANK-EKLEATINEL-----------
 ------------------------------------------------------------
 ------------------------------------------------------------
------------------------------V
+-----------------------------L

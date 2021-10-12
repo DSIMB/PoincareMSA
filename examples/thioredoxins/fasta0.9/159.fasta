@@ -1,8 +1,8 @@
->gi|46199419|ref|YP_005086.1| thioredoxin [Thermus thermophilus HB27]
-MV------VTCPKCGA-------------------------KNRLGTPPPGQ--------
---------------------VPVCGACKTPL-----------------------------
---WVVEADE-KGFAQ-EVAG--APLTLVDFFAPWCGPCRLVSPILEELAREHAGRLKVVK
-VNVDEHPGLAARYGVRSVPTLVLFRRGAPVATWVGASPKRVLEERLRPY-----------
-------------------------------------------------LE----------
+>gi|11135407|sp|Q9XGS0.1|TRXM_BRANA RecName: Full=Thioredoxin M-type, chloroplastic; Short=Trx-M; Flags: Precursor
+MA-----AFTCTSSPPISLRSEM------------MIASSKTVSLSTRQMFSV-LRTRVS
+LSSVSKNS----RASRLRRGGIICEAQD--T-------------------------AT--
+--GIPMVND-STWESLVLKA--DEPVVVDFWAPWCGPCKMIDPIVNELAQQYTGKIKFFK
+LNTDDSPATPGKYGVRSIPTIMIFVKGEKKDTIIGAVPKTTLATSIDKF-----------
+------------------------------------------------L-----------
 ------------------------------------------------------------
-----------------------------GR
+-----------------------------Q

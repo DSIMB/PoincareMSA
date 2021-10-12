@@ -1,8 +1,8 @@
->gi|194226778|ref|XP_001499297.2| PREDICTED: thioredoxin, mitochondrial-like [Equus caballus]
-MAQRL-------------------------------LLRRFLASVVSRRPCPGR------
--------------------WGPLTS-----LPAPQCGPGDLTGTPSQARSLYTTRVCA--
---TTFNIQDGPDFQDRVVNS--ETPVVVDFHAQWCGPCKILGPRLEKMVAKQHGKVVMAK
-VDIDDHTDLAIEYEVSAVPTVLAMKNGDVVDKFVGIKDEDQLEAFLRKL-----------
+>gi|108935910|sp|Q95108.2|THIOM_BOVIN RecName: Full=Thioredoxin, mitochondrial; Short=MTRX; Short=Mt-Trx; AltName: Full=Thioredoxin-2; Flags: Precursor
+MAQRL-------------------------------LLRRFLTSIISGKPSQSR------
+-------------------WAPVAS-----LQTPQYSPGYLTVTPSQARSIYTTRVCS--
+--TTFNIQDGPDFQDRVVNS--ETPVVVDFHAQWCGPCKILGPRLEKVVAKQHGKVVMAK
+VDIDDHTDLALEYEVSAVPTVLAMKNGDVVDKFVGIKDEDQLEAFLKKL-----------
 ------------------------------------------------I-----------
 ------------------------------------------------------------
 -----------------------------G

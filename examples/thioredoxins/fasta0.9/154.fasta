@@ -1,8 +1,8 @@
->gi|1351239|sp|P48384.1|TRXM_PEA RecName: Full=Thioredoxin M-type, chloroplastic; Short=Trx-M; Flags: Precursor
-MALES--LFKSIHTKTS------------LSSSIVFIFKGKACLLTSKSRIQ--------
---ESFAELNSFTSLVLLIENHVLLHARE--A-------------------------VN--
---EVQVVND-SSWDELVIGS--ETPVLVDFWAPWCGPCRMIAPIIDELAKEYAGKIKCYK
-LNTDESPNTATKYGIRSIPTVLFFKNGERKDSVIGAVPKATLSEKVEKY-----------
-------------------------------------------------I-----------
+>gi|17227548|ref|NP_484096.1| thioredoxin [Nostoc sp. PCC 7120]
+------------------------------------------------------------
+------------------------------M-------------------------S---
+--AAAQVTD-STFKQEVLDS--DVPVLVDFWAPWCGPCRMVAPVVDEIAQQYEGKIKVVK
+VNTDENPQVASQYGIRSIPTLMIFKGGQKVDMVVGAVPKTTLSQTLEKH-----------
+------------------------------------------------L-----------
 ------------------------------------------------------------
 ------------------------------
