@@ -9,9 +9,6 @@ from model import poincare_translation
 import matplotlib
 matplotlib.use('Agg')
 
-from chart_studio import plotly as py
-import plotly.graph_objs as go
-
 def rotate(df, root_name='root'):
     idx_root = np.where(df.index == root_name)[0][0]
     embeddings = df[['pm1', 'pm2']].values
@@ -24,32 +21,19 @@ def rotate(df, root_name='root'):
 
 def read_embeddings(
     path_embedding, 
-    path_annotation = None, 
-    withroot = True
-    #    root_name='root'
+    path_annotation=None, 
+    root_name='root'
     ):
 
     embeddings = pd.read_csv(path_embedding)
     embeddings = embeddings.set_index(['proteins_id'])
-    embeddings.index = embeddings.index.astype("int64") # convert all indices to numbers
-    embeddings.sort_index(axis = 0, inplace = True)
-#    embeddings.loc[root_name] = [root_name]*len(embeddings.columns)        
 
     if not (path_annotation is None):
         df = pd.read_csv(path_annotation)    
-#        if withroot:
-        df['proteins_id'] = [str(i+1) for i in list(df.index)]
-#        else:
-#            df['proteins_id'] = [str(i) for i in list(df.index)]    
-        df = df.set_index(['proteins_id'])
-        if withroot:
-            df.loc[0] = "root"
-        df.index = df.index.astype("int64")
-        df.sort_index(axis = 0, inplace = True)
- #       df.loc[root_name] = [root_name]*len(df.columns)
+        df['proteins_id'] = [str(i) for i in list(df.index)]    
+        df = df.set_index(['proteins_id'])    
+        df.loc[root_name] = [root_name]*len(df.columns)        
         result = pd.concat([embeddings, df], axis=1, join="outer")
-#        print("df: ", df.index)
-        print("result: ", result)
         return result
     else:
         return embeddings
@@ -92,6 +76,7 @@ def save_to_file(fig, file_name, file_format):
         fig.savefig(savename, format=file_format)
         print(f"Saved file to: {savename}")
 
+
 def plot_embedding(
         df,
         labels=None,
@@ -108,8 +93,8 @@ def plot_embedding(
         line_transparency=0.8,
         line_width=0.8,
         fontsize=9,
-        fig_width=5,
-        fig_height=5,
+        fig_width=10,
+        fig_height=10,
         file_name=None,
         file_format=None,
         labels_name=None,
@@ -170,9 +155,8 @@ def plot_embedding(
         except:
             pass
     else:
-        print(len(np.unique(labels)))
         plt.legend(numpoints=1, loc='center left',
-               bbox_to_anchor=bbox, fontsize=fontsize, ncol=int(len(np.unique(labels))/20))
+               bbox_to_anchor=bbox, fontsize=fontsize)
     
     emb = df[['pm1', 'pm2']].values
     if show_lines:        
