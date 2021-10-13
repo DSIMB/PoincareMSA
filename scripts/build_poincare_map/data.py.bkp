@@ -42,28 +42,22 @@ def construct_tensor(fpath):
     return np.array(ansarr)
 
 
-def prepare_data(fpath, withroot = True, fmt='.aamtx'):
+def prepare_data(fpath, fmt='.aamtx'):
     # print([x[0] for x in os.walk(fpath)])
     # subfolders = [f.path for f in os.listdir(fpath) if f.is_dir() ]   
     # fmt = '.aamtx'
     proteins = [s for s in os.listdir(fpath) if fmt in s]
     n_proteins = len(proteins)
-    print(f"{n_proteins-1} proteins found in folder {fpath}.")
-
-    if not withroot:
-        proteins.remove("0.aamtx")
-        n_proteins = len(proteins)
-        print("no root detected")
+    print(f"{n_proteins} proteins in the family in folder {fpath}.")
 
     protein_file = proteins[0]
-    print(protein_file)
     fin = f'{fpath}/{protein_file}'    
 
     a = construct_tensor(fin)
 
     features = np.zeros([n_proteins, len(a)])
     labels = []
-
+    labels2 = []
     for i, protein_name in enumerate(proteins):
         # print(protein_name)
         fin = f'{fpath}/{protein_name}'

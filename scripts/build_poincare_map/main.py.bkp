@@ -49,28 +49,28 @@ def create_output_name(opt):
 
 
 
-#def get_tree_colors(opt, labels, tree_cl_name):
-#    pkl_file = open(f'{tree_cl_name}.pkl', 'rb')
-#    colors = pickle.load(pkl_file)
-#    colors_keys = [str(k) for k in colors.keys()]
-#    colors_val = [str(k) for k in colors.values()]
-#    colors = dict(zip(colors_keys, colors_val))
-#    pkl_file.close()
-#    tree_levels = []
-#    for l in labels:
-#        if l == 'root':
-#            tree_levels.append('root')
-#        else:
-#            tree_levels.append(colors[l])
-#
-#    tree_levels = np.array(tree_levels)
-#    n_tree_levels = len(np.unique(tree_levels))
-#    current_palette = sns.color_palette("husl", n_tree_levels)
-#    color_dict = dict(zip(np.unique(tree_levels), current_palette))
-#    sns.palplot(current_palette)
-#    color_dict[-1] = '#bdbdbd'
-#    color_dict['root'] = '#000000'
-#    return tree_levels, color_dict
+def get_tree_colors(opt, labels, tree_cl_name):
+    pkl_file = open(f'{tree_cl_name}.pkl', 'rb')
+    colors = pickle.load(pkl_file)
+    colors_keys = [str(k) for k in colors.keys()]
+    colors_val = [str(k) for k in colors.values()]
+    colors = dict(zip(colors_keys, colors_val))
+    pkl_file.close()
+    tree_levels = []
+    for l in labels:
+        if l == 'root':
+            tree_levels.append('root')
+        else:
+            tree_levels.append(colors[l])
+
+    tree_levels = np.array(tree_levels)
+    n_tree_levels = len(np.unique(tree_levels))
+    current_palette = sns.color_palette("husl", n_tree_levels)
+    color_dict = dict(zip(np.unique(tree_levels), current_palette))
+    sns.palplot(current_palette)
+    color_dict[-1] = '#bdbdbd'
+    color_dict['root'] = '#000000'
+    return tree_levels, color_dict
 
 
 def parse_args():
@@ -120,14 +120,12 @@ def parse_args():
     parser.add_argument('--lossfn', help='Loss funstion (kl, klSym)',
         type=str, default='klSym')
 
-#    parser.add_argument('--root', 
-#        help='Get root node from labels', type=str, default="root")
+    parser.add_argument('--root', 
+        help='Get root node from labels', type=str, default="root")
     parser.add_argument('--iroot',
-        help='Index of the root cell', type=int, default=0)
-#    parser.add_argument('--rotate',
-#        help='Rotate', type=int, default=-1)
+        help='Index of the root cell', type=int, default=-1)
     parser.add_argument('--rotate',
-        help='use 0 element for calculations or not', action='store_true')
+        help='Rotate', type=int, default=-1)
 
     parser.add_argument('--knn', 
         help='Number of nearest neighbours in KNN', type=int, default=3)
@@ -170,8 +168,8 @@ def poincare_map(opt):
     opt.cuda = True if torch.cuda.is_available() else False
     print('CUDA:', opt.cuda)
 
-    features, labels = prepare_data(opt.input_path, withroot = opt.rotate)
-    print(len(features), len(labels)) 
+    features, labels = prepare_data(opt.input_path)
+    
     # if not (opt.tree is None):
     #     tree_levels, color_dict = get_tree_colors(
     #         opt, labels, 
@@ -236,20 +234,7 @@ def poincare_map(opt):
 
     df_pm = pd.DataFrame(embeddings, columns=['pm1', 'pm2'])
     df_pm['proteins_id'] = labels
-
-    if opt.rotate:
-        idx_root = np.where(df_pm['proteins_id'] == str(opt.iroot))[0][0]
-        print("Recentering poincare disk at ", opt.iroot) 
-#        print("root index: ", idx_root)
-        poincare_coord_rot = poincare_translation(
-            -embeddings[idx_root, :], embeddings)
-        df_rot = df_pm.copy()
-        df_rot['pm1'] = poincare_coord_rot[:, 0]
-        df_rot['pm2'] = poincare_coord_rot[:, 1]
-        df_rot.to_csv(fout + '.csv', sep=',', index=False)
-
-    else:
-        df_pm.to_csv(fout + '.csv', sep=',', index=False)
+    df_pm.to_csv(fout + '.csv', sep=',', index=False)
 
     t = timeit.default_timer() - t_start
     titlename = f"\nloss = {loss:.3e}\ntime = {t/60:.3f} min"
