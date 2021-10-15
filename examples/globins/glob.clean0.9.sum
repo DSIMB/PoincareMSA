@@ -1,252 +1,252 @@
-0	>sp|P80018|GLBC_CAUAR Globin C, coelomic OS=Caudina arenicola PE=1 SV=3
-1	>tr|A0A087UB53|A0A087UB53_9ARAC Globin (Fragment) OS=Stegodyphus mimosarum GN=X975_07614 PE=3 SV=1
-2	>tr|T1JI21|T1JI21_STRMM Uncharacterized protein OS=Strigamia maritima PE=3 SV=1
-3	>tr|A0A0P4VNA3|A0A0P4VNA3_9EUCA Uncharacterized protein OS=Scylla olivacea PE=3 SV=1
-4	>tr|A0A0P4W708|A0A0P4W708_9EUCA Uncharacterized protein OS=Scylla olivacea PE=3 SV=1
-5	>tr|D8MIW2|D8MIW2_CARMA Hemoglobin OS=Carcinus maenas GN=hb PE=2 SV=1
-6	>tr|B7QI99|B7QI99_IXOSC Globin, putative OS=Ixodes scapularis GN=IscW_ISCW023279 PE=3 SV=1
-7	>tr|A0A067RER1|A0A067RER1_ZOONE Globin OS=Zootermopsis nevadensis GN=L798_01680 PE=3 SV=1
-8	>tr|A0A0B6ZNH9|A0A0B6ZNH9_9EUPU Uncharacterized protein OS=Arion vulgaris GN=ORF69612 PE=3 SV=1
-9	>tr|A0A0B7A0X1|A0A0B7A0X1_9EUPU Uncharacterized protein OS=Arion vulgaris GN=ORF87455 PE=3 SV=1
-10	>tr|R4V4K7|R4V4K7_COPFO Globin-like protein (Fragment) OS=Coptotermes formosanus PE=2 SV=1
-11	>tr|A0A0T6B576|A0A0T6B576_9SCAR Uncharacterized protein OS=Oryctes borbonicus GN=AMK59_4821 PE=3 SV=1
-12	>tr|T1KR38|T1KR38_TETUR Uncharacterized protein OS=Tetranychus urticae PE=3 SV=1
-13	>tr|C4WSU4|C4WSU4_ACYPI ACYPI007228 protein OS=Acyrthosiphon pisum GN=ACYPI007228 PE=2 SV=1
-14	>tr|R7UKY8|R7UKY8_CAPTE Uncharacterized protein OS=Capitella teleta GN=CAPTEDRAFT_110047 PE=3 SV=1
-15	>tr|R7UHS6|R7UHS6_CAPTE Uncharacterized protein OS=Capitella teleta GN=CAPTEDRAFT_190593 PE=3 SV=1
-16	>tr|A0A0N8JZ42|A0A0N8JZ42_9TELE Neuroglobin-like OS=Scleropages formosus GN=Z043_113048 PE=3 SV=1
-17	>tr|A7RGQ4|A7RGQ4_NEMVE Predicted protein OS=Nematostella vectensis GN=v1g196903 PE=3 SV=1
-18	>tr|R7TFF7|R7TFF7_CAPTE Uncharacterized protein OS=Capitella teleta GN=CAPTEDRAFT_98019 PE=3 SV=1
-19	>tr|F2Q9X4|F2Q9X4_BRAFL Globin OS=Branchiostoma floridae GN=lGb9 PE=2 SV=1
-20	>tr|R7TL54|R7TL54_CAPTE Uncharacterized protein (Fragment) OS=Capitella teleta GN=CAPTEDRAFT_144794 PE=3 SV=1
-21	>tr|Q14SN0|Q14SN0_APIME Globin 1 OS=Apis mellifera GN=glob1 PE=2 SV=1
-22	>tr|E9IBK1|E9IBK1_SOLIN Putative uncharacterized protein (Fragment) OS=Solenopsis invicta GN=SINV_03861 PE=3 SV=1
-23	>tr|A0A0L7R0Z8|A0A0L7R0Z8_9HYME Globin OS=Habropoda laboriosa GN=WH47_01055 PE=3 SV=1
-24	>tr|W4XUE2|W4XUE2_STRPU Uncharacterized protein OS=Strongylocentrotus purpuratus GN=Sp-Gbxf PE=3 SV=1
-25	>tr|A0A0C9QI71|A0A0C9QI71_9HYME Cygb2_0 protein OS=Fopius arisanus GN=cygb2_1 PE=3 SV=1
-26	>tr|A0A026WVZ6|A0A026WVZ6_CERBI Cytoglobin-2 OS=Cerapachys biroi GN=X777_13333 PE=3 SV=1
-27	>tr|E2AZW6|E2AZW6_CAMFO Globin OS=Camponotus floridanus GN=EAG_14345 PE=3 SV=1
-28	>tr|K7INA7|K7INA7_NASVI Uncharacterized protein OS=Nasonia vitripennis GN=LOC100124253 PE=3 SV=1
-29	>tr|F4WPU3|F4WPU3_ACREC Cytoglobin OS=Acromyrmex echinatior GN=G5I_07807 PE=3 SV=1
-30	>tr|D6WV71|D6WV71_TRICA Globin-like Protein OS=Tribolium castaneum GN=TcasGA2_TC006804 PE=3 SV=1
-31	>tr|R7T5E2|R7T5E2_CAPTE Uncharacterized protein OS=Capitella teleta GN=CAPTEDRAFT_218767 PE=3 SV=1
-32	>tr|A0A132AHZ9|A0A132AHZ9_SARSC Cytoglobin-1-like protein OS=Sarcoptes scabiei GN=QR98_0086180 PE=3 SV=1
-33	>tr|A0A1B0CM37|A0A1B0CM37_LUTLO Uncharacterized protein OS=Lutzomyia longipalpis PE=4 SV=1
-34	>tr|A0A0N7Z8G1|A0A0N7Z8G1_9HEMI Putative hemoglobin-like flavoprotein (Fragment) OS=Rhodnius neglectus PE=2 SV=1
-35	>tr|A0A023F5X9|A0A023F5X9_TRIIF Putative hemoglobin-like flavoprotein (Fragment) OS=Triatoma infestans PE=2 SV=1
-36	>tr|I1FJ81|I1FJ81_AMPQE Uncharacterized protein OS=Amphimedon queenslandica GN=LOC100637089 PE=3 SV=1
-37	>tr|K1PM52|K1PM52_CRAGI Cytoglobin-2 OS=Crassostrea gigas GN=CGI_10007189 PE=3 SV=1
-38	>tr|C3Y502|C3Y502_BRAFL Putative uncharacterized protein OS=Branchiostoma floridae GN=BRAFLDRAFT_92393 PE=3 SV=1
-39	>tr|A0A0K8RR11|A0A0K8RR11_IXORI Uncharacterized protein (Fragment) OS=Ixodes ricinus PE=2 SV=1
-40	>tr|A0A0C5E1K9|A0A0C5E1K9_CHEDE Cytoglobin 2 isoform CYGBi2 OS=Cherax destructor PE=2 SV=1
-41	>tr|A0A0K2SFU3|A0A0K2SFU3_XENLA Cytoglobin b OS=Xenopus laevis GN=cygbb PE=2 SV=1
-42	>tr|I3KPD7|I3KPD7_ORENI Uncharacterized protein OS=Oreochromis niloticus GN=cygb PE=3 SV=1
-43	>tr|A0A1A8FMR6|A0A1A8FMR6_9TELE Cytoglobin OS=Nothobranchius korthausae GN=CYGB PE=4 SV=1
-44	>tr|G3PGU7|G3PGU7_GASAC Uncharacterized protein (Fragment) OS=Gasterosteus aculeatus PE=3 SV=1
-45	>tr|L8HVQ9|L8HVQ9_9CETA Cytoglobin OS=Bos mutus GN=M91_06698 PE=3 SV=1
-46	>tr|A6MHQ7|A6MHQ7_IGUIG Cytoglobin-1 OS=Iguana iguana GN=cygb-1 PE=2 SV=1
-47	>sp|Q575T0|CYGB1_ORYLA Cytoglobin-1 OS=Oryzias latipes GN=cygb1 PE=2 SV=1
-48	>tr|U3I7D6|U3I7D6_ANAPL Uncharacterized protein OS=Anas platyrhynchos GN=CYGB PE=3 SV=1
-49	>tr|H3D213|H3D213_TETNG Uncharacterized protein OS=Tetraodon nigroviridis PE=3 SV=1
-50	>tr|H2U139|H2U139_TAKRU Uncharacterized protein (Fragment) OS=Takifugu rubripes GN=LOC101072021 PE=3 SV=1
-51	>tr|Q575S6|Q575S6_TETNG Cytoglobin-2 OS=Tetraodon nigroviridis GN=cygb-2 PE=2 SV=2
-52	>tr|H3BZ09|H3BZ09_TETNG Uncharacterized protein OS=Tetraodon nigroviridis PE=3 SV=1
-53	>tr|M4AD09|M4AD09_XIPMA Uncharacterized protein OS=Xiphophorus maculatus PE=3 SV=1
-54	>tr|A0A0F8AM48|A0A0F8AM48_LARCR Cytoglobin-1 OS=Larimichthys crocea GN=EH28_10953 PE=3 SV=1
-55	>tr|A0A060WFV6|A0A060WFV6_ONCMY Uncharacterized protein OS=Oncorhynchus mykiss GN=GSONMT00070468001 PE=3 SV=1
-56	>tr|A0A1A8LTA3|A0A1A8LTA3_9TELE Cytoglobin 1 OS=Nothobranchius pienaari GN=CYGB1 PE=4 SV=1
-57	>tr|A0A151N3A3|A0A151N3A3_ALLMI Cytoglobin OS=Alligator mississippiensis GN=CYGB PE=3 SV=1
-58	>tr|W5L8V9|W5L8V9_ASTMX Uncharacterized protein OS=Astyanax mexicanus PE=3 SV=1
-59	>tr|H3B4U9|H3B4U9_LATCH Uncharacterized protein OS=Latimeria chalumnae GN=CYGB PE=3 SV=1
-60	>tr|V5N6Q4|V5N6Q4_ICTPU Cytoglobin 2 OS=Ictalurus punctatus PE=2 SV=1
-61	>tr|A0A192X9L5|A0A192X9L5_CHAAC Cytoglobin OS=Chaenocephalus aceratus GN=CYGB1 PE=2 SV=1
-62	>tr|A4IGG7|A4IGG7_DANRE Cygb2 protein OS=Danio rerio GN=cygb2 PE=2 SV=1
-63	>tr|I3KTN4|I3KTN4_ORENI Uncharacterized protein OS=Oreochromis niloticus GN=LOC100700939 PE=3 SV=1
-64	>tr|Q802S6|Q802S6_ONCMY Cytoglobin OS=Oncorhynchus mykiss GN=cygb PE=2 SV=1
-65	>tr|W5LJG5|W5LJG5_ASTMX Uncharacterized protein OS=Astyanax mexicanus PE=3 SV=1
-66	>tr|M4QW49|M4QW49_CYPCA Cytoglobin 1 OS=Cyprinus carpio PE=3 SV=1
-67	>tr|A0A0K1NVR7|A0A0K1NVR7_CALMI Cytoglobin OS=Callorhinchus milii PE=2 SV=1
-68	>sp|Q8UUR3|CYGB1_DANRE Cytoglobin-1 OS=Danio rerio GN=cygb1 PE=2 SV=2
-69	>tr|V5N4H6|V5N4H6_ICTPU Cytoglobin 1 OS=Ictalurus punctatus PE=2 SV=1
-70	>tr|V4BDN7|V4BDN7_LOTGI Uncharacterized protein (Fragment) OS=Lottia gigantea GN=LOTGIDRAFT_73010 PE=3 SV=1
-71	>tr|V3Z7S3|V3Z7S3_LOTGI Uncharacterized protein (Fragment) OS=Lottia gigantea GN=LOTGIDRAFT_72750 PE=3 SV=1
-72	>tr|V4CJX8|V4CJX8_LOTGI Uncharacterized protein (Fragment) OS=Lottia gigantea GN=LOTGIDRAFT_63395 PE=3 SV=1
-73	>tr|R7UZI3|R7UZI3_CAPTE Uncharacterized protein OS=Capitella teleta GN=CAPTEDRAFT_166020 PE=3 SV=1
-74	>tr|C4WXJ8|C4WXJ8_ACYPI ACYPI001485 protein OS=Acyrthosiphon pisum GN=ACYPI001485 PE=2 SV=1
-75	>tr|V4ABF4|V4ABF4_LOTGI Uncharacterized protein OS=Lottia gigantea GN=LOTGIDRAFT_118731 PE=3 SV=1
-76	>tr|W5MMD7|W5MMD7_LEPOC Uncharacterized protein OS=Lepisosteus oculatus PE=3 SV=1
-77	>tr|B3RYV6|B3RYV6_TRIAD Putative uncharacterized protein OS=Trichoplax adhaerens GN=TRIADDRAFT_57230 PE=3 SV=1
-78	>tr|W0RNE9|W0RNE9_9BACT Globin OS=Gemmatirosa kalamazoonesis GN=J421_4313 PE=3 SV=1
-79	>tr|W0RCT4|W0RCT4_9BACT Globin OS=Gemmatirosa kalamazoonesis GN=J421_1392 PE=3 SV=1
-80	>tr|A0A191ZHV2|A0A191ZHV2_9GAMM Hemin receptor OS=Halothiobacillus sp. LS2 GN=A9404_08590 PE=4 SV=1
-81	>tr|A7RZB2|A7RZB2_NEMVE Predicted protein OS=Nematostella vectensis GN=v1g204383 PE=3 SV=1
-82	>tr|A7RHV8|A7RHV8_NEMVE Predicted protein OS=Nematostella vectensis GN=v1g197347 PE=3 SV=1
-83	>tr|A7S5B8|A7S5B8_NEMVE Predicted protein OS=Nematostella vectensis GN=v1g207046 PE=3 SV=1
-84	>tr|A7SFV0|A7SFV0_NEMVE Predicted protein OS=Nematostella vectensis GN=v1g211636 PE=3 SV=1
-85	>tr|A0A0K1NVN5|A0A0K1NVN5_CALMI GbX1 OS=Callorhinchus milii PE=2 SV=1
-86	>tr|A0A0K1NW59|A0A0K1NW59_CALMI GbX2 OS=Callorhinchus milii PE=2 SV=1
-87	>tr|Q4RLN3|Q4RLN3_TETNG Chromosome 10 SCAF15019, whole genome shotgun sequence OS=Tetraodon nigroviridis GN=GSTENG00032411001 PE=3 SV=1
-88	>tr|M7BHW7|M7BHW7_CHEMY Cytoglobin-1 OS=Chelonia mydas GN=UY3_15064 PE=3 SV=1
-89	>tr|A0A087XVE5|A0A087XVE5_POEFO Uncharacterized protein OS=Poecilia formosa PE=3 SV=1
-90	>tr|W5NBV0|W5NBV0_LEPOC Uncharacterized protein OS=Lepisosteus oculatus PE=3 SV=1
-91	>tr|H3ARB7|H3ARB7_LATCH Uncharacterized protein OS=Latimeria chalumnae PE=3 SV=1
-92	>tr|A3KNI8|A3KNI8_DANRE Xgb protein OS=Danio rerio GN=xgb PE=2 SV=1
-93	>tr|W5N545|W5N545_LEPOC Uncharacterized protein OS=Lepisosteus oculatus PE=3 SV=1
-94	>tr|F6TGD7|F6TGD7_XENTR Uncharacterized protein OS=Xenopus tropicalis GN=xgb PE=3 SV=1
-95	>tr|W5UIQ8|W5UIQ8_ICTPU Cytoglobin-2 OS=Ictalurus punctatus GN=cygb2 PE=2 SV=1
-96	>tr|I3KRJ1|I3KRJ1_ORENI Uncharacterized protein OS=Oreochromis niloticus GN=LOC100698055 PE=3 SV=1
-97	>tr|A0A060WFL0|A0A060WFL0_ONCMY Uncharacterized protein OS=Oncorhynchus mykiss GN=GSONMT00074348001 PE=3 SV=1
-98	>tr|F2Q9X0|F2Q9X0_BRAFL Globin OS=Branchiostoma floridae GN=lGb5 PE=2 SV=1
-99	>tr|A0A060WME6|A0A060WME6_ONCMY Uncharacterized protein OS=Oncorhynchus mykiss GN=GSONMT00034919001 PE=3 SV=1
-100	>tr|A0A0P7XQL8|A0A0P7XQL8_9TELE Neuroglobin-like (Fragment) OS=Scleropages formosus GN=Z043_102867 PE=3 SV=1
-101	>sp|P14821|GLB2A_ANAIN Globin-2 A chain OS=Anadara inaequivalvis PE=1 SV=2
-102	>tr|Q3MQ26|Q3MQ26_SPISO Nerve hemoglobin OS=Spisula solidissima GN=nHb PE=2 SV=1
-103	>tr|Q17286|Q17286_9BIVA Hemoglobin (Heterodimeric) OS=Barbatia virescens GN=hemoglobin PE=2 SV=1
-104	>sp|P25165|GLBM_ANATR Globin, minor OS=Anadara trapezia PE=3 SV=2
-105	>sp|P14822|GLB2B_ANAIN Globin-2 B chain OS=Anadara inaequivalvis PE=1 SV=1
-106	>tr|A0A158USK6|A0A158USK6_9DIPT Globin 2 OS=Chironomus riparius PE=2 SV=1
-107	>tr|V5YMJ8|V5YMJ8_9DIPT Globin OS=Polypedilum nubifer GN=PnHb23 PE=2 SV=1
-108	>tr|S6BNE9|S6BNE9_POLVA Globin OS=Polypedilum vanderplanki GN=PvHb7 PE=2 SV=1
-109	>tr|S6BEI9|S6BEI9_POLVA Globin OS=Polypedilum vanderplanki GN=PvHb9 PE=2 SV=1
-110	>tr|V5YM17|V5YM17_9DIPT Globin OS=Polypedilum nubifer GN=PnHb1 PE=2 SV=1
-111	>tr|V5YNC2|V5YNC2_9DIPT Globin OS=Polypedilum nubifer GN=PnHb4 PE=2 SV=1
-112	>tr|S6B7W8|S6B7W8_POLVA Globin OS=Polypedilum vanderplanki GN=PVHb31 PE=2 SV=1
-113	>tr|A0A161TXB5|A0A161TXB5_9DIPT Globin 11 OS=Chironomus riparius PE=2 SV=1
-114	>tr|Q94445|Q94445_CHITE ORF E protein OS=Chironomus tentans GN=ORF E PE=3 SV=1
-115	>tr|V5YLQ7|V5YLQ7_9DIPT Globin OS=Polypedilum nubifer GN=PnHb3 PE=2 SV=1
-116	>tr|V5YMG1|V5YMG1_9DIPT Globin OS=Polypedilum nubifer GN=PnHb2 PE=2 SV=1
-117	>tr|E0VN13|E0VN13_PEDHC Globin D, coelomic, putative OS=Pediculus humanus subsp. corporis GN=Phum_PHUM323880 PE=3 SV=1 
-118	>tr|W6FEV1|W6FEV1_9ECHI Hemoglobin OS=Hemipholis cordifera GN=hb_f1 PE=2 SV=1
-119	>tr|W6FSH9|W6FSH9_9ECHI Hemoglobin OS=Ophiactis simplex GN=Hb_a PE=2 SV=1
-120	>tr|W6FIG9|W6FIG9_9ECHI Hemoglobin OS=Ophiactis simplex GN=Hb_b PE=2 SV=1
-121	>tr|E9GW66|E9GW66_DAPPU Putative uncharacterized protein OS=Daphnia pulex GN=DAPPUDRAFT_107161 PE=3 SV=1
-122	>tr|K1PSK3|K1PSK3_CRAGI Globin OS=Crassostrea gigas GN=CGI_10008579 PE=3 SV=1
-123	>tr|A0A0N7ZGP6|A0A0N7ZGP6_9CRUS Di-domain hemoglobin OS=Daphnia magna PE=3 SV=1
-124	>tr|E9G8K2|E9G8K2_DAPPU Putative uncharacterized protein OS=Daphnia pulex GN=DAPPUDRAFT_223071 PE=3 SV=1
-125	>tr|E9G846|E9G846_DAPPU Putative uncharacterized protein OS=Daphnia pulex GN=DAPPUDRAFT_223021 PE=3 SV=1
-126	>tr|H2ZPV2|H2ZPV2_CIOSA Uncharacterized protein OS=Ciona savignyi PE=3 SV=1
-127	>tr|F7A367|F7A367_CIOIN Uncharacterized protein OS=Ciona intestinalis GN=LOC100183005 PE=3 SV=2
-128	>tr|Q70T64|Q70T64_CIOIN Globin OS=Ciona intestinalis GN=hb1 PE=2 SV=1
-129	>tr|H2ZPV1|H2ZPV1_CIOSA Uncharacterized protein OS=Ciona savignyi GN=Csa.10981 PE=3 SV=1
-130	>tr|H2YFM6|H2YFM6_CIOSA Uncharacterized protein OS=Ciona savignyi PE=3 SV=1
-131	>tr|Q70T62|Q70T62_CIOIN Globin OS=Ciona intestinalis GN=hb3 PE=2 SV=1
-132	>tr|S4RN97|S4RN97_PETMA Uncharacterized protein (Fragment) OS=Petromyzon marinus GN=Pma.586 PE=3 SV=1
-133	>tr|A2V8C2|A2V8C2_LETCA Hemoglobin 4 OS=Lethenteron camtschaticum PE=2 SV=1
-134	>tr|S4R971|S4R971_PETMA Uncharacterized protein OS=Petromyzon marinus GN=Pma.5710 PE=3 SV=1
-135	>tr|S4RW14|S4RW14_PETMA Uncharacterized protein OS=Petromyzon marinus GN=Pma.6206 PE=3 SV=1
-136	>sp|P01947|HBA_CAVPO Hemoglobin subunit alpha OS=Cavia porcellus GN=HBA PE=1 SV=2
-137	>tr|D9I2F7|D9I2F7_SCAAQ Hemoglobin subunit alpha 2 OS=Scalopus aquaticus GN=HBA2 PE=2 SV=1
-138	>tr|A0A1A6FTA7|A0A1A6FTA7_NEOLE Uncharacterized protein OS=Neotoma lepida GN=A6R68_11691 PE=4 SV=1
-139	>tr|V9LEU4|V9LEU4_CALMI Globin Y OS=Callorhinchus milii PE=2 SV=1
-140	>tr|H3B2L7|H3B2L7_LATCH Uncharacterized protein OS=Latimeria chalumnae GN=LOC102356093 PE=3 SV=1
-141	>tr|F6UQT5|F6UQT5_XENTR Uncharacterized protein OS=Xenopus tropicalis GN=gby PE=3 SV=1
-142	>tr|Q575S4|Q575S4_XENLA Globin Y OS=Xenopus laevis GN=gby PE=2 SV=1
-143	>tr|K7FYQ5|K7FYQ5_PELSI Uncharacterized protein OS=Pelodiscus sinensis PE=3 SV=1
-144	>tr|A0A0P6B1R4|A0A0P6B1R4_9CRUS Neuroglobin OS=Daphnia magna PE=3 SV=1
-145	>tr|A0A0P5FUN9|A0A0P5FUN9_9CRUS Putative di-domain hemoglobin OS=Daphnia magna PE=3 SV=1
-146	>tr|A0A0P5MKC2|A0A0P5MKC2_9CRUS Putative di-domain hemoglobin OS=Daphnia magna PE=3 SV=1
-147	>tr|K1R7G1|K1R7G1_CRAGI Neuroglobin-1 OS=Crassostrea gigas GN=CGI_10027924 PE=3 SV=1
-148	>tr|A0A0B6Z8Y6|A0A0B6Z8Y6_9EUPU Uncharacterized protein OS=Arion vulgaris GN=ORF50902 PE=3 SV=1
-149	>tr|A0A0P5AEE1|A0A0P5AEE1_9CRUS Di-domain hemoglobin (Fragment) OS=Daphnia magna PE=3 SV=1
-150	>tr|A0A0N8ATF7|A0A0N8ATF7_9CRUS Di-domain hemoglobin (Fragment) OS=Daphnia magna PE=3 SV=1
-151	>tr|B7QBW9|B7QBW9_IXOSC Beta chain of the tetrameric hemoglobin, putative OS=Ixodes scapularis GN=IscW_ISCW012561 PE=3 SV=1 
-152	>tr|A0A0P5AKV9|A0A0P5AKV9_9CRUS Putative di-domain hemoglobin OS=Daphnia magna PE=3 SV=1
-153	>tr|A0A0P5EV32|A0A0P5EV32_9CRUS Putative di-domain hemoglobin (Fragment) OS=Daphnia magna PE=3 SV=1
-154	>tr|A0A0P4XVE5|A0A0P4XVE5_9CRUS Putative di-domain hemoglobin OS=Daphnia magna PE=3 SV=1
-155	>sp|P31331|GLB_NASMU Globin OS=Nassarius mutabilis PE=1 SV=1
-156	>tr|V4C2N0|V4C2N0_LOTGI Uncharacterized protein OS=Lottia gigantea GN=LOTGIDRAFT_231953 PE=3 SV=1
-157	>tr|V4ALZ1|V4ALZ1_LOTGI Uncharacterized protein OS=Lottia gigantea GN=LOTGIDRAFT_231954 PE=3 SV=1
-158	>sp|P02215|GLB_CERRH Globin OS=Cerithidea rhizophorarum PE=1 SV=1
-159	>tr|A0A0B6YIN5|A0A0B6YIN5_9EUPU Uncharacterized protein OS=Arion vulgaris GN=ORF25075 PE=3 SV=1
-160	>tr|V4ARY3|V4ARY3_LOTGI Uncharacterized protein OS=Lottia gigantea GN=LOTGIDRAFT_159879 PE=3 SV=1
-161	>tr|K1PR28|K1PR28_CRAGI Cytoglobin-1 OS=Crassostrea gigas GN=CGI_10010717 PE=3 SV=1
-162	>tr|A0A0P5FF42|A0A0P5FF42_9CRUS Di-domain hemoglobin (Fragment) OS=Daphnia magna PE=3 SV=1 
-163	>tr|A0A147ASE9|A0A147ASE9_FUNHE Cytoglobin (Fragment) OS=Fundulus heteroclitus PE=3 SV=1
-164	>tr|C3Y526|C3Y526_BRAFL Putative uncharacterized protein OS=Branchiostoma floridae GN=BRAFLDRAFT_98913 PE=3 SV=1
-165	>tr|C3Y525|C3Y525_BRAFL Putative uncharacterized protein OS=Branchiostoma floridae GN=BRAFLDRAFT_98914 PE=3 SV=1
-166	>tr|E2C8N8|E2C8N8_HARSA Globin OS=Harpegnathos saltator GN=EAI_09772 PE=3 SV=1
-167	>tr|A0A151PG43|A0A151PG43_ALLMI Hemoglobin subunit rho OS=Alligator mississippiensis GN=HBG1 PE=3 SV=1
-168	>sp|P0C227|GLB_NERAL Globin OS=Nerita albicilla PE=1 SV=1
-169	>tr|Q86G74|Q86G74_PHAPT Hemoglobin II OS=Phacoides pectinatus PE=2 SV=1
-170	>tr|A0A067RP63|A0A067RP63_ZOONE Globin OS=Zootermopsis nevadensis GN=L798_01681 PE=3 SV=1 
-171	>tr|G1SPL8|G1SPL8_RABIT Neuroglobin OS=Oryctolagus cuniculus GN=NGB PE=3 SV=1
-172	>tr|A0A151M5K7|A0A151M5K7_ALLMI Neuroglobin OS=Alligator mississippiensis GN=NGB PE=3 SV=1
-173	>tr|A0A0R4ILZ6|A0A0R4ILZ6_DANRE Neuroglobin OS=Danio rerio GN=ngb PE=3 SV=1
-174	>tr|G1KTL1|G1KTL1_ANOCA Uncharacterized protein OS=Anolis carolinensis GN=NGB PE=3 SV=1
-175	>tr|W5MYS7|W5MYS7_LEPOC Uncharacterized protein OS=Lepisosteus oculatus PE=3 SV=1
-176	>tr|C0HA43|C0HA43_SALSA Neuroglobin-1 OS=Salmo salar GN=NGB1 PE=2 SV=1
-177	>tr|A0A0Q3PR64|A0A0Q3PR64_AMAAE Neuroglobin OS=Amazona aestiva GN=AAES_62811 PE=3 SV=1
-178	>sp|P86880|NGB_CHAAC Neuroglobin OS=Chaenocephalus aceratus PE=2 SV=1
-179	>tr|F6RIV9|F6RIV9_ORNAN Uncharacterized protein OS=Ornithorhynchus anatinus GN=NGB PE=3 SV=1
-180	>tr|G3W066|G3W066_SARHA Uncharacterized protein OS=Sarcophilus harrisii GN=NGB PE=3 SV=1
-181	>tr|U3J239|U3J239_ANAPL Uncharacterized protein OS=Anas platyrhynchos GN=NGB PE=3 SV=1
-182	>tr|Q5QSB1|Q5QSB1_CHICK Neuroglobin OS=Gallus gallus GN=NGB PE=2 SV=1
-183	>tr|A0A0P5FJW6|A0A0P5FJW6_9CRUS Di-domain hemoglobin OS=Daphnia magna PE=3 SV=1
-184	>tr|W4YI83|W4YI83_STRPU Uncharacterized protein OS=Strongylocentrotus purpuratus GN=Sp-Glbn PE=4 SV=1 
-185	>tr|E9FXJ0|E9FXJ0_DAPPU Putative uncharacterized protein OS=Daphnia pulex GN=DAPPUDRAFT_96311 PE=3 SV=1
-186	>tr|A0A165AF90|A0A165AF90_9CRUS Hemoglobin OS=Daphnia magna GN=APZ42_016465 PE=3 SV=1
-187	>tr|E9GQN2|E9GQN2_DAPPU Hemoglobin OS=Daphnia pulex GN=DAPPUDRAFT_92880 PE=3 SV=1
-188	>tr|E9FXJ7|E9FXJ7_DAPPU Hemoglobin OS=Daphnia pulex GN=DAPPUDRAFT_234839 PE=3 SV=1
-189	>tr|E9HWQ4|E9HWQ4_DAPPU Hemoglobin OS=Daphnia pulex GN=DAPPUDRAFT_93831 PE=3 SV=1
-190	>tr|A0A0P5LQ45|A0A0P5LQ45_9CRUS Di-domain hemoglobin OS=Daphnia magna PE=3 SV=1
-191	>tr|K1QMA9|K1QMA9_CRAGI Cytoglobin-2 OS=Crassostrea gigas GN=CGI_10025547 PE=3 SV=1
-192	>sp|P11740|GLB1_METSO Extracellular globin-1 OS=Metaphire sieboldi PE=1 SV=1
-193	>tr|G1S6D0|G1S6D0_NOMLE Uncharacterized protein OS=Nomascus leucogenys GN=HBE1 PE=3 SV=2
-194	>tr|E9HXG0|E9HXG0_DAPPU Putative uncharacterized protein (Fragment) OS=Daphnia pulex GN=DAPPUDRAFT_335322 PE=3 SV=1
-195	>tr|A0A0P6H7F7|A0A0P6H7F7_9CRUS Uncharacterized protein (Fragment) OS=Daphnia magna PE=4 SV=1
-196	>tr|A0A0L7L6S9|A0A0L7L6S9_9NEOP Globin (Fragment) OS=Operophtera brumata GN=OBRU01_14366 PE=3 SV=1
-197	>tr|A0A146VJ71|A0A146VJ71_FUNHE Cytoglobin (Fragment) OS=Fundulus heteroclitus PE=3 SV=1
-198	>tr|A0A0D6LAR0|A0A0D6LAR0_9BILA Globin OS=Ancylostoma ceylanicum GN=ANCCEY_12631 PE=3 SV=1
-199	>tr|A0A0R3PER1|A0A0R3PER1_ANGCS Uncharacterized protein OS=Angiostrongylus costaricensis PE=3 SV=1
-200	>tr|W2SIK9|W2SIK9_NECAM Globin OS=Necator americanus GN=NECAME_05551 PE=3 SV=1
-201	>tr|L9L0J9|L9L0J9_TUPCH Inactive rhomboid protein 2 OS=Tupaia chinensis GN=TREES_T100007439 PE=4 SV=1
-202	>tr|D1LX80|D1LX80_SACKO Neuroglobin-like protein OS=Saccoglossus kowalevskii PE=2 SV=1
-203	>tr|A0A0L8FTQ4|A0A0L8FTQ4_OCTBM Uncharacterized protein OS=Octopus bimaculoides GN=OCBIM_22008093mg PE=3 SV=1 
-204	>tr|A0A0P6GZ78|A0A0P6GZ78_9CRUS Globin OS=Daphnia magna PE=3 SV=1
-205	>tr|R7URJ5|R7URJ5_CAPTE Uncharacterized protein OS=Capitella teleta GN=CAPTEDRAFT_188542 PE=3 SV=1 
-206	>tr|V4A611|V4A611_LOTGI Uncharacterized protein OS=Lottia gigantea GN=LOTGIDRAFT_233216 PE=3 SV=1 
-207	>tr|A7RJ19|A7RJ19_NEMVE Predicted protein OS=Nematostella vectensis GN=v1g197838 PE=3 SV=1 
-208	>tr|A0A0P5CWH4|A0A0P5CWH4_9CRUS Putative di-domain hemoglobin (Fragment) OS=Daphnia magna PE=3 SV=1 
-209	>tr|A0A060TIC9|A0A060TIC9_BLAAD ARAD1D45562p OS=Blastobotrys adeninivorans GN=GNLVRS02_ARAD1D45562g PE=4 SV=1
-210	>tr|A0A0P5G6A3|A0A0P5G6A3_9CRUS Di-domain hemoglobin OS=Daphnia magna PE=4 SV=1
-211	>tr|O97382|O97382_ARTSA Hemoglobin T1 polymer OS=Artemia salina PE=2 SV=1
-212	>tr|Q9NG75|Q9NG75_9CRUS Hemoglobin P polymer OS=Parartemia zietziana PE=2 SV=1
-213	>tr|O97382|O97382_ARTSA Hemoglobin T1 polymer OS=Artemia salina PE=2 SV=1
-214	>tr|Q9NG75|Q9NG75_9CRUS Hemoglobin P polymer OS=Parartemia zietziana PE=2 SV=1
-215	>tr|O97381|O97381_ARTSA Hemoglobin C1 polymer OS=Artemia salina PE=2 SV=1
-216	>tr|K1RJ02|K1RJ02_CRAGI Nacrein-like protein F OS=Crassostrea gigas GN=CGI_10014170 PE=4 SV=1 
-217	>tr|A0A0P5VFZ7|A0A0P5VFZ7_9CRUS Cytoglobin-2 OS=Daphnia magna PE=3 SV=1 
-218	>tr|A0A131ZY06|A0A131ZY06_SARSC Globin-like protein 1 OS=Sarcoptes scabiei GN=QR98_0021760 PE=3 SV=1 
-219	>tr|A0A146Z8V8|A0A146Z8V8_FUNHE Neuroglobin (Fragment) OS=Fundulus heteroclitus PE=3 SV=1
-220	>tr|Q9NG75|Q9NG75_9CRUS Hemoglobin P polymer OS=Parartemia zietziana PE=2 SV=1
-221	>tr|J9JX99|J9JX99_ACYPI Uncharacterized protein OS=Acyrthosiphon pisum PE=3 SV=2 
-222	>tr|A0A0K2UHU6|A0A0K2UHU6_LEPSM Uncharacterized protein OS=Lepeophtheirus salmonis PE=3 SV=1 
-223	>tr|R7TFR3|R7TFR3_CAPTE Uncharacterized protein OS=Capitella teleta GN=CAPTEDRAFT_198978 PE=3 SV=1 
-224	>tr|V4BX16|V4BX16_LOTGI Uncharacterized protein OS=Lottia gigantea GN=LOTGIDRAFT_232639 PE=3 SV=1 
-225	>tr|Q70PH6|Q70PH6_CIOIN Globin OS=Ciona intestinalis GN=hb4 PE=2 SV=1
-226	>tr|C1E0S6|C1E0S6_MICCC Uncharacterized protein OS=Micromonas commoda (strain RCC299 / NOUM17 / CCMP2709) GN=MICPUN_56622 PE=4 SV=1 
-227	>tr|Q17154|Q17154_9BIVA Two-domain chain of the polymeric hemoglobin (Intracellular) OS=Barbatia lima PE=2 SV=1
-228	>tr|Q17153|Q17153_9BIVA Hemoglobin (2 domain) OS=Barbatia lima GN=hemoglobin PE=2 SV=1
-229	>tr|A0A1B0G6S0|A0A1B0G6S0_GLOMM Uncharacterized protein OS=Glossina morsitans morsitans PE=4 SV=1
-230	>tr|A0A0K2U629|A0A0K2U629_LEPSM Cytoglobin1like [Saccoglossus kowalevskii] OS=Lepeophtheirus salmonis PE=3 SV=1 
-231	>tr|A0A0P6BQ29|A0A0P6BQ29_9CRUS Di-domain hemoglobin (Fragment) OS=Daphnia magna PE=3 SV=1
-232	>tr|A0A0K2TWK8|A0A0K2TWK8_LEPSM Neuroglobinlike [Maylandia zebra] OS=Lepeophtheirus salmonis PE=3 SV=1 
-233	>tr|A0A061B0T5|A0A061B0T5_CYBFA CYFA0S05e02454g1_1 OS=Cyberlindnera fabianii GN=CYFA0S_05e02454g PE=4 SV=1 
-234	>tr|A8XBD5|A8XBD5_CAEBR Protein CBR-GLB-7 OS=Caenorhabditis briggsae GN=glb-7 PE=3 SV=1
-235	>tr|A0A158QME6|A0A158QME6_HAEPC Uncharacterized protein OS=Haemonchus placei PE=3 SV=1 
-236	>tr|U1NCF7|U1NCF7_ASCSU Cre-glb-30 protein OS=Ascaris suum GN=ASU_13551 PE=3 SV=1 
-237	>tr|A0A0P6D8K6|A0A0P6D8K6_9CRUS Di-domain hemoglobin-like protein OS=Daphnia magna PE=4 SV=1
-238	>tr|A0A0V1IBZ4|A0A0V1IBZ4_TRIPS Globin-like protein 26 OS=Trichinella pseudospiralis GN=glb-26 PE=3 SV=1
-239	>tr|A0A016U901|A0A016U901_9BILA Uncharacterized protein OS=Ancylostoma ceylanicum GN=Acey_s0052.g2191 PE=3 SV=1
-240	>tr|Q683R3|Q683R3_BIOGL Hemoglobin (Fragment) OS=Biomphalaria glabrata GN=hb PE=2 SV=1
-241	>tr|A0A182YVC3|A0A182YVC3_BIOGL Uncharacterized protein OS=Biomphalaria glabrata PE=3 SV=1
-242	>tr|A0A0P5RQ13|A0A0P5RQ13_9CRUS Putative di-domain hemoglobin (Fragment) OS=Daphnia magna PE=3 SV=1 
-243	>tr|A0A182ZWC2|A0A182ZWC2_BIOGL Uncharacterized protein OS=Biomphalaria glabrata PE=4 SV=1
-244	>tr|Q14SM8|Q14SM8_BIOGL Haemoglobin type 1 OS=Biomphalaria glabrata GN=hb1 PE=2 SV=1
-245	>tr|A0A182ZPU1|A0A182ZPU1_BIOGL Uncharacterized protein OS=Biomphalaria glabrata PE=3 SV=1 
-246	>tr|A0A183BPT0|A0A183BPT0_GLOPA Metalloendopeptidase OS=Globodera pallida PE=3 SV=1 
-247	>tr|W4XLX6|W4XLX6_STRPU Uncharacterized protein OS=Strongylocentrotus purpuratus GN=Sp-Neuglbn PE=4 SV=1 
+1	>sp|P80018|GLBC_CAUAR Globin C, coelomic OS=Caudina arenicola PE=1 SV=3
+2	>tr|A0A087UB53|A0A087UB53_9ARAC Globin (Fragment) OS=Stegodyphus mimosarum GN=X975_07614 PE=3 SV=1
+3	>tr|T1JI21|T1JI21_STRMM Uncharacterized protein OS=Strigamia maritima PE=3 SV=1
+4	>tr|A0A0P4VNA3|A0A0P4VNA3_9EUCA Uncharacterized protein OS=Scylla olivacea PE=3 SV=1
+5	>tr|A0A0P4W708|A0A0P4W708_9EUCA Uncharacterized protein OS=Scylla olivacea PE=3 SV=1
+6	>tr|D8MIW2|D8MIW2_CARMA Hemoglobin OS=Carcinus maenas GN=hb PE=2 SV=1
+7	>tr|B7QI99|B7QI99_IXOSC Globin, putative OS=Ixodes scapularis GN=IscW_ISCW023279 PE=3 SV=1
+8	>tr|A0A067RER1|A0A067RER1_ZOONE Globin OS=Zootermopsis nevadensis GN=L798_01680 PE=3 SV=1
+9	>tr|A0A0B6ZNH9|A0A0B6ZNH9_9EUPU Uncharacterized protein OS=Arion vulgaris GN=ORF69612 PE=3 SV=1
+10	>tr|A0A0B7A0X1|A0A0B7A0X1_9EUPU Uncharacterized protein OS=Arion vulgaris GN=ORF87455 PE=3 SV=1
+11	>tr|R4V4K7|R4V4K7_COPFO Globin-like protein (Fragment) OS=Coptotermes formosanus PE=2 SV=1
+12	>tr|A0A0T6B576|A0A0T6B576_9SCAR Uncharacterized protein OS=Oryctes borbonicus GN=AMK59_4821 PE=3 SV=1
+13	>tr|T1KR38|T1KR38_TETUR Uncharacterized protein OS=Tetranychus urticae PE=3 SV=1
+14	>tr|C4WSU4|C4WSU4_ACYPI ACYPI007228 protein OS=Acyrthosiphon pisum GN=ACYPI007228 PE=2 SV=1
+15	>tr|R7UKY8|R7UKY8_CAPTE Uncharacterized protein OS=Capitella teleta GN=CAPTEDRAFT_110047 PE=3 SV=1
+16	>tr|R7UHS6|R7UHS6_CAPTE Uncharacterized protein OS=Capitella teleta GN=CAPTEDRAFT_190593 PE=3 SV=1
+17	>tr|A0A0N8JZ42|A0A0N8JZ42_9TELE Neuroglobin-like OS=Scleropages formosus GN=Z043_113048 PE=3 SV=1
+18	>tr|A7RGQ4|A7RGQ4_NEMVE Predicted protein OS=Nematostella vectensis GN=v1g196903 PE=3 SV=1
+19	>tr|R7TFF7|R7TFF7_CAPTE Uncharacterized protein OS=Capitella teleta GN=CAPTEDRAFT_98019 PE=3 SV=1
+20	>tr|F2Q9X4|F2Q9X4_BRAFL Globin OS=Branchiostoma floridae GN=lGb9 PE=2 SV=1
+21	>tr|R7TL54|R7TL54_CAPTE Uncharacterized protein (Fragment) OS=Capitella teleta GN=CAPTEDRAFT_144794 PE=3 SV=1
+22	>tr|Q14SN0|Q14SN0_APIME Globin 1 OS=Apis mellifera GN=glob1 PE=2 SV=1
+23	>tr|E9IBK1|E9IBK1_SOLIN Putative uncharacterized protein (Fragment) OS=Solenopsis invicta GN=SINV_03861 PE=3 SV=1
+24	>tr|A0A0L7R0Z8|A0A0L7R0Z8_9HYME Globin OS=Habropoda laboriosa GN=WH47_01055 PE=3 SV=1
+25	>tr|W4XUE2|W4XUE2_STRPU Uncharacterized protein OS=Strongylocentrotus purpuratus GN=Sp-Gbxf PE=3 SV=1
+26	>tr|A0A0C9QI71|A0A0C9QI71_9HYME Cygb2_0 protein OS=Fopius arisanus GN=cygb2_1 PE=3 SV=1
+27	>tr|A0A026WVZ6|A0A026WVZ6_CERBI Cytoglobin-2 OS=Cerapachys biroi GN=X777_13333 PE=3 SV=1
+28	>tr|E2AZW6|E2AZW6_CAMFO Globin OS=Camponotus floridanus GN=EAG_14345 PE=3 SV=1
+29	>tr|K7INA7|K7INA7_NASVI Uncharacterized protein OS=Nasonia vitripennis GN=LOC100124253 PE=3 SV=1
+30	>tr|F4WPU3|F4WPU3_ACREC Cytoglobin OS=Acromyrmex echinatior GN=G5I_07807 PE=3 SV=1
+31	>tr|D6WV71|D6WV71_TRICA Globin-like Protein OS=Tribolium castaneum GN=TcasGA2_TC006804 PE=3 SV=1
+32	>tr|R7T5E2|R7T5E2_CAPTE Uncharacterized protein OS=Capitella teleta GN=CAPTEDRAFT_218767 PE=3 SV=1
+33	>tr|A0A132AHZ9|A0A132AHZ9_SARSC Cytoglobin-1-like protein OS=Sarcoptes scabiei GN=QR98_0086180 PE=3 SV=1
+34	>tr|A0A1B0CM37|A0A1B0CM37_LUTLO Uncharacterized protein OS=Lutzomyia longipalpis PE=4 SV=1
+35	>tr|A0A0N7Z8G1|A0A0N7Z8G1_9HEMI Putative hemoglobin-like flavoprotein (Fragment) OS=Rhodnius neglectus PE=2 SV=1
+36	>tr|A0A023F5X9|A0A023F5X9_TRIIF Putative hemoglobin-like flavoprotein (Fragment) OS=Triatoma infestans PE=2 SV=1
+37	>tr|I1FJ81|I1FJ81_AMPQE Uncharacterized protein OS=Amphimedon queenslandica GN=LOC100637089 PE=3 SV=1
+38	>tr|K1PM52|K1PM52_CRAGI Cytoglobin-2 OS=Crassostrea gigas GN=CGI_10007189 PE=3 SV=1
+39	>tr|C3Y502|C3Y502_BRAFL Putative uncharacterized protein OS=Branchiostoma floridae GN=BRAFLDRAFT_92393 PE=3 SV=1
+40	>tr|A0A0K8RR11|A0A0K8RR11_IXORI Uncharacterized protein (Fragment) OS=Ixodes ricinus PE=2 SV=1
+41	>tr|A0A0C5E1K9|A0A0C5E1K9_CHEDE Cytoglobin 2 isoform CYGBi2 OS=Cherax destructor PE=2 SV=1
+42	>tr|A0A0K2SFU3|A0A0K2SFU3_XENLA Cytoglobin b OS=Xenopus laevis GN=cygbb PE=2 SV=1
+43	>tr|I3KPD7|I3KPD7_ORENI Uncharacterized protein OS=Oreochromis niloticus GN=cygb PE=3 SV=1
+44	>tr|A0A1A8FMR6|A0A1A8FMR6_9TELE Cytoglobin OS=Nothobranchius korthausae GN=CYGB PE=4 SV=1
+45	>tr|G3PGU7|G3PGU7_GASAC Uncharacterized protein (Fragment) OS=Gasterosteus aculeatus PE=3 SV=1
+46	>tr|L8HVQ9|L8HVQ9_9CETA Cytoglobin OS=Bos mutus GN=M91_06698 PE=3 SV=1
+47	>tr|A6MHQ7|A6MHQ7_IGUIG Cytoglobin-1 OS=Iguana iguana GN=cygb-1 PE=2 SV=1
+48	>sp|Q575T0|CYGB1_ORYLA Cytoglobin-1 OS=Oryzias latipes GN=cygb1 PE=2 SV=1
+49	>tr|U3I7D6|U3I7D6_ANAPL Uncharacterized protein OS=Anas platyrhynchos GN=CYGB PE=3 SV=1
+50	>tr|H3D213|H3D213_TETNG Uncharacterized protein OS=Tetraodon nigroviridis PE=3 SV=1
+51	>tr|H2U139|H2U139_TAKRU Uncharacterized protein (Fragment) OS=Takifugu rubripes GN=LOC101072021 PE=3 SV=1
+52	>tr|Q575S6|Q575S6_TETNG Cytoglobin-2 OS=Tetraodon nigroviridis GN=cygb-2 PE=2 SV=2
+53	>tr|H3BZ09|H3BZ09_TETNG Uncharacterized protein OS=Tetraodon nigroviridis PE=3 SV=1
+54	>tr|M4AD09|M4AD09_XIPMA Uncharacterized protein OS=Xiphophorus maculatus PE=3 SV=1
+55	>tr|A0A0F8AM48|A0A0F8AM48_LARCR Cytoglobin-1 OS=Larimichthys crocea GN=EH28_10953 PE=3 SV=1
+56	>tr|A0A060WFV6|A0A060WFV6_ONCMY Uncharacterized protein OS=Oncorhynchus mykiss GN=GSONMT00070468001 PE=3 SV=1
+57	>tr|A0A1A8LTA3|A0A1A8LTA3_9TELE Cytoglobin 1 OS=Nothobranchius pienaari GN=CYGB1 PE=4 SV=1
+58	>tr|A0A151N3A3|A0A151N3A3_ALLMI Cytoglobin OS=Alligator mississippiensis GN=CYGB PE=3 SV=1
+59	>tr|W5L8V9|W5L8V9_ASTMX Uncharacterized protein OS=Astyanax mexicanus PE=3 SV=1
+60	>tr|H3B4U9|H3B4U9_LATCH Uncharacterized protein OS=Latimeria chalumnae GN=CYGB PE=3 SV=1
+61	>tr|V5N6Q4|V5N6Q4_ICTPU Cytoglobin 2 OS=Ictalurus punctatus PE=2 SV=1
+62	>tr|A0A192X9L5|A0A192X9L5_CHAAC Cytoglobin OS=Chaenocephalus aceratus GN=CYGB1 PE=2 SV=1
+63	>tr|A4IGG7|A4IGG7_DANRE Cygb2 protein OS=Danio rerio GN=cygb2 PE=2 SV=1
+64	>tr|I3KTN4|I3KTN4_ORENI Uncharacterized protein OS=Oreochromis niloticus GN=LOC100700939 PE=3 SV=1
+65	>tr|Q802S6|Q802S6_ONCMY Cytoglobin OS=Oncorhynchus mykiss GN=cygb PE=2 SV=1
+66	>tr|W5LJG5|W5LJG5_ASTMX Uncharacterized protein OS=Astyanax mexicanus PE=3 SV=1
+67	>tr|M4QW49|M4QW49_CYPCA Cytoglobin 1 OS=Cyprinus carpio PE=3 SV=1
+68	>tr|A0A0K1NVR7|A0A0K1NVR7_CALMI Cytoglobin OS=Callorhinchus milii PE=2 SV=1
+69	>sp|Q8UUR3|CYGB1_DANRE Cytoglobin-1 OS=Danio rerio GN=cygb1 PE=2 SV=2
+70	>tr|V5N4H6|V5N4H6_ICTPU Cytoglobin 1 OS=Ictalurus punctatus PE=2 SV=1
+71	>tr|V4BDN7|V4BDN7_LOTGI Uncharacterized protein (Fragment) OS=Lottia gigantea GN=LOTGIDRAFT_73010 PE=3 SV=1
+72	>tr|V3Z7S3|V3Z7S3_LOTGI Uncharacterized protein (Fragment) OS=Lottia gigantea GN=LOTGIDRAFT_72750 PE=3 SV=1
+73	>tr|V4CJX8|V4CJX8_LOTGI Uncharacterized protein (Fragment) OS=Lottia gigantea GN=LOTGIDRAFT_63395 PE=3 SV=1
+74	>tr|R7UZI3|R7UZI3_CAPTE Uncharacterized protein OS=Capitella teleta GN=CAPTEDRAFT_166020 PE=3 SV=1
+75	>tr|C4WXJ8|C4WXJ8_ACYPI ACYPI001485 protein OS=Acyrthosiphon pisum GN=ACYPI001485 PE=2 SV=1
+76	>tr|V4ABF4|V4ABF4_LOTGI Uncharacterized protein OS=Lottia gigantea GN=LOTGIDRAFT_118731 PE=3 SV=1
+77	>tr|W5MMD7|W5MMD7_LEPOC Uncharacterized protein OS=Lepisosteus oculatus PE=3 SV=1
+78	>tr|B3RYV6|B3RYV6_TRIAD Putative uncharacterized protein OS=Trichoplax adhaerens GN=TRIADDRAFT_57230 PE=3 SV=1
+79	>tr|W0RNE9|W0RNE9_9BACT Globin OS=Gemmatirosa kalamazoonesis GN=J421_4313 PE=3 SV=1
+80	>tr|W0RCT4|W0RCT4_9BACT Globin OS=Gemmatirosa kalamazoonesis GN=J421_1392 PE=3 SV=1
+81	>tr|A0A191ZHV2|A0A191ZHV2_9GAMM Hemin receptor OS=Halothiobacillus sp. LS2 GN=A9404_08590 PE=4 SV=1
+82	>tr|A7RZB2|A7RZB2_NEMVE Predicted protein OS=Nematostella vectensis GN=v1g204383 PE=3 SV=1
+83	>tr|A7RHV8|A7RHV8_NEMVE Predicted protein OS=Nematostella vectensis GN=v1g197347 PE=3 SV=1
+84	>tr|A7S5B8|A7S5B8_NEMVE Predicted protein OS=Nematostella vectensis GN=v1g207046 PE=3 SV=1
+85	>tr|A7SFV0|A7SFV0_NEMVE Predicted protein OS=Nematostella vectensis GN=v1g211636 PE=3 SV=1
+86	>tr|A0A0K1NVN5|A0A0K1NVN5_CALMI GbX1 OS=Callorhinchus milii PE=2 SV=1
+87	>tr|A0A0K1NW59|A0A0K1NW59_CALMI GbX2 OS=Callorhinchus milii PE=2 SV=1
+88	>tr|Q4RLN3|Q4RLN3_TETNG Chromosome 10 SCAF15019, whole genome shotgun sequence OS=Tetraodon nigroviridis GN=GSTENG00032411001 PE=3 SV=1
+89	>tr|M7BHW7|M7BHW7_CHEMY Cytoglobin-1 OS=Chelonia mydas GN=UY3_15064 PE=3 SV=1
+90	>tr|A0A087XVE5|A0A087XVE5_POEFO Uncharacterized protein OS=Poecilia formosa PE=3 SV=1
+91	>tr|W5NBV0|W5NBV0_LEPOC Uncharacterized protein OS=Lepisosteus oculatus PE=3 SV=1
+92	>tr|H3ARB7|H3ARB7_LATCH Uncharacterized protein OS=Latimeria chalumnae PE=3 SV=1
+93	>tr|A3KNI8|A3KNI8_DANRE Xgb protein OS=Danio rerio GN=xgb PE=2 SV=1
+94	>tr|W5N545|W5N545_LEPOC Uncharacterized protein OS=Lepisosteus oculatus PE=3 SV=1
+95	>tr|F6TGD7|F6TGD7_XENTR Uncharacterized protein OS=Xenopus tropicalis GN=xgb PE=3 SV=1
+96	>tr|W5UIQ8|W5UIQ8_ICTPU Cytoglobin-2 OS=Ictalurus punctatus GN=cygb2 PE=2 SV=1
+97	>tr|I3KRJ1|I3KRJ1_ORENI Uncharacterized protein OS=Oreochromis niloticus GN=LOC100698055 PE=3 SV=1
+98	>tr|A0A060WFL0|A0A060WFL0_ONCMY Uncharacterized protein OS=Oncorhynchus mykiss GN=GSONMT00074348001 PE=3 SV=1
+99	>tr|F2Q9X0|F2Q9X0_BRAFL Globin OS=Branchiostoma floridae GN=lGb5 PE=2 SV=1
+100	>tr|A0A060WME6|A0A060WME6_ONCMY Uncharacterized protein OS=Oncorhynchus mykiss GN=GSONMT00034919001 PE=3 SV=1
+101	>tr|A0A0P7XQL8|A0A0P7XQL8_9TELE Neuroglobin-like (Fragment) OS=Scleropages formosus GN=Z043_102867 PE=3 SV=1
+102	>sp|P14821|GLB2A_ANAIN Globin-2 A chain OS=Anadara inaequivalvis PE=1 SV=2
+103	>tr|Q3MQ26|Q3MQ26_SPISO Nerve hemoglobin OS=Spisula solidissima GN=nHb PE=2 SV=1
+104	>tr|Q17286|Q17286_9BIVA Hemoglobin (Heterodimeric) OS=Barbatia virescens GN=hemoglobin PE=2 SV=1
+105	>sp|P25165|GLBM_ANATR Globin, minor OS=Anadara trapezia PE=3 SV=2
+106	>sp|P14822|GLB2B_ANAIN Globin-2 B chain OS=Anadara inaequivalvis PE=1 SV=1
+107	>tr|A0A158USK6|A0A158USK6_9DIPT Globin 2 OS=Chironomus riparius PE=2 SV=1
+108	>tr|V5YMJ8|V5YMJ8_9DIPT Globin OS=Polypedilum nubifer GN=PnHb23 PE=2 SV=1
+109	>tr|S6BNE9|S6BNE9_POLVA Globin OS=Polypedilum vanderplanki GN=PvHb7 PE=2 SV=1
+110	>tr|S6BEI9|S6BEI9_POLVA Globin OS=Polypedilum vanderplanki GN=PvHb9 PE=2 SV=1
+111	>tr|V5YM17|V5YM17_9DIPT Globin OS=Polypedilum nubifer GN=PnHb1 PE=2 SV=1
+112	>tr|V5YNC2|V5YNC2_9DIPT Globin OS=Polypedilum nubifer GN=PnHb4 PE=2 SV=1
+113	>tr|S6B7W8|S6B7W8_POLVA Globin OS=Polypedilum vanderplanki GN=PVHb31 PE=2 SV=1
+114	>tr|A0A161TXB5|A0A161TXB5_9DIPT Globin 11 OS=Chironomus riparius PE=2 SV=1
+115	>tr|Q94445|Q94445_CHITE ORF E protein OS=Chironomus tentans GN=ORF E PE=3 SV=1
+116	>tr|V5YLQ7|V5YLQ7_9DIPT Globin OS=Polypedilum nubifer GN=PnHb3 PE=2 SV=1
+117	>tr|V5YMG1|V5YMG1_9DIPT Globin OS=Polypedilum nubifer GN=PnHb2 PE=2 SV=1
+118	>tr|E0VN13|E0VN13_PEDHC Globin D, coelomic, putative OS=Pediculus humanus subsp. corporis GN=Phum_PHUM323880 PE=3 SV=1 
+119	>tr|W6FEV1|W6FEV1_9ECHI Hemoglobin OS=Hemipholis cordifera GN=hb_f1 PE=2 SV=1
+120	>tr|W6FSH9|W6FSH9_9ECHI Hemoglobin OS=Ophiactis simplex GN=Hb_a PE=2 SV=1
+121	>tr|W6FIG9|W6FIG9_9ECHI Hemoglobin OS=Ophiactis simplex GN=Hb_b PE=2 SV=1
+122	>tr|E9GW66|E9GW66_DAPPU Putative uncharacterized protein OS=Daphnia pulex GN=DAPPUDRAFT_107161 PE=3 SV=1
+123	>tr|K1PSK3|K1PSK3_CRAGI Globin OS=Crassostrea gigas GN=CGI_10008579 PE=3 SV=1
+124	>tr|A0A0N7ZGP6|A0A0N7ZGP6_9CRUS Di-domain hemoglobin OS=Daphnia magna PE=3 SV=1
+125	>tr|E9G8K2|E9G8K2_DAPPU Putative uncharacterized protein OS=Daphnia pulex GN=DAPPUDRAFT_223071 PE=3 SV=1
+126	>tr|E9G846|E9G846_DAPPU Putative uncharacterized protein OS=Daphnia pulex GN=DAPPUDRAFT_223021 PE=3 SV=1
+127	>tr|H2ZPV2|H2ZPV2_CIOSA Uncharacterized protein OS=Ciona savignyi PE=3 SV=1
+128	>tr|F7A367|F7A367_CIOIN Uncharacterized protein OS=Ciona intestinalis GN=LOC100183005 PE=3 SV=2
+129	>tr|Q70T64|Q70T64_CIOIN Globin OS=Ciona intestinalis GN=hb1 PE=2 SV=1
+130	>tr|H2ZPV1|H2ZPV1_CIOSA Uncharacterized protein OS=Ciona savignyi GN=Csa.10981 PE=3 SV=1
+131	>tr|H2YFM6|H2YFM6_CIOSA Uncharacterized protein OS=Ciona savignyi PE=3 SV=1
+132	>tr|Q70T62|Q70T62_CIOIN Globin OS=Ciona intestinalis GN=hb3 PE=2 SV=1
+133	>tr|S4RN97|S4RN97_PETMA Uncharacterized protein (Fragment) OS=Petromyzon marinus GN=Pma.586 PE=3 SV=1
+134	>tr|A2V8C2|A2V8C2_LETCA Hemoglobin 4 OS=Lethenteron camtschaticum PE=2 SV=1
+135	>tr|S4R971|S4R971_PETMA Uncharacterized protein OS=Petromyzon marinus GN=Pma.5710 PE=3 SV=1
+136	>tr|S4RW14|S4RW14_PETMA Uncharacterized protein OS=Petromyzon marinus GN=Pma.6206 PE=3 SV=1
+137	>sp|P01947|HBA_CAVPO Hemoglobin subunit alpha OS=Cavia porcellus GN=HBA PE=1 SV=2
+138	>tr|D9I2F7|D9I2F7_SCAAQ Hemoglobin subunit alpha 2 OS=Scalopus aquaticus GN=HBA2 PE=2 SV=1
+139	>tr|A0A1A6FTA7|A0A1A6FTA7_NEOLE Uncharacterized protein OS=Neotoma lepida GN=A6R68_11691 PE=4 SV=1
+140	>tr|V9LEU4|V9LEU4_CALMI Globin Y OS=Callorhinchus milii PE=2 SV=1
+141	>tr|H3B2L7|H3B2L7_LATCH Uncharacterized protein OS=Latimeria chalumnae GN=LOC102356093 PE=3 SV=1
+142	>tr|F6UQT5|F6UQT5_XENTR Uncharacterized protein OS=Xenopus tropicalis GN=gby PE=3 SV=1
+143	>tr|Q575S4|Q575S4_XENLA Globin Y OS=Xenopus laevis GN=gby PE=2 SV=1
+144	>tr|K7FYQ5|K7FYQ5_PELSI Uncharacterized protein OS=Pelodiscus sinensis PE=3 SV=1
+145	>tr|A0A0P6B1R4|A0A0P6B1R4_9CRUS Neuroglobin OS=Daphnia magna PE=3 SV=1
+146	>tr|A0A0P5FUN9|A0A0P5FUN9_9CRUS Putative di-domain hemoglobin OS=Daphnia magna PE=3 SV=1
+147	>tr|A0A0P5MKC2|A0A0P5MKC2_9CRUS Putative di-domain hemoglobin OS=Daphnia magna PE=3 SV=1
+148	>tr|K1R7G1|K1R7G1_CRAGI Neuroglobin-1 OS=Crassostrea gigas GN=CGI_10027924 PE=3 SV=1
+149	>tr|A0A0B6Z8Y6|A0A0B6Z8Y6_9EUPU Uncharacterized protein OS=Arion vulgaris GN=ORF50902 PE=3 SV=1
+150	>tr|A0A0P5AEE1|A0A0P5AEE1_9CRUS Di-domain hemoglobin (Fragment) OS=Daphnia magna PE=3 SV=1
+151	>tr|A0A0N8ATF7|A0A0N8ATF7_9CRUS Di-domain hemoglobin (Fragment) OS=Daphnia magna PE=3 SV=1
+152	>tr|B7QBW9|B7QBW9_IXOSC Beta chain of the tetrameric hemoglobin, putative OS=Ixodes scapularis GN=IscW_ISCW012561 PE=3 SV=1 
+153	>tr|A0A0P5AKV9|A0A0P5AKV9_9CRUS Putative di-domain hemoglobin OS=Daphnia magna PE=3 SV=1
+154	>tr|A0A0P5EV32|A0A0P5EV32_9CRUS Putative di-domain hemoglobin (Fragment) OS=Daphnia magna PE=3 SV=1
+155	>tr|A0A0P4XVE5|A0A0P4XVE5_9CRUS Putative di-domain hemoglobin OS=Daphnia magna PE=3 SV=1
+156	>sp|P31331|GLB_NASMU Globin OS=Nassarius mutabilis PE=1 SV=1
+157	>tr|V4C2N0|V4C2N0_LOTGI Uncharacterized protein OS=Lottia gigantea GN=LOTGIDRAFT_231953 PE=3 SV=1
+158	>tr|V4ALZ1|V4ALZ1_LOTGI Uncharacterized protein OS=Lottia gigantea GN=LOTGIDRAFT_231954 PE=3 SV=1
+159	>sp|P02215|GLB_CERRH Globin OS=Cerithidea rhizophorarum PE=1 SV=1
+160	>tr|A0A0B6YIN5|A0A0B6YIN5_9EUPU Uncharacterized protein OS=Arion vulgaris GN=ORF25075 PE=3 SV=1
+161	>tr|V4ARY3|V4ARY3_LOTGI Uncharacterized protein OS=Lottia gigantea GN=LOTGIDRAFT_159879 PE=3 SV=1
+162	>tr|K1PR28|K1PR28_CRAGI Cytoglobin-1 OS=Crassostrea gigas GN=CGI_10010717 PE=3 SV=1
+163	>tr|A0A0P5FF42|A0A0P5FF42_9CRUS Di-domain hemoglobin (Fragment) OS=Daphnia magna PE=3 SV=1 
+164	>tr|A0A147ASE9|A0A147ASE9_FUNHE Cytoglobin (Fragment) OS=Fundulus heteroclitus PE=3 SV=1
+165	>tr|C3Y526|C3Y526_BRAFL Putative uncharacterized protein OS=Branchiostoma floridae GN=BRAFLDRAFT_98913 PE=3 SV=1
+166	>tr|C3Y525|C3Y525_BRAFL Putative uncharacterized protein OS=Branchiostoma floridae GN=BRAFLDRAFT_98914 PE=3 SV=1
+167	>tr|E2C8N8|E2C8N8_HARSA Globin OS=Harpegnathos saltator GN=EAI_09772 PE=3 SV=1
+168	>tr|A0A151PG43|A0A151PG43_ALLMI Hemoglobin subunit rho OS=Alligator mississippiensis GN=HBG1 PE=3 SV=1
+169	>sp|P0C227|GLB_NERAL Globin OS=Nerita albicilla PE=1 SV=1
+170	>tr|Q86G74|Q86G74_PHAPT Hemoglobin II OS=Phacoides pectinatus PE=2 SV=1
+171	>tr|A0A067RP63|A0A067RP63_ZOONE Globin OS=Zootermopsis nevadensis GN=L798_01681 PE=3 SV=1 
+172	>tr|G1SPL8|G1SPL8_RABIT Neuroglobin OS=Oryctolagus cuniculus GN=NGB PE=3 SV=1
+173	>tr|A0A151M5K7|A0A151M5K7_ALLMI Neuroglobin OS=Alligator mississippiensis GN=NGB PE=3 SV=1
+174	>tr|A0A0R4ILZ6|A0A0R4ILZ6_DANRE Neuroglobin OS=Danio rerio GN=ngb PE=3 SV=1
+175	>tr|G1KTL1|G1KTL1_ANOCA Uncharacterized protein OS=Anolis carolinensis GN=NGB PE=3 SV=1
+176	>tr|W5MYS7|W5MYS7_LEPOC Uncharacterized protein OS=Lepisosteus oculatus PE=3 SV=1
+177	>tr|C0HA43|C0HA43_SALSA Neuroglobin-1 OS=Salmo salar GN=NGB1 PE=2 SV=1
+178	>tr|A0A0Q3PR64|A0A0Q3PR64_AMAAE Neuroglobin OS=Amazona aestiva GN=AAES_62811 PE=3 SV=1
+179	>sp|P86880|NGB_CHAAC Neuroglobin OS=Chaenocephalus aceratus PE=2 SV=1
+180	>tr|F6RIV9|F6RIV9_ORNAN Uncharacterized protein OS=Ornithorhynchus anatinus GN=NGB PE=3 SV=1
+181	>tr|G3W066|G3W066_SARHA Uncharacterized protein OS=Sarcophilus harrisii GN=NGB PE=3 SV=1
+182	>tr|U3J239|U3J239_ANAPL Uncharacterized protein OS=Anas platyrhynchos GN=NGB PE=3 SV=1
+183	>tr|Q5QSB1|Q5QSB1_CHICK Neuroglobin OS=Gallus gallus GN=NGB PE=2 SV=1
+184	>tr|A0A0P5FJW6|A0A0P5FJW6_9CRUS Di-domain hemoglobin OS=Daphnia magna PE=3 SV=1
+185	>tr|W4YI83|W4YI83_STRPU Uncharacterized protein OS=Strongylocentrotus purpuratus GN=Sp-Glbn PE=4 SV=1 
+186	>tr|E9FXJ0|E9FXJ0_DAPPU Putative uncharacterized protein OS=Daphnia pulex GN=DAPPUDRAFT_96311 PE=3 SV=1
+187	>tr|A0A165AF90|A0A165AF90_9CRUS Hemoglobin OS=Daphnia magna GN=APZ42_016465 PE=3 SV=1
+188	>tr|E9GQN2|E9GQN2_DAPPU Hemoglobin OS=Daphnia pulex GN=DAPPUDRAFT_92880 PE=3 SV=1
+189	>tr|E9FXJ7|E9FXJ7_DAPPU Hemoglobin OS=Daphnia pulex GN=DAPPUDRAFT_234839 PE=3 SV=1
+190	>tr|E9HWQ4|E9HWQ4_DAPPU Hemoglobin OS=Daphnia pulex GN=DAPPUDRAFT_93831 PE=3 SV=1
+191	>tr|A0A0P5LQ45|A0A0P5LQ45_9CRUS Di-domain hemoglobin OS=Daphnia magna PE=3 SV=1
+192	>tr|K1QMA9|K1QMA9_CRAGI Cytoglobin-2 OS=Crassostrea gigas GN=CGI_10025547 PE=3 SV=1
+193	>sp|P11740|GLB1_METSO Extracellular globin-1 OS=Metaphire sieboldi PE=1 SV=1
+194	>tr|G1S6D0|G1S6D0_NOMLE Uncharacterized protein OS=Nomascus leucogenys GN=HBE1 PE=3 SV=2
+195	>tr|E9HXG0|E9HXG0_DAPPU Putative uncharacterized protein (Fragment) OS=Daphnia pulex GN=DAPPUDRAFT_335322 PE=3 SV=1
+196	>tr|A0A0P6H7F7|A0A0P6H7F7_9CRUS Uncharacterized protein (Fragment) OS=Daphnia magna PE=4 SV=1
+197	>tr|A0A0L7L6S9|A0A0L7L6S9_9NEOP Globin (Fragment) OS=Operophtera brumata GN=OBRU01_14366 PE=3 SV=1
+198	>tr|A0A146VJ71|A0A146VJ71_FUNHE Cytoglobin (Fragment) OS=Fundulus heteroclitus PE=3 SV=1
+199	>tr|A0A0D6LAR0|A0A0D6LAR0_9BILA Globin OS=Ancylostoma ceylanicum GN=ANCCEY_12631 PE=3 SV=1
+200	>tr|A0A0R3PER1|A0A0R3PER1_ANGCS Uncharacterized protein OS=Angiostrongylus costaricensis PE=3 SV=1
+201	>tr|W2SIK9|W2SIK9_NECAM Globin OS=Necator americanus GN=NECAME_05551 PE=3 SV=1
+202	>tr|L9L0J9|L9L0J9_TUPCH Inactive rhomboid protein 2 OS=Tupaia chinensis GN=TREES_T100007439 PE=4 SV=1
+203	>tr|D1LX80|D1LX80_SACKO Neuroglobin-like protein OS=Saccoglossus kowalevskii PE=2 SV=1
+204	>tr|A0A0L8FTQ4|A0A0L8FTQ4_OCTBM Uncharacterized protein OS=Octopus bimaculoides GN=OCBIM_22008093mg PE=3 SV=1 
+205	>tr|A0A0P6GZ78|A0A0P6GZ78_9CRUS Globin OS=Daphnia magna PE=3 SV=1
+206	>tr|R7URJ5|R7URJ5_CAPTE Uncharacterized protein OS=Capitella teleta GN=CAPTEDRAFT_188542 PE=3 SV=1 
+207	>tr|V4A611|V4A611_LOTGI Uncharacterized protein OS=Lottia gigantea GN=LOTGIDRAFT_233216 PE=3 SV=1 
+208	>tr|A7RJ19|A7RJ19_NEMVE Predicted protein OS=Nematostella vectensis GN=v1g197838 PE=3 SV=1 
+209	>tr|A0A0P5CWH4|A0A0P5CWH4_9CRUS Putative di-domain hemoglobin (Fragment) OS=Daphnia magna PE=3 SV=1 
+210	>tr|A0A060TIC9|A0A060TIC9_BLAAD ARAD1D45562p OS=Blastobotrys adeninivorans GN=GNLVRS02_ARAD1D45562g PE=4 SV=1
+211	>tr|A0A0P5G6A3|A0A0P5G6A3_9CRUS Di-domain hemoglobin OS=Daphnia magna PE=4 SV=1
+212	>tr|O97382|O97382_ARTSA Hemoglobin T1 polymer OS=Artemia salina PE=2 SV=1
+213	>tr|Q9NG75|Q9NG75_9CRUS Hemoglobin P polymer OS=Parartemia zietziana PE=2 SV=1
+214	>tr|O97382|O97382_ARTSA Hemoglobin T1 polymer OS=Artemia salina PE=2 SV=1
+215	>tr|Q9NG75|Q9NG75_9CRUS Hemoglobin P polymer OS=Parartemia zietziana PE=2 SV=1
+216	>tr|O97381|O97381_ARTSA Hemoglobin C1 polymer OS=Artemia salina PE=2 SV=1
+217	>tr|K1RJ02|K1RJ02_CRAGI Nacrein-like protein F OS=Crassostrea gigas GN=CGI_10014170 PE=4 SV=1 
+218	>tr|A0A0P5VFZ7|A0A0P5VFZ7_9CRUS Cytoglobin-2 OS=Daphnia magna PE=3 SV=1 
+219	>tr|A0A131ZY06|A0A131ZY06_SARSC Globin-like protein 1 OS=Sarcoptes scabiei GN=QR98_0021760 PE=3 SV=1 
+220	>tr|A0A146Z8V8|A0A146Z8V8_FUNHE Neuroglobin (Fragment) OS=Fundulus heteroclitus PE=3 SV=1
+221	>tr|Q9NG75|Q9NG75_9CRUS Hemoglobin P polymer OS=Parartemia zietziana PE=2 SV=1
+222	>tr|J9JX99|J9JX99_ACYPI Uncharacterized protein OS=Acyrthosiphon pisum PE=3 SV=2 
+223	>tr|A0A0K2UHU6|A0A0K2UHU6_LEPSM Uncharacterized protein OS=Lepeophtheirus salmonis PE=3 SV=1 
+224	>tr|R7TFR3|R7TFR3_CAPTE Uncharacterized protein OS=Capitella teleta GN=CAPTEDRAFT_198978 PE=3 SV=1 
+225	>tr|V4BX16|V4BX16_LOTGI Uncharacterized protein OS=Lottia gigantea GN=LOTGIDRAFT_232639 PE=3 SV=1 
+226	>tr|Q70PH6|Q70PH6_CIOIN Globin OS=Ciona intestinalis GN=hb4 PE=2 SV=1
+227	>tr|C1E0S6|C1E0S6_MICCC Uncharacterized protein OS=Micromonas commoda (strain RCC299 / NOUM17 / CCMP2709) GN=MICPUN_56622 PE=4 SV=1 
+228	>tr|Q17154|Q17154_9BIVA Two-domain chain of the polymeric hemoglobin (Intracellular) OS=Barbatia lima PE=2 SV=1
+229	>tr|Q17153|Q17153_9BIVA Hemoglobin (2 domain) OS=Barbatia lima GN=hemoglobin PE=2 SV=1
+230	>tr|A0A1B0G6S0|A0A1B0G6S0_GLOMM Uncharacterized protein OS=Glossina morsitans morsitans PE=4 SV=1
+231	>tr|A0A0K2U629|A0A0K2U629_LEPSM Cytoglobin1like [Saccoglossus kowalevskii] OS=Lepeophtheirus salmonis PE=3 SV=1 
+232	>tr|A0A0P6BQ29|A0A0P6BQ29_9CRUS Di-domain hemoglobin (Fragment) OS=Daphnia magna PE=3 SV=1
+233	>tr|A0A0K2TWK8|A0A0K2TWK8_LEPSM Neuroglobinlike [Maylandia zebra] OS=Lepeophtheirus salmonis PE=3 SV=1 
+234	>tr|A0A061B0T5|A0A061B0T5_CYBFA CYFA0S05e02454g1_1 OS=Cyberlindnera fabianii GN=CYFA0S_05e02454g PE=4 SV=1 
+235	>tr|A8XBD5|A8XBD5_CAEBR Protein CBR-GLB-7 OS=Caenorhabditis briggsae GN=glb-7 PE=3 SV=1
+236	>tr|A0A158QME6|A0A158QME6_HAEPC Uncharacterized protein OS=Haemonchus placei PE=3 SV=1 
+237	>tr|U1NCF7|U1NCF7_ASCSU Cre-glb-30 protein OS=Ascaris suum GN=ASU_13551 PE=3 SV=1 
+238	>tr|A0A0P6D8K6|A0A0P6D8K6_9CRUS Di-domain hemoglobin-like protein OS=Daphnia magna PE=4 SV=1
+239	>tr|A0A0V1IBZ4|A0A0V1IBZ4_TRIPS Globin-like protein 26 OS=Trichinella pseudospiralis GN=glb-26 PE=3 SV=1
+240	>tr|A0A016U901|A0A016U901_9BILA Uncharacterized protein OS=Ancylostoma ceylanicum GN=Acey_s0052.g2191 PE=3 SV=1
+241	>tr|Q683R3|Q683R3_BIOGL Hemoglobin (Fragment) OS=Biomphalaria glabrata GN=hb PE=2 SV=1
+242	>tr|A0A182YVC3|A0A182YVC3_BIOGL Uncharacterized protein OS=Biomphalaria glabrata PE=3 SV=1
+243	>tr|A0A0P5RQ13|A0A0P5RQ13_9CRUS Putative di-domain hemoglobin (Fragment) OS=Daphnia magna PE=3 SV=1 
+244	>tr|A0A182ZWC2|A0A182ZWC2_BIOGL Uncharacterized protein OS=Biomphalaria glabrata PE=4 SV=1
+245	>tr|Q14SM8|Q14SM8_BIOGL Haemoglobin type 1 OS=Biomphalaria glabrata GN=hb1 PE=2 SV=1
+246	>tr|A0A182ZPU1|A0A182ZPU1_BIOGL Uncharacterized protein OS=Biomphalaria glabrata PE=3 SV=1 
+247	>tr|A0A183BPT0|A0A183BPT0_GLOPA Metalloendopeptidase OS=Globodera pallida PE=3 SV=1 
 248	>tr|W4XLX6|W4XLX6_STRPU Uncharacterized protein OS=Strongylocentrotus purpuratus GN=Sp-Neuglbn PE=4 SV=1 
-249	>tr|W4YI83|W4YI83_STRPU Uncharacterized protein OS=Strongylocentrotus purpuratus GN=Sp-Glbn PE=4 SV=1 
+249	>tr|W4XLX6|W4XLX6_STRPU Uncharacterized protein OS=Strongylocentrotus purpuratus GN=Sp-Neuglbn PE=4 SV=1 
 250	>tr|W4YI83|W4YI83_STRPU Uncharacterized protein OS=Strongylocentrotus purpuratus GN=Sp-Glbn PE=4 SV=1 
-251	>tr|A0A0K0EBF3|A0A0K0EBF3_STRER Uncharacterized protein OS=Strongyloides stercoralis PE=4 SV=1
+251	>tr|W4YI83|W4YI83_STRPU Uncharacterized protein OS=Strongylocentrotus purpuratus GN=Sp-Glbn PE=4 SV=1 
+252	>tr|A0A0K0EBF3|A0A0K0EBF3_STRER Uncharacterized protein OS=Strongyloides stercoralis PE=4 SV=1
