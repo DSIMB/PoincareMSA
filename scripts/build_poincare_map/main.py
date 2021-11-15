@@ -147,7 +147,7 @@ def parse_args():
     parser.add_argument('--epochs',
         help='Number of epochs', type=int, default=500)
     parser.add_argument('--batchsize',
-        help='Batchsize', type=int, default=4)
+        help='Batchsize', type=int, default=16)
     parser.add_argument('--burnin',
         help='Duration of burnin', type=int, default=500)
 

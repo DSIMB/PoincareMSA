@@ -6,6 +6,11 @@ import matplotlib.gridspec as gridspec
 from adjustText import adjust_text
 from model import poincare_translation
 
+import plotly.graph_objs as go
+#import plotly.io as pio
+import plotly
+import plotly.express as px
+
 import matplotlib
 matplotlib.use('Agg')
 
@@ -94,8 +99,9 @@ def save_to_file(fig, file_name, file_format):
 
 def plot_embedding(
         df,
-        labels=None,
-        labels_text=None,
+        labels=None, 
+        labels_text=None, # list of strings: values of labels_name that we would like to mark on the plot
+        labels_name=None, # string: a name of the dataframe column used for coloring and legend
         labels_idx=None,
         col_dict=None,
         title=None,
@@ -103,16 +109,17 @@ def plot_embedding(
         show_text=False,
         show_legend=True,
         axis_equal=True,
+# advanced settings:
+        legend_cols=5,
         circle_size=30,
         circe_transparency=1.0,
         line_transparency=0.8,
         line_width=0.8,
         fontsize=9,
-        fig_width=5,
-        fig_height=5,
+        fig_width=10,
+        fig_height=10,
         file_name=None,
         file_format=None,
-        labels_name=None,
         width_ratios=[7, 1],
         bbox=(1.3, 0.7),
         plot_legend=False,
@@ -120,7 +127,7 @@ def plot_embedding(
     ):
     # TODO add readdocs
     # create data structure suitable for embedding
-    
+
     if not (labels_name is None):
         labels = df[labels_name].values
     else:
@@ -130,9 +137,22 @@ def plot_embedding(
     if labels_text == 'all':
         labels_text = labels
 
-    fig = plt.figure(figsize=(fig_width, fig_height))
-    gs = gridspec.GridSpec(1, 2, width_ratios=width_ratios)
-    ax = plt.subplot(gs[0])
+
+    num_labels = len(np.unique(labels))
+    print("Number of unique labels: ", num_labels)
+
+    # To avoid scale changing when changing number of labels
+    # we recalculate figure size (assuming 5 legend columns)
+    point_size = 0.0138889
+    labelspacing = 0.5
+    labelspace_height = labelspacing*point_size
+    text_height = fontsize*point_size
+    add_height = (int(num_labels/5)+1)*(text_height+labelspace_height) # number of lines
+   
+
+    fig = plt.figure(figsize=(fig_width, fig_height + add_height))#, constrained_layout=True)
+#    gs = gridspec.GridSpec(1, 2, width_ratios=width_ratios)
+    ax = plt.subplot()#figsize=(fig_width, fig_height))#gs[0])
     
     sns.despine(left=False, bottom=False, right=True)
     
@@ -145,6 +165,10 @@ def plot_embedding(
 
     if is_hyperbolic:
         circle = plt.Circle((0, 0), radius=1,  fc='none', color='black')
+#        circle = plt.Circle((0, 0), radius=1,  fc='none', color='black')
+#        circle = plt.Circle((0, 0), radius=1,  fc='none', color='black')
+#        circle = plt.Circle((0, 0), radius=1,  fc='none', color='black')
+#        circle = plt.Circle((0, 0), radius=1,  fc='none', color='black')
         plt.gca().add_patch(circle)
         ax.plot(0, 0, 'x', c=(0, 0, 0), ms=2)
         ax.axis('off')
@@ -170,9 +194,10 @@ def plot_embedding(
         except:
             pass
     else:
-        print(len(np.unique(labels)))
-        plt.legend(numpoints=1, loc='center left',
-               bbox_to_anchor=bbox, fontsize=fontsize, ncol=int(len(np.unique(labels))/20))
+#        plt.legend(bbox_to_anchor=(0., 1.02, 1., .102), loc='lower left',
+#           ncol=2, mode="expand", borderaxespad=0.)
+        plt.legend(numpoints=1, loc='upper center',
+               bbox_to_anchor=(0.5, -0.01), fontsize=fontsize, ncol=5)#int(len(np.unique(labels))/20))
     
     emb = df[['pm1', 'pm2']].values
     if show_lines:        
@@ -226,10 +251,83 @@ def plot_embedding(
         ax.axis('equal')
         ax.axis('square')
 
-    plt.tight_layout()
+#    plt.tight_layout()
 
     if file_name:
         save_to_file(fig, file_name, file_format)        
+
+    return plt
+
+
+def plot_embedding_interactive(
+        df,
+        labels=None,
+        labels_text=None,
+        labels_idx=None,
+#        col_dict=None,
+        title=None,
+        show_lines=False,
+        show_text=False,
+        show_legend=True,
+        circle_size=30,
+        circe_transparency=1.0,
+        line_transparency=0.8,
+        line_width=0.8,
+        fontsize=9,
+#        fig_width=5,
+#        fig_height=5,
+        file_name=None,
+        file_format=None,
+        labels_name=None,
+#        width_ratios=[7, 1],
+#        bbox=(1.3, 0.7),
+        plot_legend=False,
+    ):
+    if not (labels_name is None):
+        labels = df[labels_name].values
+    else:
+        labels_name = 'labels'
+        df[labels_name] = 'na'
+
+    if labels_text == 'all':
+        labels_text = labels
+
+    #if (col_dict is None) and not (labels is None):
+    #    col_dict = get_colors(labels)
+
+    plt = px.scatter(df, x = 'pm1', y = 'pm2', 
+                     color = labels_name, 
+                     #labels={'color': labels}, 
+                     hover_name=labels_name, 
+                     hover_data=df.columns[2:], 
+                     height = 800)
+    print(df.columns[2:])
+    
+    if show_text and (not (labels_text is None)):
+        texts = df.loc[df[labels_name].isin(labels_text)]
+        labels_idx = texts.index
+
+        for i in labels_idx:
+            plt.add_annotation(x=texts.loc[i,'pm1'], y=texts.loc[i,'pm2'],
+                       text=texts.loc[i, labels_name],
+                       showarrow=True,
+                       arrowhead=1)
+        plt.update_traces(textposition='top right')
+
+    plt.add_shape(type="circle",
+                  xref="x", yref="y",
+                  x0=-1, y0=-1, x1=1, y1=1,
+                  line_color="Black")
+    
+    plt.update_xaxes(range = [-1.1, 1.1], constrain="domain")
+    plt.update_yaxes(scaleanchor = "x", scaleratio = 1)
+    
+    #    plt.update_layout({'plot_bgcolor': 'rgba(0, 0, 0, 0)', 'paper_bgcolor': 'rgba(0, 0, 0, 0)'})
+    plt.update_layout(yaxis2=dict(matches='y', layer="below traces", overlaying="y", ),)
+    plt.update_layout({'plot_bgcolor': 'rgba(0, 0, 0, 0)'})
+
+    if file_name:
+        save_to_file(fig, file_name, file_format)
 
     return plt
 
