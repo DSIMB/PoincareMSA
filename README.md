@@ -18,6 +18,7 @@ The user is invited to provide its MSA in the classical `.mfasta` format. Each s
 The resulting PSSM profiles representing each protein of MSA are stored in the directory `fasta0.9`, where 0.9 indicate the threshold percentage of gaps per position used to filter initial alignment. To build a Poincaré disk from this data, one needs to run a command from `scripts/build_poincare_map/` directory:
 
 ```
+python main.py --input_path /home/lavande/galochkina/SCIENCE/POINCARE/PoincareMSA/examples/globins/fasta0.7/ --output_path /home/lavande/galochkina/SCIENCE/POINCARE/Globins/TEST/  --knn 5 --gamma 4 --batchsize 4 --rotate --epochs 1000
 python main.py --input_path path_to_input_dir/PoincareMSA/examples/thioredoxins/fasta0.9/ --output_path path_to_out_dir 
 ```
 which will create an output `.csv` file with protein coordinates in the final projection and `.png` images reflecting the learning process. The `.csv` file can be further used to build interactive visualisation.
