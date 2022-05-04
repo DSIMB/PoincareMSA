@@ -13,7 +13,7 @@ echo $name
 
 prep_scripts="../../scripts/prepare_data" # directory containing scripts
 
-gapth=0.9 # threshold for gaps filtering
+gapth=0.7 # threshold for gaps filtering
 rep="fasta${gapth}" # output directory to contain encodings per sequence
 echo $rep
 echo $gapth
