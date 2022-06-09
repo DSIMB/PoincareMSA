@@ -341,28 +341,54 @@ def plot_embedding_interactive(
                     showarrow=True,
                     arrowhead=1)
             plt.update_traces(textposition='top right') 
+  
+    # calculate radii of the concentric circles with equivalent step in hyperbolic space
+    
+    x1 = 0.25
+    hyper_rad = [x1]
+    num_circ =6 
+    for i in range(num_circ):
+        z = 0.5*(np.cosh((i+1)*np.arccosh(1+2*x1**2/(1-x1**2)))-1)
+        a = 1+z*(1-x1**2)
+        b = -2*x1
+        c = x1**2*(z+1)-z
+#        hyper_rad.append((-b + np.sqrt(b**2 - 4*a*c))/(2*a))
+        hyper_rad = (-b + np.sqrt(b**2 - 4*a*c))/(2*a)
+        plt.add_shape(type="circle",
+                    x0=-hyper_rad, y0=-hyper_rad, x1=hyper_rad, y1=hyper_rad,
+  #                  x0=-0.5, y0=-0.5, x1=0.5, y1=0.5,
+                    line=dict(color="black", dash = "dot"), 
+                    opacity = 0.15)
    
     plt.add_shape(type="circle",
                   xref="x", yref="y",
                   x0=-1, y0=-1, x1=1, y1=1,
                   line_color="Black")
+    plt.add_shape(type="circle",
+                  xref="x", yref="y",
+                  x0=-0.005, y0=-0.005, x1=0.005, y1=0.005,
+                  line_color="Black",
+                  fillcolor="Black")
         
-    plt.add_shape(type="circle",
-                    x0=-0.5, y0=-0.5, x1=0.5, y1=0.5,
-                    line=dict(color="black", dash = "dot"), 
-                    opacity = 0.15)
+#    plt.add_shape(type="circle",
+#                    x0=-hyper_rad[0], y0=-hyper_rad[0], x1=hyper_rad[0], y1=hyper_rad[0],
+#  #                  x0=-0.5, y0=-0.5, x1=0.5, y1=0.5,
+#                    line=dict(color="black", dash = "dot"), 
+#                    opacity = 0.15)
     
 
-    plt.add_shape(type="circle",
-                    x0=-0.7, y0=-0.7, x1=0.7, y1=0.7,
-                    line=dict(color="black", dash = "dot"), 
-                    opacity = 0.15)
+#    plt.add_shape(type="circle",
+#                    x0=-hyper_rad[1], y0=-hyper_rad[1], x1=hyper_rad[1], y1=hyper_rad[1],
+##                    x0=-0.7, y0=-0.7, x1=0.7, y1=0.7,
+#                    line=dict(color="black", dash = "dot"), 
+#                    opacity = 0.15)
     
 
-    plt.add_shape(type="circle",
-                    x0=-0.9, y0=-0.9, x1=0.9, y1=0.9,
-                    line=dict(color="black", dash = "dot"), 
-                    opacity = 0.15)
+#    plt.add_shape(type="circle",
+#                    x0=-hyper_rad[2], y0=-hyper_rad[2], x1=hyper_rad[2], y1=hyper_rad[2],
+# #                   x0=-0.9, y0=-0.9, x1=0.9, y1=0.9,
+#                    line=dict(color="black", dash = "dot"), 
+#                    opacity = 0.15)
 
     plt.update_xaxes(range = [-1.1, 1.1], constrain="domain")
     plt.update_yaxes(scaleanchor = "x", scaleratio = 1)
