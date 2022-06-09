@@ -25,11 +25,11 @@ export rep=$path_out/"fasta${gapth}" # output directory to contain encodings per
 mkdir -p $rep
 
 # calculate weights of every sequence in the alignment
-#python $prep_scripts/compute_weight_sequence-py3.py -al $mfasta > $path_out/$out_name.seq_weight
+python $prep_scripts/compute_weight_sequence-py3.py -al $mfasta > $path_out/$out_name.seq_weight
 # filter sequence positions according to a given threshold on weighted gaps frequency  
-#python $prep_scripts/filter_gaps.py -i $mfasta -w $path_out/$out_name.seq_weight -o $path_out/$out_name.clean${gapth}.mfasta -g $gapth
+python $prep_scripts/filter_gaps.py -i $mfasta -w $path_out/$out_name.seq_weight -o $path_out/$out_name.clean${gapth}.mfasta -g $gapth
 # split clean mfasta file to indifidual fasta files per sequence
-#python $prep_scripts/mfasta2fasta.py -i $path_out/$out_name.clean${gapth}.mfasta -o $rep
+python $prep_scripts/mfasta2fasta.py -i $path_out/$out_name.clean${gapth}.mfasta -o $rep
 
 # Calculates an amino acid profile for each equence (fasta file) using homstrad substitution matrix calculated by Jean-Chrostophe Gelly. 
 # Gaps are considered as 21st amino acid. 20 columns are then divided by the 21st (gap) column for normalisation.
@@ -64,6 +64,6 @@ find $rep -type f -name '*.fasta' | xargs -P $MAX_CPUS -l bash -c 'translate "$0
 #done
 
 # Commands to create a root point for eventual rotation of the projection
-python $prep_scripts/ali2freq-py3.py -gapaa -al $out_name.clean${gapth}.mfasta -m $prep_scripts/homstradfreq.txt  > $rep/0.txt
+python $prep_scripts/ali2freq-py3.py -gapaa -al $mfasta -m $prep_scripts/homstradfreq.txt  > $rep/0.txt
 python $prep_scripts/normalize_gaps.py -i $rep/0.txt -o $rep/0.aamtx
 
