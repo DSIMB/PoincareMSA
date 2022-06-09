@@ -130,14 +130,14 @@ def parse_args():
         help='use 0 element for calculations or not', action='store_true')
 
     parser.add_argument('--knn', 
-        help='Number of nearest neighbours in KNN', type=int, default=3)
+        help='Number of nearest neighbours in KNN', type=int, default=5)
     parser.add_argument('--connected',
         help='Force the knn graph to be connected', type=int, default=1)
 
     parser.add_argument('--sigma',
         help='Bandwidth in high dimensional space', type=float, default=1.0)
     parser.add_argument('--gamma',
-        help='Bandwidth in low dimensional space', type=float, default=1.0)
+        help='Bandwidth in low dimensional space', type=float, default=2.0)
 
     # optimization parameters
     parser.add_argument('--lr',
@@ -145,9 +145,9 @@ def parse_args():
     parser.add_argument('--lrm',
         help='Learning rate multiplier', type=float, default=1.0)
     parser.add_argument('--epochs',
-        help='Number of epochs', type=int, default=500)
+        help='Number of epochs', type=int, default=1000)
     parser.add_argument('--batchsize',
-        help='Batchsize', type=int, default=16)
+        help='Batchsize', type=int, default=4)
     parser.add_argument('--burnin',
         help='Duration of burnin', type=int, default=500)
 
