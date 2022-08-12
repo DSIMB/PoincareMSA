@@ -169,6 +169,7 @@ def poincare_map(opt):
     # read and preprocess the dataset
     opt.cuda = True if torch.cuda.is_available() else False
     print('CUDA:', opt.cuda)
+    torch.manual_seed(opt.seed)
 
     features, labels = prepare_data(opt.input_path, withroot = opt.rotate)
     print(len(features), len(labels)) 
@@ -190,7 +191,7 @@ def poincare_map(opt):
         connected=opt.connected,
         sigma=opt.sigma
         )
-
+    print(RFA)
     if opt.batchsize < 0:
         opt.batchsize = min(512, int(len(RFA)/10))
         print('batchsize = ', opt.batchsize)
