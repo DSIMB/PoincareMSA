@@ -63,13 +63,13 @@ def prepare_data(fpath, withroot = True, fmt='.aamtx'):
 
     features = np.zeros([n_proteins, len(a)])
     labels = []
-
+    print("Prepare data: tensor construction")
     for i, protein_name in enumerate(proteins):
-        # print(protein_name)
+        print(i, protein_name)
         fin = f'{fpath}/{protein_name}'
         features[i, :] = construct_tensor(fin)
         labels.append(protein_name.split('.')[0])
-
+    print("Prepare data: successfully terminated")
     return torch.Tensor(features), np.array(labels)
 
 
