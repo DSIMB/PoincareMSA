@@ -9,6 +9,9 @@
    id="svg25946"
    sodipodi:docname="Thiodedoxins.svg"
    inkscape:version="1.1.2 (1:1.1+202202050852+0a00cf5339)"
+   inkscape:export-filename="/home/lavande/galochkina/SCIENCE/POINCARE/PoincareMSA/figures/Thiodedoxins_colored.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -23,15 +26,15 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="0.93859299"
-     inkscape:cx="-132.11264"
-     inkscape:cy="83.635826"
+     inkscape:zoom="1.877186"
+     inkscape:cx="28.766462"
+     inkscape:cy="178.19225"
      inkscape:window-width="1848"
      inkscape:window-height="1016"
      inkscape:window-x="72"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g68943"
+     inkscape:current-layer="layer1"
      fit-margin-top="1"
      fit-margin-right="1"
      fit-margin-bottom="1"
@@ -5215,7 +5218,7 @@
          xml:space="preserve"><tspan
            x="0"
            y="0"
-           id="tspan49919">Archaea, LACA</tspan></text>
+           id="tspan225907">Archaea, LACA</tspan></text>
     </g>
     <g
        id="g34296"
@@ -5338,11 +5341,11 @@
          xml:space="preserve"><tspan
            x="0"
            y="0"
-           id="tspan49921">Bacteria, LBCA, 
+           id="tspan225909">Bacteria, LBCA, 
 </tspan><tspan
            x="0"
            y="12.5"
-           id="tspan49923">LPBCA, LGPCA</tspan></text>
+           id="tspan225911">LPBCA, LGPCA</tspan></text>
     </g>
     <text
        transform="matrix(0.20762762,0,0,0.20762762,88.076407,49.970437)"
@@ -5351,11 +5354,11 @@
        xml:space="preserve"><tspan
          x="0"
          y="0"
-         id="tspan49925">Eukaryota, LECA, 
+         id="tspan225913">Eukaryota, LECA, 
 </tspan><tspan
          x="0"
          y="12.5"
-         id="tspan49927">LAFCA</tspan></text>
+         id="tspan225915">LAFCA</tspan></text>
     <g
        id="g33382-7"
        transform="matrix(0.20762762,0,0,0.20762762,84.006347,63.746313)">
@@ -5534,7 +5537,7 @@
          xml:space="preserve"><tspan
            x="0"
            y="0"
-           id="tspan49929">Archaea, LACA</tspan></text>
+           id="tspan225917">Archaea, LACA</tspan></text>
     </g>
     <g
        id="g44774"
@@ -5582,11 +5585,11 @@
          xml:space="preserve"><tspan
            x="0"
            y="0"
-           id="tspan49931">Bacteria, LBCA, 
+           id="tspan225919">Bacteria, LBCA, 
 </tspan><tspan
            x="0"
            y="12.5"
-           id="tspan49933">LPBCA, LGPCA</tspan></text>
+           id="tspan225921">LPBCA, LGPCA</tspan></text>
     </g>
     <text
        transform="matrix(0.20447158,0,0,0.20447158,179.39558,49.681275)"
@@ -5595,11 +5598,11 @@
        xml:space="preserve"><tspan
          x="0"
          y="0"
-         id="tspan49935">Eukaryota, LECA, 
+         id="tspan225923">Eukaryota, LECA, 
 </tspan><tspan
          x="0"
          y="12.5"
-         id="tspan49937">LAFCA</tspan></text>
+         id="tspan225925">LAFCA</tspan></text>
     <g
        id="g45516"
        transform="matrix(0.16626659,0,0,0.16626659,152.90281,107.1623)">
