@@ -1,4 +1,4 @@
-PoincaréMSA is a tool for protein family vizualisation. It takes as input a multiple sequence alignemnt (MSA) and builds its projection on a Poincaré disk using the method developed by Klimovslaia et al. in [1].
+PoincaréMSA is a tool for protein family vizualisation. It takes as input a multiple sequence alignemnt (MSA) and builds its projection on a Poincaré disk using the method developed by Klimovskaia et al. in [1].
 
 ## General description
 PoincareMSA relies on hyperbolic projections build as described in the original paper. The proximity of the points to the disk center corresponds to their hierarchy and correlates with the proximity of the proteins to the root of the phylogenetic tree. Thus, must central point often correspond to the ancestor proteins and protein located close to the border -- to the leaves of phylogenetic tree. The projection also preserves local proximity of sequences and the observed groups correspond to proteins sharing similar properties.
