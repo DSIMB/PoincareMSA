@@ -35,7 +35,7 @@ while line!="":
   i+=1
 
   
-print("mfasta2fasta finished for ", f)
+print("mfasta2fasta finished for", f)
 F.close()
 S.close()
 E.close()

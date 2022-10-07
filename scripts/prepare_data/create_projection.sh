@@ -11,11 +11,10 @@ export path_out="$3"
 export out_name="$4"
 export gapth="$5"
 
-echo "input file: "
-echo $mfasta
+echo "Input file: ${mfasta}"
 name=`basename $mfasta .mfasta`
-echo "name of the protein family: "
-echo $name 
+echo "Name of the protein family: ${name}"
+
 
 #prep_scripts="../../scripts/prepare_data" # directory containing scripts
 
@@ -40,18 +39,18 @@ translate(){
 #    echo $filename
 #    prep_scripts="$2"
 #    rep="$3"
-    echo $1
-    echo $prep_scripts
-    echo $rep
+    #echo $1
+    #echo $prep_scripts
+    #echo $rep
     python $prep_scripts/ali2freq-py3.py -gapaa -al $1 -m $prep_scripts/homstradfreq.txt  > $rep/$filename.txt
     python $prep_scripts/normalize_gaps.py -i $rep/$filename.txt -o $rep/$filename.aamtx 
 }
 export -f translate
 
 #ls $rep/*.fasta > $path_out/list_fasta
-echo $MAX_CPUS
+#echo $MAX_CPUS
 #cat list_fasta | xargs -P $MAX_CPUS -l bash -c 'translate $1'
-echo translate "$0" "$prep_scripts" "$rep"
+#echo translate "$0" "$prep_scripts" "$rep"
 #find $rep -type f -name '*.fasta' | xargs -P 1 -l bash -c 'translate "$0" "$prep_scripts" "$rep"'
 find $rep -type f -name '*.fasta' | xargs -P $MAX_CPUS -l bash -c 'translate "$0"'
 #"$prep_scripts" "$rep"'

@@ -53,10 +53,10 @@ def prepare_data(fpath, withroot = True, fmt='.aamtx'):
     if not withroot:
         proteins.remove("0.aamtx")
         n_proteins = len(proteins)
-        print("no root detected")
+        print("No root detected")
 
     protein_file = proteins[0]
-    print(protein_file)
+    #print(protein_file)
     fin = f'{fpath}/{protein_file}'    
 
     a = construct_tensor(fin)
@@ -65,7 +65,7 @@ def prepare_data(fpath, withroot = True, fmt='.aamtx'):
     labels = []
     print("Prepare data: tensor construction")
     for i, protein_name in enumerate(proteins):
-        print(i, protein_name)
+        #print(i, protein_name)
         fin = f'{fpath}/{protein_name}'
         features[i, :] = construct_tensor(fin)
         labels.append(protein_name.split('.')[0])
