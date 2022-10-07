@@ -1,6 +1,0 @@
-cp ~/SCIENCE/POINCARE/HOMSTRAD_DATA/HOMSTRAD_DATA/hhblits_out/glob_filter4.a3m ./
-perl /home/lavande/galochkina/SCIENCE/POINCARE/medusa/hh-suite/scripts/reformat.pl a3m fas glob_filter4.a3m glob_filter4.mfasta  -uc
-
-conda activate poincare
-python /home/lavande/galochkina/SCIENCE/POINCARE/Globins/extract_species.py -i ../globins_try_large_test/globins_large.clean0.9.sum 
-

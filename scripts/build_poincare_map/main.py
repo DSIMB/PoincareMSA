@@ -171,8 +171,7 @@ def poincare_map(opt):
     print('CUDA:', opt.cuda)
     torch.manual_seed(opt.seed)
 
-    features, labels = prepare_data(opt.input_path, withroot = opt.rotate)
-    print(len(features), len(labels)) 
+    features, labels = prepare_data(opt.input_path, withroot = opt.rotate) 
     # if not (opt.tree is None):
     #     tree_levels, color_dict = get_tree_colors(
     #         opt, labels, 
@@ -191,7 +190,7 @@ def poincare_map(opt):
         connected=opt.connected,
         sigma=opt.sigma
         )
-    print(RFA)
+    #print(RFA)
     if opt.batchsize < 0:
         opt.batchsize = min(512, int(len(RFA)/10))
         print('batchsize = ', opt.batchsize)

@@ -1,21 +1,41 @@
 name: poincare
 channels:
   - pytorch
+  - anaconda
   - conda-forge
   - defaults
-  - https://levinthal:paradox@conda.graylab.jhu.edu
 dependencies:
   - _libgcc_mutex=0.1=conda_forge
   - _openmp_mutex=4.5=1_llvm
   - adjusttext=0.7.3.1=py_1
+  - anyio=3.5.0=py37h06a4308_0
+  - argon2-cffi=20.1.0=py37h27cfd23_1
+  - attrs=21.4.0=pyhd3eb1b0_0
+  - babel=2.9.1=pyhd3eb1b0_0
+  - backcall=0.2.0=pyhd3eb1b0_0
+  - beautifulsoup4=4.11.1=py37h06a4308_0
   - blas=1.0=mkl
-  - ca-certificates=2020.12.5=ha878542_0
-  - certifi=2020.12.5=py37h89c1867_1
+  - bleach=4.1.0=pyhd3eb1b0_0
+  - brotlipy=0.7.0=py37h27cfd23_1003
+  - ca-certificates=2022.9.14=ha878542_0
+  - certifi=2022.9.14=pyhd8ed1ab_0
+  - cffi=1.15.0=py37hd667e15_1
+  - charset-normalizer=2.0.4=pyhd3eb1b0_0
+  - cryptography=37.0.1=py37h9ce1e76_0
   - cudatoolkit=11.0.3=h15472ef_8
   - cycler=0.10.0=py_2
   - dbus=1.13.6=hfdff14a_1
+  - debugpy=1.5.1=py37h295c915_0
+  - decorator=5.1.1=pyhd3eb1b0_0
+  - defusedxml=0.7.1=pyhd3eb1b0_0
+  - entrypoints=0.4=py37h06a4308_0
   - expat=2.2.10=h9c3ff4c_0
+  - font-ttf-dejavu-sans-mono=2.37=hab24e00_0
+  - font-ttf-inconsolata=3.000=h77eed37_0
+  - font-ttf-source-code-pro=2.038=h77eed37_0
+  - font-ttf-ubuntu=0.83=hab24e00_0
   - fontconfig=2.13.1=hba837de_1004
+  - fonts-conda-forge=1=0
   - freetype=2.10.4=h0708190_1
   - gettext=0.19.8.1=h0b5b191_1005
   - glib=2.66.7=h9c3ff4c_1
@@ -23,8 +43,30 @@ dependencies:
   - gst-plugins-base=1.14.0=hbbd80ab_1
   - gstreamer=1.14.0=h28cd5cc_2
   - icu=58.2=hf484d3e_1000
+  - idna=3.3=pyhd3eb1b0_0
+  - importlib-metadata=4.11.3=py37h06a4308_0
+  - importlib_metadata=4.11.3=hd3eb1b0_0
+  - importlib_resources=5.2.0=pyhd3eb1b0_1
+  - ipykernel=6.9.1=py37h06a4308_0
+  - ipython=7.31.1=py37h06a4308_1
+  - ipython_genutils=0.2.0=pyhd3eb1b0_1
+  - ipywidgets=7.6.5=pyhd3eb1b0_1
+  - jedi=0.18.1=py37h06a4308_1
+  - jinja2=3.0.3=pyhd3eb1b0_0
   - joblib=1.0.1=pyhd8ed1ab_0
   - jpeg=9b=h024ee3a_2
+  - json5=0.9.6=pyhd3eb1b0_0
+  - jsonschema=4.4.0=py37h06a4308_0
+  - jupyter=1.0.0=py37h06a4308_8
+  - jupyter_client=7.1.2=pyhd3eb1b0_0
+  - jupyter_console=6.4.3=pyhd3eb1b0_0
+  - jupyter_core=4.10.0=py37h06a4308_0
+  - jupyter_server=1.18.1=py37h06a4308_0
+  - jupyterlab=3.4.4=py37h06a4308_0
+  - jupyterlab_pygments=0.1.2=py_0
+  - jupyterlab_server=2.12.0=py37h06a4308_0
+  - jupyterlab_widgets=1.0.0=pyhd3eb1b0_1
+  - kaleido-core=0.2.1=h3644ca4_0
   - kiwisolver=1.3.1=py37h2527ec5_1
   - lcms2=2.11=h396b838_0
   - ld_impl_linux-64=2.35.1=hea4e1c9_2
@@ -38,6 +80,7 @@ dependencies:
   - libiconv=1.16=h516909a_0
   - liblapack=3.9.0=8_mkl
   - libpng=1.6.37=h21135ba_2
+  - libsodium=1.0.18=h7b6447c_0
   - libstdcxx-ng=9.3.0=h6de172a_18
   - libtiff=4.1.0=h2733197_1
   - libuuid=2.32.1=h7f98852_1000
@@ -46,52 +89,99 @@ dependencies:
   - libxml2=2.9.10=hb55368b_3
   - llvm-openmp=11.0.1=h4bd325d_0
   - lz4-c=1.9.3=h9c3ff4c_0
+  - markupsafe=2.1.1=py37h7f8727e_0
+  - mathjax=2.7.7=ha770c72_3
   - matplotlib=3.3.4=py37h89c1867_0
   - matplotlib-base=3.3.4=py37h0c9df89_0
+  - matplotlib-inline=0.1.2=pyhd3eb1b0_2
+  - mistune=0.8.4=py37h14c3975_1001
   - mkl=2020.4=h726a3e6_304
   - mkl-service=2.3.0=py37h8f50634_2
   - mkl_fft=1.3.0=py37h902c9e0_1
   - mkl_random=1.2.0=py37h9fdb41a_1
+  - nbclassic=0.3.5=pyhd3eb1b0_0
+  - nbclient=0.5.13=py37h06a4308_0
+  - nbconvert=6.4.4=py37h06a4308_0
+  - nbformat=5.3.0=py37h06a4308_0
   - ncurses=6.2=h58526e2_4
+  - nest-asyncio=1.5.5=py37h06a4308_0
   - ninja=1.10.2=h4bd325d_0
+  - notebook=6.4.12=py37h06a4308_0
+  - nspr=4.30=h9c3ff4c_0
+  - nss=3.63=hb5efdd6_0
   - numpy=1.19.2=py37h54aff64_0
   - numpy-base=1.19.2=py37hfa32c7d_0
   - olefile=0.46=pyh9f0ad1d_1
-  - openssl=1.1.1j=h7f98852_0
+  - openssl=1.1.1k=h7f98852_0
+  - packaging=21.3=pyhd3eb1b0_0
   - pandas=1.2.3=py37hdc94413_0
+  - pandocfilters=1.5.0=pyhd3eb1b0_0
+  - parso=0.8.3=pyhd3eb1b0_0
   - patsy=0.5.1=py_0
   - pcre=8.44=he1b5a44_0
+  - pexpect=4.8.0=pyhd3eb1b0_3
+  - pickleshare=0.7.5=pyhd3eb1b0_1003
   - pillow=8.1.2=py37he98fc37_0
   - pip=21.0.1=pyhd8ed1ab_0
+  - plotly=5.9.0=py37h06a4308_0
+  - prometheus_client=0.14.1=py37h06a4308_0
+  - prompt-toolkit=3.0.20=pyhd3eb1b0_0
+  - prompt_toolkit=3.0.20=hd3eb1b0_0
   - pthread-stubs=0.4=h36c2ea0_1001
+  - ptyprocess=0.7.0=pyhd3eb1b0_2
+  - pycparser=2.21=pyhd3eb1b0_0
+  - pygments=2.11.2=pyhd3eb1b0_0
+  - pyopenssl=22.0.0=pyhd3eb1b0_0
   - pyparsing=2.4.7=pyh9f0ad1d_0
   - pyqt=5.9.2=py37hcca6a23_4
+  - pyrsistent=0.18.0=py37heee7806_0
+  - pysocks=1.7.1=py37_1
   - python=3.7.9=h7579374_0
   - python-dateutil=2.8.1=py_0
+  - python-fastjsonschema=2.15.1=pyhd3eb1b0_0
+  - python-kaleido=0.2.1=pyhd8ed1ab_0
   - python_abi=3.7=1_cp37m
   - pytorch=1.7.1=py3.7_cuda11.0.221_cudnn8.0.5_0
   - pytz=2021.1=pyhd8ed1ab_0
+  - pyzmq=22.3.0=py37h295c915_2
   - qt=5.9.7=h5867ecd_1
+  - qtconsole=5.3.1=py37h06a4308_1
+  - qtpy=2.0.1=pyhd3eb1b0_0
   - readline=8.0=he28a2e2_2
+  - requests=2.28.1=py37h06a4308_0
   - scikit-learn=0.24.1=py37h69acf81_0
   - scipy=1.6.0=py37h14a347d_0
   - seaborn=0.11.1=hd8ed1ab_1
   - seaborn-base=0.11.1=pyhd8ed1ab_1
+  - send2trash=1.8.0=pyhd3eb1b0_1
   - setuptools=49.6.0=py37h89c1867_3
   - sip=4.19.8=py37hf484d3e_0
   - six=1.15.0=pyh9f0ad1d_0
+  - sniffio=1.2.0=py37h06a4308_1
+  - soupsieve=2.3.1=pyhd3eb1b0_0
   - sqlite=3.34.0=h74cdb3f_0
   - statsmodels=0.12.2=py37h902c9e0_0
+  - tenacity=8.0.1=py37h06a4308_1
+  - terminado=0.13.1=py37h06a4308_0
+  - testpath=0.6.0=py37h06a4308_0
   - threadpoolctl=2.1.0=pyh5ca1d4c_0
   - tk=8.6.10=h21135ba_1
   - torchvision=0.8.2=py37_cu110
   - tornado=6.1=py37h5e8e339_1
   - tqdm=4.59.0=pyhd8ed1ab_0
+  - traitlets=5.1.1=pyhd3eb1b0_0
   - typing_extensions=3.7.4.3=py_0
+  - urllib3=1.26.11=py37h06a4308_0
+  - wcwidth=0.2.5=pyhd3eb1b0_0
+  - webencodings=0.5.1=py37_1
+  - websocket-client=0.58.0=py37h06a4308_4
   - wheel=0.36.2=pyhd3deb0d_0
+  - widgetsnbextension=3.5.2=py37h06a4308_0
   - xorg-libxau=1.0.9=h7f98852_0
   - xorg-libxdmcp=1.1.3=h7f98852_0
   - xz=5.2.5=h516909a_1
+  - zeromq=4.3.4=h2531618_0
+  - zipp=3.8.0=py37h06a4308_0
   - zlib=1.2.11=h516909a_1010
   - zstd=1.4.9=ha95c52a_0
-prefix: /home/lavande/galochkina/miniconda3/envs/poincare
+prefix: /home/louvre/vmeersch/miniconda3/envs/poincare

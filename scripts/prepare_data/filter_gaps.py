@@ -88,5 +88,5 @@ for i in range(len(MS)):
 
 FN.close()
 
-print("filter_gaps finished for ", inp)
+print("filter_gaps finished for", inp)
 
