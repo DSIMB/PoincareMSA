@@ -26,6 +26,7 @@ def rotate(df, root_name='root'):
     df_rot['pm2'] = poincare_coord_rot[:, 1]
     return df_rot
 
+"""
 def read_embeddings(
     path_embedding, 
     path_annotation = None, 
@@ -66,7 +67,39 @@ def read_embeddings(
         return result
     else:
         return embeddings
-    
+"""
+
+
+def read_embeddings(path_embedding, path_annotation=None, withroot=True):
+    """
+    Prepare the plot data by concatenating the two dataframes.
+    """
+    df_embeddings = pd.read_csv(path_embedding)
+    df_embeddings.sort_values(["proteins_id"], ignore_index=True, ascending=True, inplace=True)
+
+    #If an annotation file is provided
+    if os.path.isfile(path_annotation):
+        df_annotation = pd.read_csv(path_annotation)
+        #Check that no column is named "proteins_id" (already used in df_embeddings)
+        if "proteins_id" in df_annotation.columns:
+            df_annotation = df_annotation.drop(["proteins_id"], axis=1)
+
+        #Convert "int64" columns to "object"
+        int_colnames = df_annotation.select_dtypes(['int64']).columns
+        df_annotation[int_colnames] = df_annotation[int_colnames].astype("object")
+        
+        #If the two dataframe have the same length, concatenate them
+        if len(df_embeddings) == len(df_annotation):
+            df_concat = pd.concat([df_embeddings, df_annotation], axis=1)
+        else:
+            raise ValueError("Number of sequence and number of annotation doesn't match.")
+
+        df_concat.set_index(["proteins_id"], inplace=True)
+        return df_concat
+    else:
+        df_embeddings.set_index(["proteins_id"], inplace=True)
+        return df_embeddings
+
 
 def get_palette(
         n_colors, 
