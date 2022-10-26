@@ -27,6 +27,20 @@ import pickle
 import seaborn as sns
 sns.set()
 
+### This function was added by Tatina Galochkina in order to improve reproducibility of the restuls 
+def set_seed(seed: int = 42) -> None:
+    np.random.seed(seed)
+#    random.seed(seed)
+    torch.manual_seed(seed)
+    torch.cuda.manual_seed(seed)
+    # When running on the CuDNN backend, two further options must be set
+    torch.backends.cudnn.deterministic = True
+    torch.backends.cudnn.benchmark = False
+    # Set a fixed value for the hash seed
+    os.environ["PYTHONHASHSEED"] = str(seed)
+    print(f"Random seed set as {seed}")
+
+
 def create_output_name(opt):
     titlename = f"dist={opt.distfn}, " +\
                 f"metric={opt.distlocal}, " +\
@@ -169,7 +183,9 @@ def poincare_map(opt):
     # read and preprocess the dataset
     opt.cuda = True if torch.cuda.is_available() else False
     print('CUDA:', opt.cuda)
-    torch.manual_seed(opt.seed)
+
+    set_seed(opt.seed)
+#    torch.manual_seed(opt.seed)
 
     features, labels = prepare_data(opt.input_path, withroot = opt.rotate) 
     # if not (opt.tree is None):
