@@ -85,6 +85,10 @@ def read_embeddings(path_embedding, path_annotation=None, withroot=True):
         if "proteins_id" in df_annotation.columns:
             df_annotation = df_annotation.drop(["proteins_id"], axis=1)
 
+        #Convert "objects" columns to "string" (correct nan read as int)
+        object_colnames = df_annotation.select_dtypes(['object']).columns
+        df_annotation[object_colnames] = df_annotation[object_colnames].astype("str")
+
         #Convert "int64" columns to "object"
         int_colnames = df_annotation.select_dtypes(['int64']).columns
         df_annotation[int_colnames] = df_annotation[int_colnames].astype("object")
