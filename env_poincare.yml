@@ -7,6 +7,7 @@ channels:
 dependencies:
   - _libgcc_mutex=0.1=conda_forge
   - _openmp_mutex=4.5=1_llvm
+  - absl-py=1.3.0=pyhd8ed1ab_0
   - adjusttext=0.7.3.1=py_1
   - anyio=3.5.0=py37h06a4308_0
   - argon2-cffi=20.1.0=py37h27cfd23_1
@@ -17,8 +18,8 @@ dependencies:
   - blas=1.0=mkl
   - bleach=4.1.0=pyhd3eb1b0_0
   - brotlipy=0.7.0=py37h27cfd23_1003
-  - ca-certificates=2022.9.14=ha878542_0
-  - certifi=2022.9.14=pyhd8ed1ab_0
+  - ca-certificates=2022.9.24=ha878542_0
+  - certifi=2022.9.24=pyhd8ed1ab_0
   - cffi=1.15.0=py37hd667e15_1
   - charset-normalizer=2.0.4=pyhd3eb1b0_0
   - cryptography=37.0.1=py37h9ce1e76_0
@@ -29,6 +30,7 @@ dependencies:
   - decorator=5.1.1=pyhd3eb1b0_0
   - defusedxml=0.7.1=pyhd3eb1b0_0
   - entrypoints=0.4=py37h06a4308_0
+  - etils=0.9.0=pyhd8ed1ab_0
   - expat=2.2.10=h9c3ff4c_0
   - font-ttf-dejavu-sans-mono=2.37=hab24e00_0
   - font-ttf-inconsolata=3.000=h77eed37_0
@@ -109,10 +111,9 @@ dependencies:
   - notebook=6.4.12=py37h06a4308_0
   - nspr=4.30=h9c3ff4c_0
   - nss=3.63=hb5efdd6_0
-  - numpy=1.19.2=py37h54aff64_0
-  - numpy-base=1.19.2=py37hfa32c7d_0
   - olefile=0.46=pyh9f0ad1d_1
   - openssl=1.1.1k=h7f98852_0
+  - opt_einsum=3.3.0=pyhd8ed1ab_1
   - packaging=21.3=pyhd3eb1b0_0
   - pandas=1.2.3=py37hdc94413_0
   - pandocfilters=1.5.0=pyhd3eb1b0_0
@@ -139,6 +140,7 @@ dependencies:
   - python=3.7.9=h7579374_0
   - python-dateutil=2.8.1=py_0
   - python-fastjsonschema=2.15.1=pyhd3eb1b0_0
+  - python-flatbuffers=2.0=pyhd8ed1ab_0
   - python-kaleido=0.2.1=pyhd8ed1ab_0
   - python_abi=3.7=1_cp37m
   - pytorch=1.7.1=py3.7_cuda11.0.221_cudnn8.0.5_0
@@ -184,4 +186,9 @@ dependencies:
   - zipp=3.8.0=py37h06a4308_0
   - zlib=1.2.11=h516909a_1010
   - zstd=1.4.9=ha95c52a_0
-prefix: /home/louvre/vmeersch/miniconda3/envs/poincare
+  - pip:
+    - entrezpy==2.1.3
+    - jax==0.3.25
+    - jaxlib==0.3.25
+    - ncbi-taxonomist==1.2.0
+    - numpy==1.21.6
