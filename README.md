@@ -6,7 +6,10 @@ PoincaréMSA is a tool for protein family vizualisation. It takes as input a mul
 PoincareMSA builds an interactive projection of an input protein multiple sequence alignemnt (MSA) using a method based on Poincaré maps described by Klimovskaia et al [1]. It reproduces both local proximities of protein sequences and hierarchy contained in give data. Thus, sequences located closer to the center of projection correspond to the proteins sharing the most general functional properites and/or appearing at the earlier stages of evolution.
 
 # Colab version
-`PoincareMSA_colab.ipynb` provides an interactive Google Colab notebook for projection of protein MSA starting from a file in `.mfasta` format. The user can also provide an annotation in `.csv` format which will be used for coloring.
+We provide three different Google Colab notebooks for interactive visualization of multiple sequence alignments:
+* `PoincareMSA_colab.ipynb` takes as input a MSA in `.mfasta` format provided by a user. The user can also provide an annotation in `.csv` format which will be used for coloring.
+* `PoincareMSA_colab_examples.ipynb` builds PoincareMSA projections from the example alignments available in `examples` directory.
+* `PoincareMSA_colab_MMseqs2.ipynb` performs a homologous sequence search for a target sequence and filtering of the resulting alignment with further projection by PoincaréMSA.
 
 # Version for local installation
 
