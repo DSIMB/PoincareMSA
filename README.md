@@ -4,6 +4,7 @@ PoincaréMSA is a tool for protein family vizualisation. It takes as input a mul
 
 ## References
 When using PoincaréMSA, please cite the following research: 
+
 A. K. Susmelj, Y. Ren, Y. Vander Meersche, J.-C. Gelly, T. Galochkina. Poincaré maps for visualization of large protein families, Briefings in Bioinformatics, doi:10.1093/bib/bbad103
 
 # About
