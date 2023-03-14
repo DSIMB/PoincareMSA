@@ -3,20 +3,20 @@
 PoincaréMSA is a tool for protein family vizualisation starting from a multiple sequence alignment (either provided by the user or built by homologous search for a target seuqence). It is available in form of interactive Google Colab notebooks and the underlying algorithm is described in Susmelj et al. [1]. PoincaréMSA takes as input a multiple sequence alignemnt (MSA) and builds its projection on a Poincaré disk using the method developed by Klimovskaia et al. in [2]. For the detailed tutorial and contacts please see: https://www.dsimb.inserm.fr/POINCARE_MSA
 
 # About
-PoincareMSA builds an interactive projection of an input protein multiple sequence alignemnt (MSA) using a method based on Poincaré maps described by [Klimovskaia et al.](https://doi.org/10.1038/s41467-020-16822-4) [1]. It reproduces both local proximities of protein sequences and hierarchy contained in give data. Thus, sequences located closer to the center of projection correspond to the proteins sharing the most general functional properites and/or appearing at the earlier stages of evolution.
+PoincareMSA builds an interactive projection of an input protein multiple sequence alignemnt (MSA) using a method developed by Susmelj et al. [1] based on Poincaré maps [2]. It reproduces both local proximities of protein sequences and hierarchy contained in the given data. Thus, sequences located closer to the center of projection correspond to the proteins sharing the most general functional properites and/or appearing at the earlier stages of evolution.
 
 # Colab version
 We provide three different Google Colab notebooks for interactive visualization of multiple sequence alignments:
-* [PoincareMSA_colab.ipynb](https://colab.research.google.com/github/klanita/PoincareMSA/blob/master/PoincareMSA_colab.ipynb) takes as input a MSA in `.mfasta` format provided by a user. The user can also provide an annotation in `.csv` format which will be used for coloring, as well as an UniProt IDs list used to automatically fetch taxonomy informations for coloring.
-* [PoincareMSA_colab_examples.ipynb](https://colab.research.google.com/github/klanita/PoincareMSA/blob/master/PoincareMSA_colab_examples.ipynb) builds PoincareMSA projections from the example alignments available in `examples` directory.
-* [PoincareMSA_colab_MMseqs2.ipynb](https://colab.research.google.com/github/klanita/PoincareMSA/blob/master/PoincareMSA_colab_MMseqs2.ipynb) performs a homologous sequence search for a target sequence and filtering of the resulting alignment with further projection by PoincaréMSA.
+* [PoincareMSA_colab.ipynb](https://colab.research.google.com/github/DSIMB/PoincareMSA/blob/master/PoincareMSA_colab.ipynb) takes as input a MSA in `.mfasta` format provided by a user. The user can also provide an annotation in `.csv` format which will be used for coloring, as well as an UniProt IDs list used to automatically fetch taxonomy informations for coloring.
+* [PoincareMSA_colab_examples.ipynb](https://colab.research.google.com/github/DSIMB/PoincareMSA/blob/master/PoincareMSA_colab_examples.ipynb) builds PoincareMSA projections from the example alignments available in `examples` directory.
+* [PoincareMSA_colab_MMseqs2.ipynb](https://colab.research.google.com/github/DSIMB/PoincareMSA/blob/master/PoincareMSA_colab_MMseqs2.ipynb) performs a homologous sequence search for a target sequence and filtering of the resulting alignment with further projection by PoincaréMSA.
 
 # Version for local installation
 
 To get a local copy of the software run:
 
 ```
-git clone git@github.com:klanita/PoincareMSA.git
+git clone git@github.com:DSIMB/PoincareMSA.git
 cd PoincareMSA
 ```
 
