@@ -1,6 +1,6 @@
 <img src=".github/PoincareMSA_small_logo.png" alt="PoincareMSA logo" style="height: 100px;"/>
      
-PoincaréMSA is a tool for protein family vizualisation. It takes as input a multiple sequence alignemnt (MSA) and builds its projection on a Poincaré disk using the method developed by [Klimovskaia et al.](https://doi.org/10.1038/s41467-020-16822-4) in [1]. For the detailed tutorial and contacts please see: https://www.dsimb.inserm.fr/POINCARE_MSA
+PoincaréMSA is a tool for protein family vizualisation starting from a multiple sequence alignment (either provided by the user or built by homologous search for a target seuqence). It is available in form of interactive Google Colab notebooks and the underlying algorithm is described in Susmelj et al. [1]. PoincaréMSA takes as input a multiple sequence alignemnt (MSA) and builds its projection on a Poincaré disk using the method developed by Klimovskaia et al. in [2]. For the detailed tutorial and contacts please see: https://www.dsimb.inserm.fr/POINCARE_MSA
 
 # About
 PoincareMSA builds an interactive projection of an input protein multiple sequence alignemnt (MSA) using a method based on Poincaré maps described by [Klimovskaia et al.](https://doi.org/10.1038/s41467-020-16822-4) [1]. It reproduces both local proximities of protein sequences and hierarchy contained in give data. Thus, sequences located closer to the center of projection correspond to the proteins sharing the most general functional properites and/or appearing at the earlier stages of evolution.
@@ -76,11 +76,11 @@ We provide several examples of PoincareMSA usage for different protien families 
 # References
 When using PoincaréMSA, please cite the following research: 
 
-* A. K. Susmelj, Y. Ren, Y. Vander Meersche, J.-C. Gelly, T. Galochkina. Poincaré maps for visualization of large protein families, _Briefings in Bioinformatics_, https://doi.org/10.1093/bib/bbad103
+[1] A. K. Susmelj, Y. Ren, Y. Vander Meersche, J.-C. Gelly, T. Galochkina. Poincaré maps for visualization of large protein families, _Briefings in Bioinformatics_, https://doi.org/10.1093/bib/bbad103
 
 The projection construction is adapted from the original code: https://github.com/facebookresearch/PoincareMaps developed for RNA sequence data visualization as described in the following paper:
 
-* A. Klimovskaia, D. Lopez-Paz, L. Bottou et al. Poincaré maps for analyzing complex hierarchies in single-cell data. _Nat Commun_ 11, 2966 (2020). https://doi.org/10.1038/s41467-020-16822-4
+[2] A. Klimovskaia, D. Lopez-Paz, L. Bottou et al. Poincaré maps for analyzing complex hierarchies in single-cell data. _Nat Commun_ 11, 2966 (2020). https://doi.org/10.1038/s41467-020-16822-4
 
 # Contact
 For scientific collaboration please contact Dr. Tatiana Galochkina at tatiana.galochkina@u-paris.fr and Dr. Jean-Christophe Gelly at jean-christophe.gelly@u-paris.fr.
