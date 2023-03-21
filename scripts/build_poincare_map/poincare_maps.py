@@ -8,7 +8,6 @@ import numpy as np
 from sklearn.cluster import *
 # import scanpy.api as sc
 
-from model import poincare_translation
 import matplotlib.pyplot as plt
 plt.switch_backend('agg')
 from sklearn.decomposition import PCA
