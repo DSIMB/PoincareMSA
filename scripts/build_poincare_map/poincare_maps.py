@@ -8,16 +8,16 @@ import numpy as np
 from sklearn.cluster import *
 # import scanpy.api as sc
 
+from model import poincare_translation
 import matplotlib.pyplot as plt
 plt.switch_backend('agg')
 from sklearn.decomposition import PCA
 
-from scripts.build_poincare_map.model import *
-from scripts.build_poincare_map.visualize import *
-from scripts.build_poincare_map.coldict import *
-
+from visualize import *
+from model import *
 import seaborn as sns; sns.set()
 import torch as th
+from coldict import *
 from scipy.spatial.distance import euclidean
 
 
