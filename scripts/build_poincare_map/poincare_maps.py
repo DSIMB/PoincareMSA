@@ -13,11 +13,12 @@ import matplotlib.pyplot as plt
 plt.switch_backend('agg')
 from sklearn.decomposition import PCA
 
-from visualize import *
-from model import *
+from scripts.build_poincare_map.model import *
+from scripts.build_poincare_map.visualize import *
+from scripts.build_poincare_map.coldict import *
+
 import seaborn as sns; sns.set()
 import torch as th
-from coldict import *
 from scipy.spatial.distance import euclidean
 
 

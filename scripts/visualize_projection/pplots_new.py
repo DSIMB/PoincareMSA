@@ -100,14 +100,14 @@ def read_embeddings(path_embedding, path_annotation=None, withroot=True):
             raise ValueError("Number of sequence and number of annotation doesn't match.")
 
         df_concat.set_index(["proteins_id"], inplace=True)
-        df_concat.insert(0, "proteins_id", df_concat.index)
+        df_concat.insert(2, "proteins_id", df_concat.index)
         df_concat["proteins_id"] = df_concat["proteins_id"].astype("object")
 
         return df_concat
     
     else:
         df_embeddings.set_index(["proteins_id"], inplace=True)
-        df_embeddings.insert(0, "proteins_id", df_embeddings.index)
+        df_embeddings.insert(2, "proteins_id", df_embeddings.index)
         df_embeddings["proteins_id"] = df_embeddings["proteins_id"].astype("object")
         return df_embeddings
 
