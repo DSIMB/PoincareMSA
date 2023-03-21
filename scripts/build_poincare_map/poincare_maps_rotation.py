@@ -7,7 +7,6 @@
 import numpy as np
 from sklearn.cluster import *
 # import scanpy.api as sc
-from scripts.build_poincare_map.model import poincare_translation
 from scripts.build_poincare_map.model import *
 from scripts.build_poincare_map.visualize import *
 from scripts.build_poincare_map.coldict import *
